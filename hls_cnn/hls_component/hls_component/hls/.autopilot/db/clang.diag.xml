@@ -1,0 +1,39 @@
+<dict>
+  <key>main-file</key>
+  <string>D:/vitis/projects_learning/hls_cnn/hls_component/hls_component/hls/.autopilot/db/cnn_layer.pp.0.cpp</string>
+  <key>diagnostics</key>
+  <array>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>cnn_layer.cpp</string>
+      <key>line</key>
+      <integer>75</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>missing argument for &apos;variable&apos;</string>
+      <key>ID</key>
+      <integer>5562</integer>
+      <key>WarningOption</key>
+      <string>invalid-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>cnn_layer.cpp</string>
+      <key>line</key>
+      <integer>76</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>missing argument for &apos;variable&apos;</string>
+      <key>ID</key>
+      <integer>5562</integer>
+      <key>WarningOption</key>
+      <string>invalid-hls-pragmas</string>
+    </dict>
+  </array>
+</dict>

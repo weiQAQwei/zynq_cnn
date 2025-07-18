@@ -1,0 +1,248 @@
+<ENTRY>
+{
+ "thisFile": "D:/vitis\\projects_learning\\hls_cnn\\hls_component\\hls_component\\hls_component.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "07/18/25 13:02:54",
+ "timestampMillis": "1752814974698",
+ "buildStep": {
+  "cmdId": "b9435739-244a-45f8-bc06-ad96031ff1d2",
+  "name": "v++",
+  "logFile": "D:/vitis\\projects_learning\\hls_cnn\\hls_component\\hls_component\\logs\\hls_component.steps.log",
+  "commandLine": "C:/Xilinx/2025.1/Vitis/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config D:\\vitis\\projects_learning\\hls_cnn\\hls_component\\hls_config.cfg --work_dir hls_component ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "D:\\vitis\\projects_learning\\hls_cnn\\hls_component\\hls_config.cfg",
+   "--work_dir",
+   "hls_component"
+  ],
+  "iniFiles": [
+   {
+    "path": "D:/vitis\\projects_learning\\hls_cnn\\hls_component\\hls_config.cfg",
+    "content": "part=xc7z020clg400-2\n\n[hls]\nflow_target=vivado\npackage.output.format=ip_catalog\npackage.output.syn=false\nsyn.file=cnn_layer.cpp\nsyn.file=cnn_layer.h\nsyn.file=weights.cpp\nsyn.file=weights.h\ntb.file=test.cpp\nsyn.top=cnn_top\nsyn.interface.m_axi_addr64=0\nsyn.interface.m_axi_max_widen_bitwidth=32\nsyn.interface.m_axi_max_read_burst_length=32\nsyn.interface.m_axi_max_write_burst_length=32"
+   }
+  ],
+  "cwd": "D:\\vitis\\projects_learning\\hls_cnn\\hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/18/25 13:02:54",
+ "timestampMillis": "1752814974698",
+ "status": {
+  "cmdId": "b9435739-244a-45f8-bc06-ad96031ff1d2",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "07/18/25 13:02:57",
+ "timestampMillis": "1752814977830",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "cnn_top",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "D:/vitis\\projects_learning\\hls_cnn\\hls_component\\cnn_layer.cpp",
+     "D:/vitis\\projects_learning\\hls_cnn\\hls_component\\cnn_layer.h",
+     "D:/vitis\\projects_learning\\hls_cnn\\hls_component\\weights.cpp",
+     "D:/vitis\\projects_learning\\hls_cnn\\hls_component\\weights.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "07/18/25 13:02:57",
+ "timestampMillis": "1752814977831",
+ "buildStep": {
+  "cmdId": "8b4801f2-440d-4d70-92a5-3abd73e474e1",
+  "name": "",
+  "logFile": "D:/vitis\\projects_learning\\hls_cnn\\hls_component\\hls_component\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "D:\\vitis\\projects_learning\\hls_cnn\\hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/18/25 13:02:57",
+ "timestampMillis": "1752814977831",
+ "status": {
+  "cmdId": "8b4801f2-440d-4d70-92a5-3abd73e474e1",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/18/25 13:02:57",
+ "timestampMillis": "1752814977831",
+ "report": {
+  "path": "D:/vitis\\projects_learning\\hls_cnn\\hls_component\\hls_component\\hls\\hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/18/25 13:02:57",
+ "timestampMillis": "1752814977831",
+ "report": {
+  "path": "D:/vitis\\projects_learning\\hls_cnn\\hls_component\\hls_component\\hls\\syn\\report\\csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/18/25 13:02:57",
+ "timestampMillis": "1752814977831",
+ "report": {
+  "path": "D:/vitis\\projects_learning\\hls_cnn\\hls_component\\hls_component\\hls\\syn\\report\\csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/18/25 13:04:13",
+ "timestampMillis": "1752815053958",
+ "report": {
+  "path": "D:/vitis\\projects_learning\\hls_cnn\\hls_component\\hls_component\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/18/25 13:04:13",
+ "timestampMillis": "1752815053959",
+ "report": {
+  "path": "D:/vitis\\projects_learning\\hls_cnn\\hls_component\\hls_component\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/18/25 13:04:13",
+ "timestampMillis": "1752815053959",
+ "report": {
+  "path": "D:/vitis\\projects_learning\\hls_cnn\\hls_component\\hls_component\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/18/25 13:04:13",
+ "timestampMillis": "1752815053959",
+ "status": {
+  "cmdId": "8b4801f2-440d-4d70-92a5-3abd73e474e1",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/18/25 13:04:14",
+ "timestampMillis": "1752815054109",
+ "status": {
+  "cmdId": "b9435739-244a-45f8-bc06-ad96031ff1d2",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/18/25 13:04:14",
+ "timestampMillis": "1752815054134",
+ "report": {
+  "path": "D:/vitis\\projects_learning\\hls_cnn\\hls_component\\hls_component\\reports\\v++_compile_hls_component_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/18/25 13:04:14",
+ "timestampMillis": "1752815054135",
+ "report": {
+  "path": "D:/vitis\\projects_learning\\hls_cnn\\hls_component\\hls_component\\reports\\.db\\v++_compile_hls_component_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

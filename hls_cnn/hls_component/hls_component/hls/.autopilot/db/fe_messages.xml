@@ -1,0 +1,281 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5562" msg_severity="WARNING" msg_loc="cnn_layer.cpp:75:9" msg_body="missing argument for 'variable'">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5562" msg_severity="WARNING" msg_loc="cnn_layer.cpp:76:9" msg_body="missing argument for 'variable'">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-114" msg_severity="WARNING" msg_loc="cnn_layer.cpp:231:9" msg_body="Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region"/>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-169" msg_severity="WARNING" msg_loc="cnn_layer.cpp:231:9" msg_body="There are a total of 8 such instances of non-canonical statements in the dataflow region"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_layer.cpp:24:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="load_params_func" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_layer.cpp:27:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="load_params_func" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=32 max=32" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_layer.cpp:29:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="load_params_func" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=1 max=32" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_layer.cpp:32:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="load_params_func" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=4" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_layer.cpp:41:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="load_params_func" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=4" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_layer.cpp:47:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="prepare_input_buf_func" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_layer.cpp:50:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="prepare_input_buf_func" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=1 max=32" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_layer.cpp:53:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="prepare_input_buf_func" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=4" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_layer.cpp:60:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="prepare_input_buf_func" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=16 max=16" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_layer.cpp:63:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="prepare_input_buf_func" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=4" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_layer.cpp:74:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="convolution_func" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_layer.cpp:75:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="convolution_func" ARG_PragmaIsValid="0" ARG_PragmaOptions="op=mul impl=fabric latency=0" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_layer.cpp:76:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="convolution_func" ARG_PragmaIsValid="0" ARG_PragmaOptions="op=add impl=fabric latency=0" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_layer.cpp:78:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="convolution_func" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=32 max=32" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_layer.cpp:80:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="convolution_func" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=8 max=16" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_layer.cpp:85:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="convolution_func" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=1 max=32" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_layer.cpp:102:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write_output_func" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_layer.cpp:104:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write_output_func" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=8 max=16" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_layer.cpp:107:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write_output_func" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=4" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_layer.cpp:142:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read_input_func" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_layer.cpp:144:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read_input_func" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=8 max=16" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_layer.cpp:147:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read_input_func" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=4" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_layer.cpp:154:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pooling_func" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_layer.cpp:156:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pooling_func" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=4 max=8" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_layer.cpp:159:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pooling_func" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=4" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_layer.cpp:183:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read_input_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_layer.cpp:185:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read_input_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=4" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_layer.cpp:191:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write_output_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_layer.cpp:193:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write_output_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=4" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="cnn_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=cnn_top" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_layer.cpp:208:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=input offset=slave bundle=gmem0 depth=256" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_layer.cpp:209:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=output offset=slave bundle=gmem1 depth=512" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_layer.cpp:210:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=conv1_weights offset=slave bundle=gmem2" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_layer.cpp:211:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=conv1_bias offset=slave bundle=gmem3" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_layer.cpp:212:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=conv2_weights offset=slave bundle=gmem4" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_layer.cpp:213:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=conv2_bias offset=slave bundle=gmem5" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_layer.cpp:214:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=conv3_weights offset=slave bundle=gmem6" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_layer.cpp:215:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=conv3_bias offset=slave bundle=gmem7" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_layer.cpp:216:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_layer.cpp:220:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=input_s depth=256" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_layer.cpp:222:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=conv1_out depth=8192" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_layer.cpp:224:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=conv2_out depth=8192" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_layer.cpp:226:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=pool1_out depth=2048" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_layer.cpp:228:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=conv3_out depth=2048" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_layer.cpp:230:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=output_s depth=512" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="cnn_layer.cpp:231:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cnn_top" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn_layer.cpp:207:0" msg_body="Inlining function 'ConvLayer&lt;1, 16, 16, 32, 16, 16, 1, 1, 4&gt;::ConvLayer(int, int, int, int, int, int, int, short*, short*)' into 'cnn_top(short*, short*, short (*) [1][3][3], short*, short (*) [32][3][3], short*, short (*) [32][3][3], short*)'">
+        <args Callee="ConvLayer&lt;1, 16, 16, 32, 16, 16, 1, 1, 4&gt;::ConvLayer(int, int, int, int, int, int, int, short*, short*)" Callee-DebugLoc="File cnn_layer.cpp Line 18 Column 0" Caller="cnn_top(short*, short*, short (*) [1][3][3], short*, short (*) [32][3][3], short*, short (*) [32][3][3], short*)" Caller-DebugLoc="File cnn_layer.cpp Line 207 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn_layer.cpp:207:0" msg_body="Inlining function 'ConvLayer&lt;32, 16, 16, 32, 16, 16, 1, 1, 4&gt;::ConvLayer(int, int, int, int, int, int, int, short*, short*)' into 'cnn_top(short*, short*, short (*) [1][3][3], short*, short (*) [32][3][3], short*, short (*) [32][3][3], short*)'">
+        <args Callee="ConvLayer&lt;32, 16, 16, 32, 16, 16, 1, 1, 4&gt;::ConvLayer(int, int, int, int, int, int, int, short*, short*)" Callee-DebugLoc="File cnn_layer.cpp Line 18 Column 0" Caller="cnn_top(short*, short*, short (*) [1][3][3], short*, short (*) [32][3][3], short*, short (*) [32][3][3], short*)" Caller-DebugLoc="File cnn_layer.cpp Line 207 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="cnn_layer.cpp:207:0" msg_body="Inlining function 'ConvLayer&lt;32, 8, 8, 32, 8, 8, 1, 1, 4&gt;::ConvLayer(int, int, int, int, int, int, int, short*, short*)' into 'cnn_top(short*, short*, short (*) [1][3][3], short*, short (*) [32][3][3], short*, short (*) [32][3][3], short*)'">
+        <args Callee="ConvLayer&lt;32, 8, 8, 32, 8, 8, 1, 1, 4&gt;::ConvLayer(int, int, int, int, int, int, int, short*, short*)" Callee-DebugLoc="File cnn_layer.cpp Line 18 Column 0" Caller="cnn_top(short*, short*, short (*) [1][3][3], short*, short (*) [32][3][3], short*, short (*) [32][3][3], short*)" Caller-DebugLoc="File cnn_layer.cpp Line 207 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="cnn_layer.cpp:161:39" msg_body="Loop 'VITIS_LOOP_161_4' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_161_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="cnn_layer.cpp:162:43" msg_body="Loop 'VITIS_LOOP_162_5' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_162_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_LOOP_TRIPCOUNT" msg_id="214-398" msg_severity="WARNING" msg_loc="cnn_layer.cpp:141:0" msg_body="Updating loop upper bound from 16 to 8 for loop 'VITIS_LOOP_143_1' (cnn_layer.cpp:143:20) in function 'MaxPool&lt;32, 8, 8&gt;::read_input_func'.">
+        <args LoopLoc="cnn_layer.cpp:143:20" LoopName="VITIS_LOOP_143_1" NewBound="8" OldBound="16"/>
+    </msg>
+    <msg msg_groups="PRAGMA_LOOP_TRIPCOUNT" msg_id="214-398" msg_severity="WARNING" msg_loc="cnn_layer.cpp:153:0" msg_body="Updating loop upper bound from 8 to 4 for loop 'VITIS_LOOP_155_1' (cnn_layer.cpp:155:20) in function 'MaxPool&lt;32, 8, 8&gt;::pooling_func'.">
+        <args LoopLoc="cnn_layer.cpp:155:20" LoopName="VITIS_LOOP_155_1" NewBound="4" OldBound="8"/>
+    </msg>
+    <msg msg_groups="PRAGMA_LOOP_TRIPCOUNT" msg_id="214-398" msg_severity="WARNING" msg_loc="cnn_layer.cpp:141:0" msg_body="Updating loop lower bound from 8 to 16 for loop 'VITIS_LOOP_143_1' (cnn_layer.cpp:143:20) in function 'MaxPool&lt;32, 16, 16&gt;::read_input_func'.">
+        <args LoopLoc="cnn_layer.cpp:143:20" LoopName="VITIS_LOOP_143_1" NewBound="16" OldBound="8"/>
+    </msg>
+    <msg msg_groups="PRAGMA_LOOP_TRIPCOUNT" msg_id="214-398" msg_severity="WARNING" msg_loc="cnn_layer.cpp:153:0" msg_body="Updating loop lower bound from 4 to 8 for loop 'VITIS_LOOP_155_1' (cnn_layer.cpp:155:20) in function 'MaxPool&lt;32, 16, 16&gt;::pooling_func'.">
+        <args LoopLoc="cnn_layer.cpp:155:20" LoopName="VITIS_LOOP_155_1" NewBound="8" OldBound="4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="cnn_layer.cpp:153:0" msg_body="Unrolling loop 'VITIS_LOOP_161_4' (cnn_layer.cpp:161:39) in function 'MaxPool&lt;32, 8, 8&gt;::pooling_func' completely with a factor of 2">
+        <args Factor="2" LoopLoc="cnn_layer.cpp:161:39" LoopName="VITIS_LOOP_161_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="cnn_layer.cpp:153:0" msg_body="Unrolling loop 'VITIS_LOOP_162_5' (cnn_layer.cpp:162:43) in function 'MaxPool&lt;32, 8, 8&gt;::pooling_func' completely with a factor of 2">
+        <args Factor="2" LoopLoc="cnn_layer.cpp:162:43" LoopName="VITIS_LOOP_162_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="cnn_layer.cpp:153:0" msg_body="Unrolling loop 'VITIS_LOOP_161_4' (cnn_layer.cpp:161:39) in function 'MaxPool&lt;32, 16, 16&gt;::pooling_func' completely with a factor of 2">
+        <args Factor="2" LoopLoc="cnn_layer.cpp:161:39" LoopName="VITIS_LOOP_161_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="cnn_layer.cpp:153:0" msg_body="Unrolling loop 'VITIS_LOOP_162_5' (cnn_layer.cpp:162:43) in function 'MaxPool&lt;32, 16, 16&gt;::pooling_func' completely with a factor of 2">
+        <args Factor="2" LoopLoc="cnn_layer.cpp:162:43" LoopName="VITIS_LOOP_162_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-464" msg_severity="WARNING" msg_loc="cnn_layer.cpp:114:0" msg_body="Skipping array undecay on variable length array 'this_in_channels'.">
+        <args ArrayName="this_in_channels"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-464" msg_severity="WARNING" msg_loc="cnn_layer.cpp:114:0" msg_body="Skipping array undecay on variable length array 'this_out_channels'.">
+        <args ArrayName="this_out_channels"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-464" msg_severity="WARNING" msg_loc="cnn_layer.cpp:114:0" msg_body="Skipping array undecay on variable length array 'this_height'.">
+        <args ArrayName="this_height"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-464" msg_severity="WARNING" msg_loc="cnn_layer.cpp:114:0" msg_body="Skipping array undecay on variable length array 'this_width'.">
+        <args ArrayName="this_width"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-464" msg_severity="WARNING" msg_loc="cnn_layer.cpp:114:0" msg_body="Skipping array undecay on variable length array 'this_padding'.">
+        <args ArrayName="this_padding"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-464" msg_severity="WARNING" msg_loc="cnn_layer.cpp:114:0" msg_body="Skipping array undecay on variable length array 'this_stride'.">
+        <args ArrayName="this_stride"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-464" msg_severity="WARNING" msg_loc="cnn_layer.cpp:114:0" msg_body="Skipping array undecay on variable length array 'this_output_height'.">
+        <args ArrayName="this_output_height"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-464" msg_severity="WARNING" msg_loc="cnn_layer.cpp:114:0" msg_body="Skipping array undecay on variable length array 'this_output_width'.">
+        <args ArrayName="this_output_width"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-464" msg_severity="WARNING" msg_loc="cnn_layer.cpp:114:0" msg_body="Skipping array undecay on variable length array 'this_weights'.">
+        <args ArrayName="this_weights"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-464" msg_severity="WARNING" msg_loc="cnn_layer.cpp:114:0" msg_body="Skipping array undecay on variable length array 'this_bias'.">
+        <args ArrayName="this_bias"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="cnn_layer.cpp:86:19" msg_body="Loop 'VITIS_LOOP_86_5' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_86_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="cnn_layer.cpp:87:46" msg_body="Loop 'VITIS_LOOP_87_6' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_87_6"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="cnn_layer.cpp:73:0" msg_body="Unrolling loop 'VITIS_LOOP_86_5' (cnn_layer.cpp:86:19) in function 'ConvLayer&lt;1, 16, 16, 32, 16, 16, 1, 1, 4&gt;::convolution_func' completely with a factor of 3">
+        <args Factor="3" LoopLoc="cnn_layer.cpp:86:19" LoopName="VITIS_LOOP_86_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="cnn_layer.cpp:73:0" msg_body="Unrolling loop 'VITIS_LOOP_87_6' (cnn_layer.cpp:87:46) in function 'ConvLayer&lt;1, 16, 16, 32, 16, 16, 1, 1, 4&gt;::convolution_func' completely with a factor of 3">
+        <args Factor="3" LoopLoc="cnn_layer.cpp:87:46" LoopName="VITIS_LOOP_87_6"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-449" msg_severity="INFO" msg_loc="cnn_layer.cpp:115:17" msg_body="Automatically partitioning array 'input_buf' dimension 1 completely based on constant index.">
+        <args Dim="1" Value="input_buf"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-449" msg_severity="INFO" msg_loc="cnn_layer.cpp:118:17" msg_body="Automatically partitioning array 'local_weights' dimension 2 completely based on constant index.">
+        <args Dim="2" Value="local_weights"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="cnn_layer.cpp:115:17" msg_body="array_partition dim=1 type=complete  variable=input_buf 1 ConvLayer&lt;1, 16, 16, 32, 16, 16, 1, 1, 4&gt;::compute cnn_layer.cpp:115:17 input_buf">
+        <args PragmaFunction="ConvLayer&lt;1, 16, 16, 32, 16, 16, 1, 1, 4&gt;::compute" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=input_buf" PragmaType="array_partition" VarName="input_buf" varLoc="cnn_layer.cpp:115:17"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="cnn_layer.cpp:115:17" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'input_buf' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="input_buf" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="cnn_layer.cpp:115:17" msg_body="array_partition dim=3 type=cyclic factor=3 variable=input_buf 1 ConvLayer&lt;1, 16, 16, 32, 16, 16, 1, 1, 4&gt;::compute cnn_layer.cpp:115:17 input_buf">
+        <args PragmaFunction="ConvLayer&lt;1, 16, 16, 32, 16, 16, 1, 1, 4&gt;::compute" PragmaIsAuto="1" PragmaOptions="dim=3 type=cyclic factor=3 variable=input_buf" PragmaType="array_partition" VarName="input_buf" varLoc="cnn_layer.cpp:115:17"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="cnn_layer.cpp:115:17" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=3' for array 'input_buf' due to pipeline pragma">
+        <args Dim="3" Factor="3" Mode="cyclic" Name="input_buf" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="cnn_layer.cpp:115:17" msg_body="array_partition dim=2 type=cyclic factor=3 variable=input_buf 1 ConvLayer&lt;1, 16, 16, 32, 16, 16, 1, 1, 4&gt;::compute cnn_layer.cpp:115:17 input_buf">
+        <args PragmaFunction="ConvLayer&lt;1, 16, 16, 32, 16, 16, 1, 1, 4&gt;::compute" PragmaIsAuto="1" PragmaOptions="dim=2 type=cyclic factor=3 variable=input_buf" PragmaType="array_partition" VarName="input_buf" varLoc="cnn_layer.cpp:115:17"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="cnn_layer.cpp:115:17" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=2' for array 'input_buf' due to pipeline pragma">
+        <args Dim="2" Factor="3" Mode="cyclic" Name="input_buf" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="cnn_layer.cpp:118:17" msg_body="array_partition dim=3 type=complete  variable=local_weights 1 ConvLayer&lt;1, 16, 16, 32, 16, 16, 1, 1, 4&gt;::compute cnn_layer.cpp:118:17 local_weights">
+        <args PragmaFunction="ConvLayer&lt;1, 16, 16, 32, 16, 16, 1, 1, 4&gt;::compute" PragmaIsAuto="1" PragmaOptions="dim=3 type=complete  variable=local_weights" PragmaType="array_partition" VarName="local_weights" varLoc="cnn_layer.cpp:118:17"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="cnn_layer.cpp:118:17" msg_body="Inferring pragma 'array_partition type=complete dim=3' for array 'local_weights' due to pipeline pragma">
+        <args Dim="3" Mode="complete" Name="local_weights" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="cnn_layer.cpp:118:17" msg_body="array_partition dim=2 type=complete  variable=local_weights 1 ConvLayer&lt;1, 16, 16, 32, 16, 16, 1, 1, 4&gt;::compute cnn_layer.cpp:118:17 local_weights">
+        <args PragmaFunction="ConvLayer&lt;1, 16, 16, 32, 16, 16, 1, 1, 4&gt;::compute" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=local_weights" PragmaType="array_partition" VarName="local_weights" varLoc="cnn_layer.cpp:118:17"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="cnn_layer.cpp:118:17" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'local_weights' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="local_weights" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="cnn_layer.cpp:118:17" msg_body="array_partition dim=4 type=complete  variable=local_weights 1 ConvLayer&lt;1, 16, 16, 32, 16, 16, 1, 1, 4&gt;::compute cnn_layer.cpp:118:17 local_weights">
+        <args PragmaFunction="ConvLayer&lt;1, 16, 16, 32, 16, 16, 1, 1, 4&gt;::compute" PragmaIsAuto="1" PragmaOptions="dim=4 type=complete  variable=local_weights" PragmaType="array_partition" VarName="local_weights" varLoc="cnn_layer.cpp:118:17"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="cnn_layer.cpp:118:17" msg_body="Inferring pragma 'array_partition type=complete dim=4' for array 'local_weights' due to pipeline pragma">
+        <args Dim="4" Mode="complete" Name="local_weights" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="cnn_layer.cpp:115:17" msg_body="Applying array_partition to 'input_buf': Complete partitioning on dimension 1. Cyclic partitioning with factor 3 on dimension 2. Cyclic partitioning with factor 3 on dimension 3.">
+        <args Dim="islist 1 2 3" Factor="islist 3 3" Mode="islist Complete Cyclic Cyclic" UOName="input_buf"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="cnn_layer.cpp:118:17" msg_body="Applying array_partition to 'local_weights': Complete partitioning on dimension 2. Complete partitioning on dimension 3. Complete partitioning on dimension 4.">
+        <args Dim="islist 2 3 4" Mode="islist Complete Complete Complete" UOName="local_weights"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-475" msg_severity="WARNING" msg_loc="cnn_layer.cpp:207:0" msg_body="Merging processes 'write_output_top' in function 'cnn_top' due to writes on 'gmem1'">
+        <args FName="cnn_top"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

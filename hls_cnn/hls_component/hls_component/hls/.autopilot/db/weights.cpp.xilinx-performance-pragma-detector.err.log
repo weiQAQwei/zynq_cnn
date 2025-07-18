@@ -1,0 +1,9 @@
+In file included from D:\vitis\projects_learning\hls_cnn\hls_component\weights.cpp:3:
+In file included from D:\vitis\projects_learning\hls_cnn\hls_component/weights.h:4:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\cstdint:8:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\yvals_core.h:908:1: error: static_assert failed "error STL1000: Unexpected compiler version, expected Clang 19.0.0 or newer."
+_EMIT_STL_ERROR(STL1000, "Unexpected compiler version, expected Clang 19.0.0 or newer.");
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\yvals_core.h:534:44: note: expanded from macro '_EMIT_STL_ERROR'
+#define _EMIT_STL_ERROR(NUMBER, MESSAGE)   static_assert(false, "error " #NUMBER ": " MESSAGE)
+                                           ^             ~~~~~

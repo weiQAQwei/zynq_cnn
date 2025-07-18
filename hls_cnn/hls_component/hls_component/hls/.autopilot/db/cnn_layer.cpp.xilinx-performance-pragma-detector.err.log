@@ -1,0 +1,34 @@
+In file included from D:\vitis\projects_learning\hls_cnn\hls_component\cnn_layer.cpp:2:
+In file included from D:\vitis\projects_learning\hls_cnn\hls_component/weights.h:4:
+In file included from C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\cstdint:8:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\yvals_core.h:908:1: error: static_assert failed "error STL1000: Unexpected compiler version, expected Clang 19.0.0 or newer."
+_EMIT_STL_ERROR(STL1000, "Unexpected compiler version, expected Clang 19.0.0 or newer.");
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\yvals_core.h:534:44: note: expanded from macro '_EMIT_STL_ERROR'
+#define _EMIT_STL_ERROR(NUMBER, MESSAGE)   static_assert(false, "error " #NUMBER ": " MESSAGE)
+                                           ^             ~~~~~
+In file included from D:\vitis\projects_learning\hls_cnn\hls_component\cnn_layer.cpp:1:
+In file included from C:/Xilinx/2025.1/Vitis/common/technology/autopilot\hls_stream.h:12:
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot/hls_stream_39.h:127:9: error: use of undeclared identifier '__fpga_fifo_push'
+        __fpga_fifo_push(&V, &din);
+        ^
+D:\vitis\projects_learning\hls_cnn\hls_component\cnn_layer.cpp:186:17: note: in instantiation of member function 'hls::stream<short, 0>::write' requested here
+        input_s.write(input[i]);
+                ^
+In file included from D:\vitis\projects_learning\hls_cnn\hls_component\cnn_layer.cpp:1:
+In file included from C:/Xilinx/2025.1/Vitis/common/technology/autopilot\hls_stream.h:12:
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot/hls_stream_39.h:98:9: error: use of undeclared identifier '__fpga_fifo_pop'
+        __fpga_fifo_pop(&V, &dout);
+        ^
+C:/Xilinx/2025.1/Vitis/common/technology/autopilot/hls_stream_39.h:109:9: note: in instantiation of member function 'hls::stream<short, 0>::read' requested here
+        read(tmp);
+        ^
+D:\vitis\projects_learning\hls_cnn\hls_component\cnn_layer.cpp:194:30: note: in instantiation of member function 'hls::stream<short, 0>::read' requested here
+        output[i] = output_s.read();
+                             ^
+D:\vitis\projects_learning\hls_cnn\hls_component\cnn_layer.cpp:75:17: warning: missing argument for 'variable' [-Winvalid-hls-pragmas]
+        #pragma HLS bind_op op=mul impl=fabric latency=0
+                ^
+D:\vitis\projects_learning\hls_cnn\hls_component\cnn_layer.cpp:76:17: warning: missing argument for 'variable' [-Winvalid-hls-pragmas]
+        #pragma HLS bind_op op=add impl=fabric latency=0
+                ^

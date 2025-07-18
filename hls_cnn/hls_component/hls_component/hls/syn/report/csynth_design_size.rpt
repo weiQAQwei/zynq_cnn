@@ -1,0 +1,61 @@
+================================================================
+== Design Size Report
+================================================================
+
+* Total Instructions per Compilation Phase
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Phase         | Step                        | Instructions | Description                                                                            |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Compile/Link  |                             | 1,821        | After all functions are compiled and linked into a single design                       |
+|               |                             |              |                                                                                        |
+| Unroll/Inline |                             |              | After user unroll and inline pragmas are applied                                       |
+|               | (1) unroll                  | 1,171        | user unroll pragmas are applied                                                        |
+|               | (2) simplification          |   883        | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                  |   888        | user inline pragmas are applied                                                        |
+|               | (4) simplification          |   888        | simplification of applied user inline pragmas                                          |
+|               |                             |              |                                                                                        |
+| Array/Struct  |                             |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
+|               | (1) array partition         |   677        | user array partition pragmas are applied                                               |
+|               | (2) simplification          |   671        | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate  |   671        | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape           |   671        | apply array reshape pragmas                                                            |
+|               | (5) access patterns         |   675        | array access pattern optmizations                                                      |
+|               |                             |              |                                                                                        |
+| Performance   |                             |              | After transformations are applied to meet performance pragma targets                   |
+|               | (1) loop simplification     |   672        | loop and instruction simplification                                                    |
+|               | (2) parallelization         |   716        | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition         | 1,334        | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification          | 1,156        | simplification of design after performance transformations                             |
+|               |                             |              |                                                                                        |
+| HW Transforms |                             |              | After hardware transfomations                                                          |
+|               | (1) lowering                | 1,177        | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations           | 1,398        | high level synthesis optimizations                                                     |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+
+* Instructions per Function for each Compilation Phase
++----------------------------+-------------------+-----------------+---------------+---------------+----------------+-----------------+
+| Function                   | Location          | Compile/Link    | Unroll/Inline | Array/Struct  | Performance    | HW Transforms   |
++----------------------------+-------------------+-----------------+---------------+---------------+----------------+-----------------+
+| + cnn_top                  | cnn_layer.cpp:203 | 1,821           | 888           | 675           | 1,156          | 1,398           |
+|    read_input_top          | cnn_layer.cpp:182 |   17            |   9           |  12           |   12           |   18            |
+|    ConvLayer               | cnn_layer.cpp:16  |  147 (3 calls)  |               |               |                |                 |
+|  + compute                 | cnn_layer.cpp:114 | 1,119 (3 calls) | 705 (3 calls) | 480 (3 calls) |  961 (3 calls) | 1,125 (3 calls) |
+|     load_params_func       | cnn_layer.cpp:23  |  249 (3 calls)  | 156 (3 calls) | 131 (3 calls) |  198 (3 calls) |  224 (3 calls)  |
+|     prepare_input_buf_func | cnn_layer.cpp:46  |  288 (3 calls)  | 171 (3 calls) | 101 (3 calls) |  222 (3 calls) |  280 (3 calls)  |
+|     convolution_func       | cnn_layer.cpp:70  |  348 (3 calls)  | 237 (3 calls) | 164 (3 calls) |  396 (3 calls) |  443 (3 calls)  |
+|     write_output_func      | cnn_layer.cpp:101 |  135 (3 calls)  | 102 (3 calls) |  57 (3 calls) |   57 (3 calls) |   90 (3 calls)  |
+|    MaxPool                 | cnn_layer.cpp:135 |   66 (2 calls)  |               |               |                |                 |
+|  + compute                 | cnn_layer.cpp:173 |  332 (2 calls)  | 118 (2 calls) | 116 (2 calls) |  116 (2 calls) |  168 (2 calls)  |
+|     read_input_func        | cnn_layer.cpp:141 |  108 (2 calls)  |  38 (2 calls) |  38 (2 calls) |   38 (2 calls) |   64 (2 calls)  |
+|     pooling_func           | cnn_layer.cpp:153 |  204 (2 calls)  |  70 (2 calls) |  70 (2 calls) |   70 (2 calls) |   96 (2 calls)  |
+|    write_output_top        | cnn_layer.cpp:190 |   26            |   9           |  12           |   12           |                 |
++----------------------------+-------------------+-----------------+---------------+---------------+----------------+-----------------+
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+

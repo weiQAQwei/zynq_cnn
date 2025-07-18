@@ -1,0 +1,89 @@
+<pragmas>
+<pragma file="cnn_layer.cpp" line="74" pragmaType="inline" parentfunction="convolution_func" off="1" region="0" recursive="0"/>
+<pragma file="cnn_layer.cpp" line="78" pragmaType="loop_tripcount" parentfunction="convolution_func" min="32" max="32" avg="32"/>
+<pragma file="cnn_layer.cpp" line="80" pragmaType="loop_tripcount" parentfunction="convolution_func" min="8" max="16" avg="12"/>
+<pragma file="cnn_layer.cpp" line="85" pragmaType="loop_tripcount" parentfunction="convolution_func" min="1" max="32" avg="16"/>
+<pragma file="cnn_layer.cpp" line="102" pragmaType="inline" parentfunction="write_output_func" off="1" region="0" recursive="0"/>
+<pragma file="cnn_layer.cpp" line="104" pragmaType="loop_tripcount" parentfunction="write_output_func" min="8" max="16" avg="12"/>
+<pragma file="cnn_layer.cpp" line="107" pragmaType="pipeline" parentfunction="write_output_func" off="0" ii="4" rewind="0" style=""/>
+<pragma file="cnn_layer.cpp" line="47" pragmaType="inline" parentfunction="prepare_input_buf_func" off="1" region="0" recursive="0"/>
+<pragma file="cnn_layer.cpp" line="60" pragmaType="loop_tripcount" parentfunction="prepare_input_buf_func" min="16" max="16" avg="16"/>
+<pragma file="cnn_layer.cpp" line="63" pragmaType="pipeline" parentfunction="prepare_input_buf_func" off="0" ii="4" rewind="0" style=""/>
+<pragma file="cnn_layer.cpp" line="50" pragmaType="loop_tripcount" parentfunction="prepare_input_buf_func" min="1" max="32" avg="16"/>
+<pragma file="cnn_layer.cpp" line="53" pragmaType="pipeline" parentfunction="prepare_input_buf_func" off="0" ii="4" rewind="0" style=""/>
+<pragma file="cnn_layer.cpp" line="74" pragmaType="inline" parentfunction="convolution_func" off="1" region="0" recursive="0"/>
+<pragma file="cnn_layer.cpp" line="78" pragmaType="loop_tripcount" parentfunction="convolution_func" min="32" max="32" avg="32"/>
+<pragma file="cnn_layer.cpp" line="80" pragmaType="loop_tripcount" parentfunction="convolution_func" min="8" max="16" avg="12"/>
+<pragma file="cnn_layer.cpp" line="85" pragmaType="loop_tripcount" parentfunction="convolution_func" min="1" max="32" avg="16"/>
+<pragma file="cnn_layer.cpp" line="24" pragmaType="inline" parentfunction="load_params_func" off="1" region="0" recursive="0"/>
+<pragma file="cnn_layer.cpp" line="41" pragmaType="pipeline" parentfunction="load_params_func" off="0" ii="4" rewind="0" style=""/>
+<pragma file="cnn_layer.cpp" line="27" pragmaType="loop_tripcount" parentfunction="load_params_func" min="32" max="32" avg="32"/>
+<pragma file="cnn_layer.cpp" line="29" pragmaType="loop_tripcount" parentfunction="load_params_func" min="1" max="32" avg="16"/>
+<pragma file="cnn_layer.cpp" line="32" pragmaType="pipeline" parentfunction="load_params_func" off="0" ii="4" rewind="0" style=""/>
+<pragma file="cnn_layer.cpp" line="102" pragmaType="inline" parentfunction="write_output_func" off="1" region="0" recursive="0"/>
+<pragma file="cnn_layer.cpp" line="104" pragmaType="loop_tripcount" parentfunction="write_output_func" min="8" max="16" avg="12"/>
+<pragma file="cnn_layer.cpp" line="107" pragmaType="pipeline" parentfunction="write_output_func" off="0" ii="4" rewind="0" style=""/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<short, 0>::stream()" off="0" region="0" recursive="0"/>
+<pragma file="cnn_layer.cpp" line="102" pragmaType="inline" parentfunction="write_output_func" off="1" region="0" recursive="0"/>
+<pragma file="cnn_layer.cpp" line="104" pragmaType="loop_tripcount" parentfunction="write_output_func" min="8" max="16" avg="12"/>
+<pragma file="cnn_layer.cpp" line="107" pragmaType="pipeline" parentfunction="write_output_func" off="0" ii="4" rewind="0" style=""/>
+<pragma file="cnn_layer.cpp" line="74" pragmaType="inline" parentfunction="convolution_func" off="1" region="0" recursive="0"/>
+<pragma file="cnn_layer.cpp" line="78" pragmaType="loop_tripcount" parentfunction="convolution_func" min="32" max="32" avg="32"/>
+<pragma file="cnn_layer.cpp" line="80" pragmaType="loop_tripcount" parentfunction="convolution_func" min="8" max="16" avg="12"/>
+<pragma file="cnn_layer.cpp" line="85" pragmaType="loop_tripcount" parentfunction="convolution_func" min="1" max="32" avg="16"/>
+<pragma file="cnn_layer.cpp" line="183" pragmaType="inline" parentfunction="read_input_top" off="1" region="0" recursive="0"/>
+<pragma file="cnn_layer.cpp" line="185" pragmaType="pipeline" parentfunction="read_input_top" off="0" ii="4" rewind="0" style=""/>
+<pragma file="cnn_layer.cpp" line="154" pragmaType="inline" parentfunction="pooling_func" off="1" region="0" recursive="0"/>
+<pragma file="cnn_layer.cpp" line="156" pragmaType="loop_tripcount" parentfunction="pooling_func" min="4" max="8" avg="6"/>
+<pragma file="cnn_layer.cpp" line="159" pragmaType="pipeline" parentfunction="pooling_func" off="0" ii="4" rewind="0" style=""/>
+<pragma file="cnn_layer.cpp" line="142" pragmaType="inline" parentfunction="read_input_func" off="1" region="0" recursive="0"/>
+<pragma file="cnn_layer.cpp" line="144" pragmaType="loop_tripcount" parentfunction="read_input_func" min="8" max="16" avg="12"/>
+<pragma file="cnn_layer.cpp" line="147" pragmaType="pipeline" parentfunction="read_input_func" off="0" ii="4" rewind="0" style=""/>
+<pragma file="cnn_layer.cpp" line="154" pragmaType="inline" parentfunction="pooling_func" off="1" region="0" recursive="0"/>
+<pragma file="cnn_layer.cpp" line="156" pragmaType="loop_tripcount" parentfunction="pooling_func" min="4" max="8" avg="6"/>
+<pragma file="cnn_layer.cpp" line="159" pragmaType="pipeline" parentfunction="pooling_func" off="0" ii="4" rewind="0" style=""/>
+<pragma file="cnn_layer.cpp" line="24" pragmaType="inline" parentfunction="load_params_func" off="1" region="0" recursive="0"/>
+<pragma file="cnn_layer.cpp" line="41" pragmaType="pipeline" parentfunction="load_params_func" off="0" ii="4" rewind="0" style=""/>
+<pragma file="cnn_layer.cpp" line="27" pragmaType="loop_tripcount" parentfunction="load_params_func" min="32" max="32" avg="32"/>
+<pragma file="cnn_layer.cpp" line="29" pragmaType="loop_tripcount" parentfunction="load_params_func" min="1" max="32" avg="16"/>
+<pragma file="cnn_layer.cpp" line="32" pragmaType="pipeline" parentfunction="load_params_func" off="0" ii="4" rewind="0" style=""/>
+<pragma file="cnn_layer.cpp" line="24" pragmaType="inline" parentfunction="load_params_func" off="1" region="0" recursive="0"/>
+<pragma file="cnn_layer.cpp" line="41" pragmaType="pipeline" parentfunction="load_params_func" off="0" ii="4" rewind="0" style=""/>
+<pragma file="cnn_layer.cpp" line="27" pragmaType="loop_tripcount" parentfunction="load_params_func" min="32" max="32" avg="32"/>
+<pragma file="cnn_layer.cpp" line="29" pragmaType="loop_tripcount" parentfunction="load_params_func" min="1" max="32" avg="16"/>
+<pragma file="cnn_layer.cpp" line="32" pragmaType="pipeline" parentfunction="load_params_func" off="0" ii="4" rewind="0" style=""/>
+<pragma file="cnn_layer.cpp" line="47" pragmaType="inline" parentfunction="prepare_input_buf_func" off="1" region="0" recursive="0"/>
+<pragma file="cnn_layer.cpp" line="60" pragmaType="loop_tripcount" parentfunction="prepare_input_buf_func" min="16" max="16" avg="16"/>
+<pragma file="cnn_layer.cpp" line="63" pragmaType="pipeline" parentfunction="prepare_input_buf_func" off="0" ii="4" rewind="0" style=""/>
+<pragma file="cnn_layer.cpp" line="50" pragmaType="loop_tripcount" parentfunction="prepare_input_buf_func" min="1" max="32" avg="16"/>
+<pragma file="cnn_layer.cpp" line="53" pragmaType="pipeline" parentfunction="prepare_input_buf_func" off="0" ii="4" rewind="0" style=""/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
+<pragma file="cnn_layer.cpp" line="231" pragmaType="dataflow" parentfunction="cnn_top" disable_start_propagation="0"/>
+<pragma file="cnn_layer.cpp" line="208" pragmaType="interface" parentfunction="cnn_top" mode="m_axi" port="input" bundle="gmem0" offset="slave" name="" depth="256" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="cnn_layer.cpp" line="209" pragmaType="interface" parentfunction="cnn_top" mode="m_axi" port="output" bundle="gmem1" offset="slave" name="" depth="512" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="cnn_layer.cpp" line="210" pragmaType="interface" parentfunction="cnn_top" mode="m_axi" port="conv1_weights" bundle="gmem2" offset="slave" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="cnn_layer.cpp" line="211" pragmaType="interface" parentfunction="cnn_top" mode="m_axi" port="conv1_bias" bundle="gmem3" offset="slave" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="cnn_layer.cpp" line="212" pragmaType="interface" parentfunction="cnn_top" mode="m_axi" port="conv2_weights" bundle="gmem4" offset="slave" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="cnn_layer.cpp" line="213" pragmaType="interface" parentfunction="cnn_top" mode="m_axi" port="conv2_bias" bundle="gmem5" offset="slave" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="cnn_layer.cpp" line="214" pragmaType="interface" parentfunction="cnn_top" mode="m_axi" port="conv3_weights" bundle="gmem6" offset="slave" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="cnn_layer.cpp" line="215" pragmaType="interface" parentfunction="cnn_top" mode="m_axi" port="conv3_bias" bundle="gmem7" offset="slave" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="cnn_layer.cpp" line="216" pragmaType="interface" parentfunction="cnn_top" mode="s_axilite" port="" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="cnn_layer.cpp" line="220" pragmaType="stream" parentfunction="cnn_top" depth="256" type="fifo" variable="input_s"/>
+<pragma file="cnn_layer.cpp" line="222" pragmaType="stream" parentfunction="cnn_top" depth="8192" type="fifo" variable="conv1_out"/>
+<pragma file="cnn_layer.cpp" line="224" pragmaType="stream" parentfunction="cnn_top" depth="8192" type="fifo" variable="conv2_out"/>
+<pragma file="cnn_layer.cpp" line="226" pragmaType="stream" parentfunction="cnn_top" depth="2048" type="fifo" variable="pool1_out"/>
+<pragma file="cnn_layer.cpp" line="228" pragmaType="stream" parentfunction="cnn_top" depth="2048" type="fifo" variable="conv3_out"/>
+<pragma file="cnn_layer.cpp" line="230" pragmaType="stream" parentfunction="cnn_top" depth="512" type="fifo" variable="output_s"/>
+<pragma file="cnn_layer.cpp" line="47" pragmaType="inline" parentfunction="prepare_input_buf_func" off="1" region="0" recursive="0"/>
+<pragma file="cnn_layer.cpp" line="60" pragmaType="loop_tripcount" parentfunction="prepare_input_buf_func" min="16" max="16" avg="16"/>
+<pragma file="cnn_layer.cpp" line="63" pragmaType="pipeline" parentfunction="prepare_input_buf_func" off="0" ii="4" rewind="0" style=""/>
+<pragma file="cnn_layer.cpp" line="50" pragmaType="loop_tripcount" parentfunction="prepare_input_buf_func" min="1" max="32" avg="16"/>
+<pragma file="cnn_layer.cpp" line="53" pragmaType="pipeline" parentfunction="prepare_input_buf_func" off="0" ii="4" rewind="0" style=""/>
+<pragma file="cnn_layer.cpp" line="142" pragmaType="inline" parentfunction="read_input_func" off="1" region="0" recursive="0"/>
+<pragma file="cnn_layer.cpp" line="144" pragmaType="loop_tripcount" parentfunction="read_input_func" min="8" max="16" avg="12"/>
+<pragma file="cnn_layer.cpp" line="147" pragmaType="pipeline" parentfunction="read_input_func" off="0" ii="4" rewind="0" style=""/>
+<pragma file="cnn_layer.cpp" line="191" pragmaType="inline" parentfunction="write_output_top" off="1" region="0" recursive="0"/>
+<pragma file="cnn_layer.cpp" line="193" pragmaType="pipeline" parentfunction="write_output_top" off="0" ii="4" rewind="0" style=""/>
+</pragmas>

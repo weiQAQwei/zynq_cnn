@@ -1,0 +1,365 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "1 20 9 10 5 17 15",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "cnn_layer.cpp",
+    "fileloc": 203,
+    "instructions": 55,
+    "memory_accesses": 0,
+    "name": "cnn_top",
+    "stores": {
+      "T": 1
+    },
+    "total_instructions": 671
+  },
+  "1": {
+    "basicblocks": 3,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "cnn_layer.cpp",
+    "fileloc": 182,
+    "instructions": 9,
+    "loads": {
+      "L": 1
+    },
+    "memory_accesses": 2,
+    "name": "read_input_top",
+    "total_instructions": 9
+  },
+  "10": {
+    "basicblocks": 1,
+    "calls": "22 18",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "cnn_layer.cpp",
+    "fileloc": 173,
+    "instructions": 4,
+    "memory_accesses": 0,
+    "name": "compute",
+    "total_instructions": 58
+  },
+  "11": {
+    "basicblocks": 13,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 4,
+    "file": "cnn_layer.cpp",
+    "fileloc": 70,
+    "instructions": 54,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 2,
+    "name": "convolution_func",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 54
+  },
+  "12": {
+    "basicblocks": 11,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "cnn_layer.cpp",
+    "fileloc": 23,
+    "instructions": 41,
+    "loads": {
+      "L": 2
+    },
+    "memory_accesses": 4,
+    "name": "load_params_func",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 41
+  },
+  "13": {
+    "basicblocks": 13,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 4,
+    "file": "cnn_layer.cpp",
+    "fileloc": 70,
+    "instructions": 54,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 2,
+    "name": "convolution_func",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 54
+  },
+  "14": {
+    "basicblocks": 13,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 4,
+    "file": "cnn_layer.cpp",
+    "fileloc": 70,
+    "instructions": 54,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 2,
+    "name": "convolution_func",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 54
+  },
+  "15": {
+    "basicblocks": 3,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "cnn_layer.cpp",
+    "fileloc": 190,
+    "instructions": 9,
+    "memory_accesses": 2,
+    "name": "write_output_top",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 9
+  },
+  "16": {
+    "basicblocks": 13,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "cnn_layer.cpp",
+    "fileloc": 46,
+    "instructions": 38,
+    "memory_accesses": 3,
+    "name": "prepare_input_buf_func",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 38
+  },
+  "17": {
+    "basicblocks": 1,
+    "calls": "2 23",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "cnn_layer.cpp",
+    "fileloc": 173,
+    "instructions": 4,
+    "memory_accesses": 0,
+    "name": "compute",
+    "total_instructions": 58
+  },
+  "18": {
+    "basicblocks": 7,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 8,
+    "file": "cnn_layer.cpp",
+    "fileloc": 153,
+    "instructions": 35,
+    "loads": {
+      "L": 4
+    },
+    "memory_accesses": 5,
+    "name": "pooling_func",
+    "total_instructions": 35
+  },
+  "19": {
+    "basicblocks": 11,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "cnn_layer.cpp",
+    "fileloc": 23,
+    "instructions": 41,
+    "loads": {
+      "L": 2
+    },
+    "memory_accesses": 4,
+    "name": "load_params_func",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 41
+  },
+  "2": {
+    "basicblocks": 7,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "cnn_layer.cpp",
+    "fileloc": 141,
+    "instructions": 19,
+    "memory_accesses": 2,
+    "name": "read_input_func",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 19
+  },
+  "20": {
+    "basicblocks": 1,
+    "calls": "3 8 11 7",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "cnn_layer.cpp",
+    "fileloc": 114,
+    "instructions": 9,
+    "memory_accesses": 0,
+    "name": "compute",
+    "total_instructions": 160
+  },
+  "21": {
+    "basicblocks": 7,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "cnn_layer.cpp",
+    "fileloc": 101,
+    "instructions": 19,
+    "loads": {
+      "L": 1
+    },
+    "memory_accesses": 2,
+    "name": "write_output_func",
+    "total_instructions": 19
+  },
+  "22": {
+    "basicblocks": 7,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "cnn_layer.cpp",
+    "fileloc": 141,
+    "instructions": 19,
+    "memory_accesses": 2,
+    "name": "read_input_func",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 19
+  },
+  "23": {
+    "basicblocks": 7,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 8,
+    "file": "cnn_layer.cpp",
+    "fileloc": 153,
+    "instructions": 35,
+    "loads": {
+      "L": 4
+    },
+    "memory_accesses": 5,
+    "name": "pooling_func",
+    "total_instructions": 35
+  },
+  "3": {
+    "basicblocks": 11,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "cnn_layer.cpp",
+    "fileloc": 23,
+    "instructions": 40,
+    "loads": {
+      "L": 2
+    },
+    "memory_accesses": 4,
+    "name": "load_params_func",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 40
+  },
+  "4": {
+    "basicblocks": 7,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "cnn_layer.cpp",
+    "fileloc": 101,
+    "instructions": 19,
+    "loads": {
+      "L": 1
+    },
+    "memory_accesses": 2,
+    "name": "write_output_func",
+    "total_instructions": 19
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "12 16 13 4",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "cnn_layer.cpp",
+    "fileloc": 114,
+    "instructions": 9,
+    "memory_accesses": 0,
+    "name": "compute",
+    "total_instructions": 161
+  },
+  "6": {
+    "basicblocks": 13,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "cnn_layer.cpp",
+    "fileloc": 46,
+    "instructions": 38,
+    "memory_accesses": 3,
+    "name": "prepare_input_buf_func",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 38
+  },
+  "7": {
+    "basicblocks": 7,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "cnn_layer.cpp",
+    "fileloc": 101,
+    "instructions": 19,
+    "loads": {
+      "L": 1
+    },
+    "memory_accesses": 2,
+    "name": "write_output_func",
+    "total_instructions": 19
+  },
+  "8": {
+    "basicblocks": 13,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "cnn_layer.cpp",
+    "fileloc": 46,
+    "instructions": 38,
+    "memory_accesses": 3,
+    "name": "prepare_input_buf_func",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 38
+  },
+  "9": {
+    "basicblocks": 1,
+    "calls": "19 6 14 21",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "cnn_layer.cpp",
+    "fileloc": 114,
+    "instructions": 9,
+    "memory_accesses": 0,
+    "name": "compute",
+    "total_instructions": 161
+  }
+}

@@ -1,0 +1,62 @@
+<design_size title="Design Size Report">
+    <item name="Total Instructions per Compilation Phase">
+        <table>
+            <keys size="4">Phase, Step, Instructions, Description</keys>
+            <column name="Compile/Link">, 1821, After all functions are compiled and linked into a single design</column>
+            <column name="">, , </column>
+            <column name="Unroll/Inline">, , After user unroll and inline pragmas are applied</column>
+            <column name="">(1) unroll, 1171, user unroll pragmas are applied</column>
+            <column name="">(2) simplification,   883, simplification of applied user unroll pragmas</column>
+            <column name="">(3) inline,   888, user inline pragmas are applied</column>
+            <column name="">(4) simplification,   888, simplification of applied user inline pragmas</column>
+            <column name="">, , </column>
+            <column name="Array/Struct">, , After user array partition and struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(1) array partition,   677, user array partition pragmas are applied</column>
+            <column name="">(2) simplification,   671, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
+            <column name="">(3) aggregate/disaggregate ,   671, user struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(4) array reshape,   671, apply array reshape pragmas</column>
+            <column name="">(5) access patterns,   675, array access pattern optmizations</column>
+            <column name="">, , </column>
+            <column name="Performance">, , After transformations are applied to meet performance pragma targets</column>
+            <column name="">(1) loop simplification,   672, loop and instruction simplification</column>
+            <column name="">(2) parallelization,   716, loops are unrolled or pipelined to meet performance targets</column>
+            <column name="">(3) array partition, 1334, arrays are partitioned to meet performance targets</column>
+            <column name="">(4) simplification, 1156, simplification of design after performance transformations</column>
+            <column name="">, , </column>
+            <column name="HW Transforms">, , After hardware transfomations</column>
+            <column name="">(1) lowering, 1177, initial conversion to HW specific instructions</column>
+            <column name="">(2) optimizations, 1398, high level synthesis optimizations</column>
+        </table>
+    </item>
+    <item name="Instructions per Function for each Compilation Phase">
+        <hiertable>
+            <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
+            <rows>
+                <row id="0" col0="cnn_top" col1="cnn_layer.cpp:203" col2="1821" col3="888" col4="675" col5="1156" col6="1398">
+                    <row id="10" col0="read_input_top" col1="cnn_layer.cpp:182" col2="17" col3="9" col4="12" col5="12" col6="18"/>
+                    <row id="6" col0="ConvLayer" col1="cnn_layer.cpp:16" col2="147" col2_disp=" 147 (3 calls)" col3="" col4="" col5="" col6=""/>
+                    <row id="1" col0="compute" col1="cnn_layer.cpp:114" col2="1119" col2_disp="1,119 (3 calls)" col3="705" col3_disp="705 (3 calls)" col4="480" col4_disp="480 (3 calls)" col5="961" col5_disp=" 961 (3 calls)" col6="1125" col6_disp="1,125 (3 calls)">
+                        <row id="3" col0="load_params_func" col1="cnn_layer.cpp:23" col2="249" col2_disp=" 249 (3 calls)" col3="156" col3_disp="156 (3 calls)" col4="131" col4_disp="131 (3 calls)" col5="198" col5_disp=" 198 (3 calls)" col6="224" col6_disp=" 224 (3 calls)"/>
+                        <row id="8" col0="prepare_input_buf_func" col1="cnn_layer.cpp:46" col2="288" col2_disp=" 288 (3 calls)" col3="171" col3_disp="171 (3 calls)" col4="101" col4_disp="101 (3 calls)" col5="222" col5_disp=" 222 (3 calls)" col6="280" col6_disp=" 280 (3 calls)"/>
+                        <row id="11" col0="convolution_func" col1="cnn_layer.cpp:70" col2="348" col2_disp=" 348 (3 calls)" col3="237" col3_disp="237 (3 calls)" col4="164" col4_disp="164 (3 calls)" col5="396" col5_disp=" 396 (3 calls)" col6="443" col6_disp=" 443 (3 calls)"/>
+                        <row id="4" col0="write_output_func" col1="cnn_layer.cpp:101" col2="135" col2_disp=" 135 (3 calls)" col3="102" col3_disp="102 (3 calls)" col4="57" col4_disp=" 57 (3 calls)" col5="57" col5_disp="  57 (3 calls)" col6="90" col6_disp="  90 (3 calls)"/>
+                    </row>
+                    <row id="7" col0="MaxPool" col1="cnn_layer.cpp:135" col2="66" col2_disp="  66 (2 calls)" col3="" col4="" col5="" col6=""/>
+                    <row id="2" col0="compute" col1="cnn_layer.cpp:173" col2="332" col2_disp=" 332 (2 calls)" col3="118" col3_disp="118 (2 calls)" col4="116" col4_disp="116 (2 calls)" col5="116" col5_disp=" 116 (2 calls)" col6="168" col6_disp=" 168 (2 calls)">
+                        <row id="5" col0="read_input_func" col1="cnn_layer.cpp:141" col2="108" col2_disp=" 108 (2 calls)" col3="38" col3_disp=" 38 (2 calls)" col4="38" col4_disp=" 38 (2 calls)" col5="38" col5_disp="  38 (2 calls)" col6="64" col6_disp="  64 (2 calls)"/>
+                        <row id="9" col0="pooling_func" col1="cnn_layer.cpp:153" col2="204" col2_disp=" 204 (2 calls)" col3="70" col3_disp=" 70 (2 calls)" col4="70" col4_disp=" 70 (2 calls)" col5="70" col5_disp="  70 (2 calls)" col6="96" col6_disp="  96 (2 calls)"/>
+                    </row>
+                    <row id="12" col0="write_output_top" col1="cnn_layer.cpp:190" col2="26" col3="9" col4="12" col5="12" col6=""/>
+                </row>
+            </rows>
+            <notes/>
+        </hiertable>
+    </item>
+    <item name="Design Size Message Settings">
+        <table>
+            <keys size="3">Message Setting, Value, Description</keys>
+            <column name="config_compile -design_size_maximum_warning">100000, Show a warning when total design instructions exceeds this value</column>
+        </table>
+    </item>
+</design_size>
+

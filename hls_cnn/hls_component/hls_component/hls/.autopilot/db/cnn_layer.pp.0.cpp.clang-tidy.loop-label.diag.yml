@@ -1,0 +1,274 @@
+---
+MainSourceFile:  'D:/vitis/projects_learning/hls_cnn/hls_component/hls_component/hls/.autopilot/db/cnn_layer.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_26_1:  '
+    FileOffset:      26
+    FilePath:        cnn_layer.cpp
+    Replacements:    
+      - FilePath:        'D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp'
+        Offset:          62021
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_26_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_28_2:  '
+    FileOffset:      28
+    FilePath:        cnn_layer.cpp
+    Replacements:    
+      - FilePath:        'D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp'
+        Offset:          62107
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_28_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_30_3:  '
+    FileOffset:      30
+    FilePath:        cnn_layer.cpp
+    Replacements:    
+      - FilePath:        'D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp'
+        Offset:          62191
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_30_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_31_4:  '
+    FileOffset:      31
+    FilePath:        cnn_layer.cpp
+    Replacements:    
+      - FilePath:        'D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp'
+        Offset:          62241
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_31_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_40_5:  '
+    FileOffset:      40
+    FilePath:        cnn_layer.cpp
+    Replacements:    
+      - FilePath:        'D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp'
+        Offset:          62506
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_40_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_49_1:  '
+    FileOffset:      49
+    FilePath:        cnn_layer.cpp
+    Replacements:    
+      - FilePath:        'D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp'
+        Offset:          62787
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_49_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_51_2:  '
+    FileOffset:      51
+    FilePath:        cnn_layer.cpp
+    Replacements:    
+      - FilePath:        'D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp'
+        Offset:          62871
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_51_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_52_3:  '
+    FileOffset:      52
+    FilePath:        cnn_layer.cpp
+    Replacements:    
+      - FilePath:        'D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp'
+        Offset:          62935
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_52_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_59_4:  '
+    FileOffset:      59
+    FilePath:        cnn_layer.cpp
+    Replacements:    
+      - FilePath:        'D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp'
+        Offset:          63086
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_59_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_61_5:  '
+    FileOffset:      61
+    FilePath:        cnn_layer.cpp
+    Replacements:    
+      - FilePath:        'D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp'
+        Offset:          63163
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_61_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_62_6:  '
+    FileOffset:      62
+    FilePath:        cnn_layer.cpp
+    Replacements:    
+      - FilePath:        'D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp'
+        Offset:          63213
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_62_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_77_1:  '
+    FileOffset:      77
+    FilePath:        cnn_layer.cpp
+    Replacements:    
+      - FilePath:        'D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp'
+        Offset:          63828
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_77_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_79_2:  '
+    FileOffset:      79
+    FilePath:        cnn_layer.cpp
+    Replacements:    
+      - FilePath:        'D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp'
+        Offset:          63914
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_79_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_81_3:  '
+    FileOffset:      81
+    FilePath:        cnn_layer.cpp
+    Replacements:    
+      - FilePath:        'D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp'
+        Offset:          63997
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_81_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_84_4:  '
+    FileOffset:      84
+    FilePath:        cnn_layer.cpp
+    Replacements:    
+      - FilePath:        'D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp'
+        Offset:          64115
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_84_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_86_5:  '
+    FileOffset:      86
+    FilePath:        cnn_layer.cpp
+    Replacements:    
+      - FilePath:        'D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp'
+        Offset:          64199
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_86_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_87_6:  '
+    FileOffset:      87
+    FilePath:        cnn_layer.cpp
+    Replacements:    
+      - FilePath:        'D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp'
+        Offset:          64257
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_87_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_103_1:  '
+    FileOffset:      103
+    FilePath:        cnn_layer.cpp
+    Replacements:    
+      - FilePath:        'D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp'
+        Offset:          64877
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_103_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_105_2:  '
+    FileOffset:      105
+    FilePath:        cnn_layer.cpp
+    Replacements:    
+      - FilePath:        'D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp'
+        Offset:          64960
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_105_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_106_3:  '
+    FileOffset:      106
+    FilePath:        cnn_layer.cpp
+    Replacements:    
+      - FilePath:        'D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp'
+        Offset:          65017
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_106_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_143_1:  '
+    FileOffset:      143
+    FilePath:        cnn_layer.cpp
+    Replacements:    
+      - FilePath:        'D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp'
+        Offset:          66288
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_143_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_145_2:  '
+    FileOffset:      145
+    FilePath:        cnn_layer.cpp
+    Replacements:    
+      - FilePath:        'D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp'
+        Offset:          66364
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_145_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_146_3:  '
+    FileOffset:      146
+    FilePath:        cnn_layer.cpp
+    Replacements:    
+      - FilePath:        'D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp'
+        Offset:          66414
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_146_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_155_1:  '
+    FileOffset:      155
+    FilePath:        cnn_layer.cpp
+    Replacements:    
+      - FilePath:        'D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp'
+        Offset:          66693
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_155_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_157_2:  '
+    FileOffset:      157
+    FilePath:        cnn_layer.cpp
+    Replacements:    
+      - FilePath:        'D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp'
+        Offset:          66775
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_157_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_158_3:  '
+    FileOffset:      158
+    FilePath:        cnn_layer.cpp
+    Replacements:    
+      - FilePath:        'D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp'
+        Offset:          66832
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_158_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_161_4:  '
+    FileOffset:      161
+    FilePath:        cnn_layer.cpp
+    Replacements:    
+      - FilePath:        'D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp'
+        Offset:          66972
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_161_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_162_5:  '
+    FileOffset:      162
+    FilePath:        cnn_layer.cpp
+    Replacements:    
+      - FilePath:        'D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp'
+        Offset:          67034
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_162_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_184_1:  '
+    FileOffset:      184
+    FilePath:        cnn_layer.cpp
+    Replacements:    
+      - FilePath:        'D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp'
+        Offset:          67712
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_184_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_192_1:  '
+    FileOffset:      192
+    FilePath:        cnn_layer.cpp
+    Replacements:    
+      - FilePath:        'D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp'
+        Offset:          67910
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_192_1: '
+...

@@ -1,0 +1,53 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'cnn_top'" level="0">
+<item name = "Date">Fri Jul 18 13:03:54 2025
+</item>
+<item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
+<item name = "Project">hls_component</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 10.071 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">2439577, 2439577, 24.569 ms, 24.569 ms, 2439575, 2439575, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="call_ln231_entry_proc_fu_226">entry_proc, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="grp_read_input_top_fu_233">read_input_top, 1032, 1032, 10.320 us, 10.320 us, 1024, 1024, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_compute_4_fu_242">compute_4, 43627, 43627, 0.436 ms, 0.436 ms, 43627, 43627, no</column>
+<column name="grp_compute_3_fu_254">compute_3, 2439574, 2439574, 24.569 ms, 24.569 ms, 2439574, 2439574, no</column>
+<column name="grp_compute_1_fu_266">compute_1, 24583, 24583, 0.246 ms, 0.246 ms, 24583, 24583, no</column>
+<column name="grp_compute_2_fu_272">compute_2, 623750, 623750, 6.282 ms, 6.282 ms, 623750, 623750, no</column>
+<column name="grp_compute_fu_284">compute, 6151, 6151, 61.510 us, 61.510 us, 6151, 6151, no</column>
+<column name="grp_Block_entry_gmem1_wr_proc_fu_290">Block_entry_gmem1_wr_proc, 1554, 1554, 15.540 us, 15.540 us, 1554, 1554, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

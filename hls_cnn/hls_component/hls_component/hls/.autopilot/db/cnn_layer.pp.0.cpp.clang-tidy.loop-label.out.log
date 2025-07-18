@@ -1,0 +1,150 @@
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1389:2: warning: Added loop label VITIS_LOOP_26_1:   [xilinx-label-all-loops]
+ for (int oc = 0; oc < out_channels; oc++) {
+ ^~~
+ VITIS_LOOP_26_1: 
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1389:2: note: FIX-IT applied suggested code changes
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1391:2: warning: Added loop label VITIS_LOOP_28_2:   [xilinx-label-all-loops]
+ for (int ic = 0; ic < in_channels; ic++) {
+ ^~~
+ VITIS_LOOP_28_2: 
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1391:2: note: FIX-IT applied suggested code changes
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1393:2: warning: Added loop label VITIS_LOOP_30_3:   [xilinx-label-all-loops]
+ for (int m = 0; m < 3; m++) {
+ ^~~
+ VITIS_LOOP_30_3: 
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1393:2: note: FIX-IT applied suggested code changes
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1394:21: warning: Added loop label VITIS_LOOP_31_4:   [xilinx-label-all-loops]
+                    for (int n = 0; n < 3; n++) {
+                    ^~~
+                    VITIS_LOOP_31_4: 
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1394:21: note: FIX-IT applied suggested code changes
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1403:9: warning: Added loop label VITIS_LOOP_40_5:   [xilinx-label-all-loops]
+        for (int oc = 0; oc < out_channels; oc++) {
+        ^~~
+        VITIS_LOOP_40_5: 
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1403:9: note: FIX-IT applied suggested code changes
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1412:2: warning: Added loop label VITIS_LOOP_49_1:   [xilinx-label-all-loops]
+ for (int ic = 0; ic < in_channels; ic++) {
+ ^~~
+ VITIS_LOOP_49_1: 
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1412:2: note: FIX-IT applied suggested code changes
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1414:2: warning: Added loop label VITIS_LOOP_51_2:   [xilinx-label-all-loops]
+ for (int i = 0; i < MAX_H + 2 * MAX_PAD; i++) {
+ ^~~
+ VITIS_LOOP_51_2: 
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1414:2: note: FIX-IT applied suggested code changes
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1415:17: warning: Added loop label VITIS_LOOP_52_3:   [xilinx-label-all-loops]
+                for (int j = 0; j < MAX_W + 2 * MAX_PAD; j++) {
+                ^~~
+                VITIS_LOOP_52_3: 
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1415:17: note: FIX-IT applied suggested code changes
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1422:9: warning: Added loop label VITIS_LOOP_59_4:   [xilinx-label-all-loops]
+        for (int i = 0; i < height; i++) {
+        ^~~
+        VITIS_LOOP_59_4: 
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1422:9: note: FIX-IT applied suggested code changes
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1424:2: warning: Added loop label VITIS_LOOP_61_5:   [xilinx-label-all-loops]
+ for (int j = 0; j < width; j++) {
+ ^~~
+ VITIS_LOOP_61_5: 
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1424:2: note: FIX-IT applied suggested code changes
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1425:17: warning: Added loop label VITIS_LOOP_62_6:   [xilinx-label-all-loops]
+                for (int ic = 0; ic < in_channels; ic++) {
+                ^~~
+                VITIS_LOOP_62_6: 
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1425:17: note: FIX-IT applied suggested code changes
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1440:2: warning: Added loop label VITIS_LOOP_77_1:   [xilinx-label-all-loops]
+ for (int oc = 0; oc < out_channels; oc++) {
+ ^~~
+ VITIS_LOOP_77_1: 
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1440:2: note: FIX-IT applied suggested code changes
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1442:2: warning: Added loop label VITIS_LOOP_79_2:   [xilinx-label-all-loops]
+ for (int i = 0; i < output_height; i++) {
+ ^~~
+ VITIS_LOOP_79_2: 
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1442:2: note: FIX-IT applied suggested code changes
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1444:2: warning: Added loop label VITIS_LOOP_81_3:   [xilinx-label-all-loops]
+ for (int j = 0; j < output_width; j++) {
+ ^~~
+ VITIS_LOOP_81_3: 
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1444:2: note: FIX-IT applied suggested code changes
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1447:21: warning: Added loop label VITIS_LOOP_84_4:   [xilinx-label-all-loops]
+                    for (int ic = 0; ic < in_channels; ic++) {
+                    ^~~
+                    VITIS_LOOP_84_4: 
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1447:21: note: FIX-IT applied suggested code changes
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1449:2: warning: Added loop label VITIS_LOOP_86_5:   [xilinx-label-all-loops]
+ for (int m = 0; m < 3; m++) {
+ ^~~
+ VITIS_LOOP_86_5: 
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1449:2: note: FIX-IT applied suggested code changes
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1450:29: warning: Added loop label VITIS_LOOP_87_6:   [xilinx-label-all-loops]
+                            for (int n = 0; n < 3; n++) {
+                            ^~~
+                            VITIS_LOOP_87_6: 
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1450:29: note: FIX-IT applied suggested code changes
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1466:2: warning: Added loop label VITIS_LOOP_103_1:   [xilinx-label-all-loops]
+ for (int i = 0; i < output_height; i++) {
+ ^~~
+ VITIS_LOOP_103_1: 
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1466:2: note: FIX-IT applied suggested code changes
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1468:2: warning: Added loop label VITIS_LOOP_105_2:   [xilinx-label-all-loops]
+ for (int j = 0; j < output_width; j++) {
+ ^~~
+ VITIS_LOOP_105_2: 
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1468:2: note: FIX-IT applied suggested code changes
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1469:17: warning: Added loop label VITIS_LOOP_106_3:   [xilinx-label-all-loops]
+                for (int oc = 0; oc < out_channels; oc++) {
+                ^~~
+                VITIS_LOOP_106_3: 
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1469:17: note: FIX-IT applied suggested code changes
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1506:2: warning: Added loop label VITIS_LOOP_143_1:   [xilinx-label-all-loops]
+ for (int i = 0; i < height; i++) {
+ ^~~
+ VITIS_LOOP_143_1: 
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1506:2: note: FIX-IT applied suggested code changes
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1508:2: warning: Added loop label VITIS_LOOP_145_2:   [xilinx-label-all-loops]
+ for (int j = 0; j < width; j++) {
+ ^~~
+ VITIS_LOOP_145_2: 
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1508:2: note: FIX-IT applied suggested code changes
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1509:17: warning: Added loop label VITIS_LOOP_146_3:   [xilinx-label-all-loops]
+                for (int c = 0; c < channels; c++) {
+                ^~~
+                VITIS_LOOP_146_3: 
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1509:17: note: FIX-IT applied suggested code changes
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1518:2: warning: Added loop label VITIS_LOOP_155_1:   [xilinx-label-all-loops]
+ for (int i = 0; i < output_height; i++) {
+ ^~~
+ VITIS_LOOP_155_1: 
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1518:2: note: FIX-IT applied suggested code changes
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1520:2: warning: Added loop label VITIS_LOOP_157_2:   [xilinx-label-all-loops]
+ for (int j = 0; j < output_width; j++) {
+ ^~~
+ VITIS_LOOP_157_2: 
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1520:2: note: FIX-IT applied suggested code changes
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1521:17: warning: Added loop label VITIS_LOOP_158_3:   [xilinx-label-all-loops]
+                for (int c = 0; c < channels; c++) {
+                ^~~
+                VITIS_LOOP_158_3: 
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1521:17: note: FIX-IT applied suggested code changes
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1524:21: warning: Added loop label VITIS_LOOP_161_4:   [xilinx-label-all-loops]
+                    for (int m = 0; m < pool_size; m++) {
+                    ^~~
+                    VITIS_LOOP_161_4: 
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1524:21: note: FIX-IT applied suggested code changes
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1525:25: warning: Added loop label VITIS_LOOP_162_5:   [xilinx-label-all-loops]
+                        for (int n = 0; n < pool_size; n++) {
+                        ^~~
+                        VITIS_LOOP_162_5: 
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1525:25: note: FIX-IT applied suggested code changes
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1547:2: warning: Added loop label VITIS_LOOP_184_1:   [xilinx-label-all-loops]
+ for (int i = 0; i < 16 * 16 * 1; i++) {
+ ^~~
+ VITIS_LOOP_184_1: 
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1547:2: note: FIX-IT applied suggested code changes
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1555:2: warning: Added loop label VITIS_LOOP_192_1:   [xilinx-label-all-loops]
+ for (int i = 0; i < 4 * 4 * 32; i++) {
+ ^~~
+ VITIS_LOOP_192_1: 
+D:\vitis\projects_learning\hls_cnn\hls_component\hls_component\hls\.autopilot\db\cnn_layer.pp.0.cpp:1555:2: note: FIX-IT applied suggested code changes

@@ -1,0 +1,1631 @@
+  **** HLS Build v2025.1 6135595
+INFO: [HLS 200-2005] Using work_dir D:/vitis/projects_learning/hls_cnn/hls_component/hls_component 
+INFO: [HLS 200-2176] Writing Vitis IDE component file D:/vitis/projects_learning/hls_cnn/hls_component/hls_component/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'D:/vitis/projects_learning/hls_cnn/hls_component/hls_component'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file D:/vitis/projects_learning/hls_cnn/hls_component/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=cnn_layer.cpp' from D:/vitis/projects_learning/hls_cnn/hls_component/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'D:/vitis/projects_learning/hls_cnn/hls_component/cnn_layer.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=cnn_layer.h' from D:/vitis/projects_learning/hls_cnn/hls_component/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'D:/vitis/projects_learning/hls_cnn/hls_component/cnn_layer.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=weights.cpp' from D:/vitis/projects_learning/hls_cnn/hls_component/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'D:/vitis/projects_learning/hls_cnn/hls_component/weights.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=weights.h' from D:/vitis/projects_learning/hls_cnn/hls_component/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'D:/vitis/projects_learning/hls_cnn/hls_component/weights.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=test.cpp' from D:/vitis/projects_learning/hls_cnn/hls_component/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding test bench file 'D:/vitis/projects_learning/hls_cnn/hls_component/test.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=cnn_top' from D:/vitis/projects_learning/hls_cnn/hls_component/hls_config.cfg(12)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from D:/vitis/projects_learning/hls_cnn/hls_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z020clg400-2' from D:/vitis/projects_learning/hls_cnn/hls_component/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-2'
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from D:/vitis/projects_learning/hls_cnn/hls_component/hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file D:/vitis/projects_learning/hls_cnn/hls_component/hls_component/vitis-comp.json
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 2 seconds. Elapsed time: 3.528 seconds; current allocated memory: 391.398 MB.
+INFO: [HLS 200-10] Analyzing design file 'weights.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'cnn_layer.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 5.421 seconds; current allocated memory: 394.852 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 1,826 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (D:/vitis/projects_learning/hls_cnn/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,395 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (D:/vitis/projects_learning/hls_cnn/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,071 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (D:/vitis/projects_learning/hls_cnn/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,091 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (D:/vitis/projects_learning/hls_cnn/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,091 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (D:/vitis/projects_learning/hls_cnn/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 7,339 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (D:/vitis/projects_learning/hls_cnn/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 5,861 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (D:/vitis/projects_learning/hls_cnn/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 5,861 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (D:/vitis/projects_learning/hls_cnn/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 5,861 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (D:/vitis/projects_learning/hls_cnn/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 62,757 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (D:/vitis/projects_learning/hls_cnn/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 20,088 instructions in the design after the 'Performance' phase of compilation. See the Design Size Report for more details (D:/vitis/projects_learning/hls_cnn/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 20,088 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (D:/vitis/projects_learning/hls_cnn/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 20,194 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (D:/vitis/projects_learning/hls_cnn/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 20,130 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (D:/vitis/projects_learning/hls_cnn/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 20,143 instructions in the design after the 'HW Transforms' phase of compilation. See the Design Size Report for more details (D:/vitis/projects_learning/hls_cnn/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 20,362 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (D:/vitis/projects_learning/hls_cnn/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt:2)
+WARNING: [HLS 214-275] In 'VITIS_LOOP_81_4', Pragma conflict happens on 'PIPELINE' and 'UNROLL_OFF' pragmas: Pipeline requires unrolling all sub loops (cnn_layer.cpp:81:38)
+INFO: [HLS 214-178] Inlining function 'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 1>::ConvLayer(int, int, int, int, int, int, int, short*, short*)' into 'cnn_top(short*, short*, short (*) [1][3][3], short*, short (*) [32][3][3], short*, short (*) [32][3][3], short*)' (cnn_layer.cpp:214:0)
+INFO: [HLS 214-178] Inlining function 'ConvLayer<32, 16, 16, 32, 16, 16, 1, 4, 4>::ConvLayer(int, int, int, int, int, int, int, short*, short*)' into 'cnn_top(short*, short*, short (*) [1][3][3], short*, short (*) [32][3][3], short*, short (*) [32][3][3], short*)' (cnn_layer.cpp:214:0)
+INFO: [HLS 214-178] Inlining function 'ConvLayer<32, 8, 8, 32, 8, 8, 1, 4, 4>::ConvLayer(int, int, int, int, int, int, int, short*, short*)' into 'cnn_top(short*, short*, short (*) [1][3][3], short*, short (*) [32][3][3], short*, short (*) [32][3][3], short*)' (cnn_layer.cpp:214:0)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_169_4' is marked as complete unroll implied by the pipeline pragma (cnn_layer.cpp:169:39)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_171_5' is marked as complete unroll implied by the pipeline pragma (cnn_layer.cpp:171:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_81_4' is marked as complete unroll implied by the pipeline pragma (cnn_layer.cpp:81:38)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_84_5' is marked as complete unroll implied by the pipeline pragma (cnn_layer.cpp:84:19)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_86_6' is marked as complete unroll implied by the pipeline pragma (cnn_layer.cpp:86:19)
+WARNING: [HLS 214-398] Updating loop upper bound from 16 to 8 for loop 'VITIS_LOOP_151_1' (cnn_layer.cpp:151:20) in function 'MaxPool<32, 8, 8>::read_input_func'. (cnn_layer.cpp:149:0)
+WARNING: [HLS 214-398] Updating loop upper bound from 8 to 4 for loop 'VITIS_LOOP_163_1' (cnn_layer.cpp:163:20) in function 'MaxPool<32, 8, 8>::pooling_func'. (cnn_layer.cpp:161:0)
+WARNING: [HLS 214-398] Updating loop lower bound from 8 to 16 for loop 'VITIS_LOOP_151_1' (cnn_layer.cpp:151:20) in function 'MaxPool<32, 16, 16>::read_input_func'. (cnn_layer.cpp:149:0)
+WARNING: [HLS 214-398] Updating loop lower bound from 4 to 8 for loop 'VITIS_LOOP_163_1' (cnn_layer.cpp:163:20) in function 'MaxPool<32, 16, 16>::pooling_func'. (cnn_layer.cpp:161:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_169_4' (cnn_layer.cpp:169:39) in function 'MaxPool<32, 8, 8>::pooling_func' completely with a factor of 2 (cnn_layer.cpp:161:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_171_5' (cnn_layer.cpp:171:20) in function 'MaxPool<32, 8, 8>::pooling_func' completely with a factor of 2 (cnn_layer.cpp:161:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_84_5' (cnn_layer.cpp:84:19) in function 'ConvLayer<32, 8, 8, 32, 8, 8, 1, 4, 4>::convolution_func' completely with a factor of 3 (cnn_layer.cpp:72:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_86_6' (cnn_layer.cpp:86:19) in function 'ConvLayer<32, 8, 8, 32, 8, 8, 1, 4, 4>::convolution_func' completely with a factor of 3 (cnn_layer.cpp:72:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_169_4' (cnn_layer.cpp:169:39) in function 'MaxPool<32, 16, 16>::pooling_func' completely with a factor of 2 (cnn_layer.cpp:161:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_171_5' (cnn_layer.cpp:171:20) in function 'MaxPool<32, 16, 16>::pooling_func' completely with a factor of 2 (cnn_layer.cpp:161:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_84_5' (cnn_layer.cpp:84:19) in function 'ConvLayer<32, 16, 16, 32, 16, 16, 1, 4, 4>::convolution_func' completely with a factor of 3 (cnn_layer.cpp:72:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_86_6' (cnn_layer.cpp:86:19) in function 'ConvLayer<32, 16, 16, 32, 16, 16, 1, 4, 4>::convolution_func' completely with a factor of 3 (cnn_layer.cpp:72:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_84_5' (cnn_layer.cpp:84:19) in function 'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 1>::convolution_func' completely with a factor of 3 (cnn_layer.cpp:72:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_86_6' (cnn_layer.cpp:86:19) in function 'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 1>::convolution_func' completely with a factor of 3 (cnn_layer.cpp:72:0)
+WARNING: [HLS 214-464] Skipping array undecay on variable length array 'this_in_channels'. (cnn_layer.cpp:114:0)
+WARNING: [HLS 214-464] Skipping array undecay on variable length array 'this_out_channels'. (cnn_layer.cpp:114:0)
+WARNING: [HLS 214-464] Skipping array undecay on variable length array 'this_height'. (cnn_layer.cpp:114:0)
+WARNING: [HLS 214-464] Skipping array undecay on variable length array 'this_width'. (cnn_layer.cpp:114:0)
+WARNING: [HLS 214-464] Skipping array undecay on variable length array 'this_padding'. (cnn_layer.cpp:114:0)
+WARNING: [HLS 214-464] Skipping array undecay on variable length array 'this_stride'. (cnn_layer.cpp:114:0)
+WARNING: [HLS 214-464] Skipping array undecay on variable length array 'this_output_height'. (cnn_layer.cpp:114:0)
+WARNING: [HLS 214-464] Skipping array undecay on variable length array 'this_output_width'. (cnn_layer.cpp:114:0)
+WARNING: [HLS 214-464] Skipping array undecay on variable length array 'this_weights'. (cnn_layer.cpp:114:0)
+WARNING: [HLS 214-464] Skipping array undecay on variable length array 'this_bias'. (cnn_layer.cpp:114:0)
+INFO: [HLS 214-248] Applying array_partition to 'input_buf': Complete partitioning on dimension 1. Cyclic partitioning with factor 3 on dimension 2. Cyclic partitioning with factor 3 on dimension 3. (cnn_layer.cpp:116:10)
+INFO: [HLS 214-248] Applying array_partition to 'local_weights': Complete partitioning on dimension 2. Complete partitioning on dimension 3. Complete partitioning on dimension 4. (cnn_layer.cpp:122:17)
+INFO: [HLS 214-248] Applying array_partition to 'local_bias': Complete partitioning on dimension 1. (cnn_layer.cpp:126:10)
+INFO: [HLS 214-248] Applying array_partition to 'input_buf': Cyclic partitioning with factor 4 on dimension 1. Cyclic partitioning with factor 3 on dimension 2. Cyclic partitioning with factor 3 on dimension 3. (cnn_layer.cpp:116:10)
+INFO: [HLS 214-248] Applying array_partition to 'local_weights': Cyclic partitioning with factor 4 on dimension 2. Complete partitioning on dimension 3. Complete partitioning on dimension 4. (cnn_layer.cpp:122:17)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_81_4' (cnn_layer.cpp:81:38) in function 'ConvLayer<32, 8, 8, 32, 8, 8, 1, 4, 4>::convolution_func' completely with a factor of 32 (cnn_layer.cpp:72:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_81_4' (cnn_layer.cpp:81:38) in function 'ConvLayer<32, 16, 16, 32, 16, 16, 1, 4, 4>::convolution_func' completely with a factor of 32 (cnn_layer.cpp:72:0)
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_60_5> at cnn_layer.cpp:60:19 
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=2 dim=3' for array 'input_buf' due to pipeline pragma (cnn_layer.cpp:167:9)
+INFO: [HLS 214-248] Applying array_partition to 'input_buf': Cyclic partitioning with factor 2 on dimension 3. (cnn_layer.cpp:185:10)
+INFO: [HLS 214-115] Multiple burst reads of length 256 and bit width 16 in loop 'VITIS_LOOP_195_1'(cnn_layer.cpp:195:20) has been inferred on bundle 'gmem3'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (cnn_layer.cpp:195:20)
+INFO: [HLS 214-115] Multiple burst reads of length 288 and bit width 16 in loop 'VITIS_LOOP_25_1'(cnn_layer.cpp:25:19) has been inferred on bundle 'gmem0'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (cnn_layer.cpp:25:19)
+INFO: [HLS 214-115] Multiple burst reads of length 32 and bit width 16 in loop 'VITIS_LOOP_39_5'(cnn_layer.cpp:39:26) has been inferred on bundle 'gmem0'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (cnn_layer.cpp:39:26)
+INFO: [HLS 214-115] Multiple burst reads of length 9216 and bit width 16 in loop 'VITIS_LOOP_25_1'(cnn_layer.cpp:25:19) has been inferred on bundle 'gmem1'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (cnn_layer.cpp:25:19)
+INFO: [HLS 214-115] Multiple burst reads of length 32 and bit width 16 in loop 'VITIS_LOOP_39_5'(cnn_layer.cpp:39:26) has been inferred on bundle 'gmem1'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (cnn_layer.cpp:39:26)
+INFO: [HLS 214-115] Multiple burst reads of length 9216 and bit width 16 in loop 'VITIS_LOOP_25_1'(cnn_layer.cpp:25:19) has been inferred on bundle 'gmem2'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (cnn_layer.cpp:25:19)
+INFO: [HLS 214-115] Multiple burst reads of length 32 and bit width 16 in loop 'VITIS_LOOP_39_5'(cnn_layer.cpp:39:26) has been inferred on bundle 'gmem2'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (cnn_layer.cpp:39:26)
+INFO: [HLS 214-115] Multiple burst writes of length 512 and bit width 16 in loop 'VITIS_LOOP_203_1'(cnn_layer.cpp:203:20) has been inferred on bundle 'gmem4'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (cnn_layer.cpp:203:20)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 101.528 seconds; current allocated memory: 400.457 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.003 seconds; current allocated memory: 400.457 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 3.094 seconds; current allocated memory: 424.176 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 2.833 seconds; current allocated memory: 458.867 MB.
+WARNING: [XFORM 203-561] Updating loop upper bound from 16 to 8 for loop 'VITIS_LOOP_103_1' (cnn_layer.cpp:104:9) in function 'ConvLayer<32, 8, 8, 32, 8, 8, 1, 4, 4>::write_output_func'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 1 to 32 for loop 'VITIS_LOOP_48_1' (cnn_layer.cpp:49:9) in function 'ConvLayer<32, 8, 8, 32, 8, 8, 1, 4, 4>::prepare_input_buf_func'.
+WARNING: [XFORM 203-561] Updating loop upper bound from 16 to 8 for loop 'VITIS_LOOP_58_4' (cnn_layer.cpp:59:9) in function 'ConvLayer<32, 8, 8, 32, 8, 8, 1, 4, 4>::prepare_input_buf_func'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 16 to 8 for loop 'VITIS_LOOP_58_4' (cnn_layer.cpp:59:9) in function 'ConvLayer<32, 8, 8, 32, 8, 8, 1, 4, 4>::prepare_input_buf_func'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 1 to 32 for loop 'VITIS_LOOP_27_2' (cnn_layer.cpp:28:9) in function 'ConvLayer<32, 8, 8, 32, 8, 8, 1, 4, 4>::load_params_func'.
+WARNING: [XFORM 203-561] Updating loop upper bound from 16 to 8 for loop 'VITIS_LOOP_76_2' (cnn_layer.cpp:77:9) in function 'ConvLayer<32, 8, 8, 32, 8, 8, 1, 4, 4>::convolution_func'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 8 to 16 for loop 'VITIS_LOOP_103_1' (cnn_layer.cpp:104:9) in function 'ConvLayer<32, 16, 16, 32, 16, 16, 1, 4, 4>::write_output_func'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 1 to 32 for loop 'VITIS_LOOP_48_1' (cnn_layer.cpp:49:9) in function 'ConvLayer<32, 16, 16, 32, 16, 16, 1, 4, 4>::prepare_input_buf_func'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 1 to 32 for loop 'VITIS_LOOP_27_2' (cnn_layer.cpp:28:9) in function 'ConvLayer<32, 16, 16, 32, 16, 16, 1, 4, 4>::load_params_func'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 8 to 16 for loop 'VITIS_LOOP_76_2' (cnn_layer.cpp:77:9) in function 'ConvLayer<32, 16, 16, 32, 16, 16, 1, 4, 4>::convolution_func'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 8 to 16 for loop 'VITIS_LOOP_103_1' (cnn_layer.cpp:104:9) in function 'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 1>::write_output_func'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 8 to 16 for loop 'VITIS_LOOP_76_2' (cnn_layer.cpp:77:9) in function 'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 1>::convolution_func'.
+INFO: [XFORM 203-712] Applying dataflow to function 'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 1>::compute' (cnn_layer.cpp:116:5), detected/extracted 4 process function(s): 
+	 'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 1>::load_params_func'
+	 'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 1>::prepare_input_buf_func'
+	 'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 1>::convolution_func'
+	 'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 1>::write_output_func'.
+INFO: [XFORM 203-712] Applying dataflow to function 'ConvLayer<32, 16, 16, 32, 16, 16, 1, 4, 4>::compute' (cnn_layer.cpp:116:5), detected/extracted 4 process function(s): 
+	 'ConvLayer<32, 16, 16, 32, 16, 16, 1, 4, 4>::load_params_func'
+	 'ConvLayer<32, 16, 16, 32, 16, 16, 1, 4, 4>::prepare_input_buf_func'
+	 'ConvLayer<32, 16, 16, 32, 16, 16, 1, 4, 4>::convolution_func'
+	 'ConvLayer<32, 16, 16, 32, 16, 16, 1, 4, 4>::write_output_func'.
+INFO: [XFORM 203-712] Applying dataflow to function 'MaxPool<32, 16, 16>::compute' (cnn_layer.cpp:185:5), detected/extracted 2 process function(s): 
+	 'MaxPool<32, 16, 16>::read_input_func'
+	 'MaxPool<32, 16, 16>::pooling_func'.
+INFO: [XFORM 203-712] Applying dataflow to function 'ConvLayer<32, 8, 8, 32, 8, 8, 1, 4, 4>::compute' (cnn_layer.cpp:116:5), detected/extracted 4 process function(s): 
+	 'ConvLayer<32, 8, 8, 32, 8, 8, 1, 4, 4>::load_params_func'
+	 'ConvLayer<32, 8, 8, 32, 8, 8, 1, 4, 4>::prepare_input_buf_func'
+	 'ConvLayer<32, 8, 8, 32, 8, 8, 1, 4, 4>::convolution_func'
+	 'ConvLayer<32, 8, 8, 32, 8, 8, 1, 4, 4>::write_output_func'.
+INFO: [XFORM 203-712] Applying dataflow to function 'MaxPool<32, 8, 8>::compute' (cnn_layer.cpp:185:5), detected/extracted 2 process function(s): 
+	 'MaxPool<32, 8, 8>::read_input_func'
+	 'MaxPool<32, 8, 8>::pooling_func'.
+INFO: [XFORM 203-712] Applying dataflow to function 'cnn_top' (cnn_layer.cpp:211:1), detected/extracted 8 process function(s): 
+	 'entry_proc'
+	 'read_input_top'
+	 'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 1>::compute'
+	 'ConvLayer<32, 16, 16, 32, 16, 16, 1, 4, 4>::compute'
+	 'MaxPool<32, 16, 16>::compute'
+	 'ConvLayer<32, 8, 8, 32, 8, 8, 1, 4, 4>::compute'
+	 'MaxPool<32, 8, 8>::compute'
+	 'write_output_top'.
+INFO: [XFORM 203-11] Balancing expressions in function 'ConvLayer<32, 8, 8, 32, 8, 8, 1, 4, 4>::convolution_func' (cnn_layer.cpp:74:40)...288 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'ConvLayer<32, 16, 16, 32, 16, 16, 1, 4, 4>::convolution_func' (cnn_layer.cpp:74:40)...288 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 1>::convolution_func' (cnn_layer.cpp:74:19)...9 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 18 seconds. CPU system time: 0 seconds. Elapsed time: 18.923 seconds; current allocated memory: 496.453 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_153_2'(cnn_layer.cpp:153:20) and 'VITIS_LOOP_154_3'(cnn_layer.cpp:154:35) in function 'MaxPool<32, 8, 8>::read_input_func' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_151_1'(cnn_layer.cpp:151:20) and 'VITIS_LOOP_153_2'(cnn_layer.cpp:153:20) in function 'MaxPool<32, 8, 8>::read_input_func' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_165_2'(cnn_layer.cpp:165:20) and 'VITIS_LOOP_166_3'(cnn_layer.cpp:166:35) in function 'MaxPool<32, 8, 8>::pooling_func' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_163_1'(cnn_layer.cpp:163:20) and 'VITIS_LOOP_165_2'(cnn_layer.cpp:165:20) in function 'MaxPool<32, 8, 8>::pooling_func' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_153_2'(cnn_layer.cpp:153:20) and 'VITIS_LOOP_154_3'(cnn_layer.cpp:154:35) in function 'MaxPool<32, 16, 16>::read_input_func' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_151_1'(cnn_layer.cpp:151:20) and 'VITIS_LOOP_153_2'(cnn_layer.cpp:153:20) in function 'MaxPool<32, 16, 16>::read_input_func' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_165_2'(cnn_layer.cpp:165:20) and 'VITIS_LOOP_166_3'(cnn_layer.cpp:166:35) in function 'MaxPool<32, 16, 16>::pooling_func' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_163_1'(cnn_layer.cpp:163:20) and 'VITIS_LOOP_165_2'(cnn_layer.cpp:165:20) in function 'MaxPool<32, 16, 16>::pooling_func' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_105_2'(cnn_layer.cpp:105:20) and 'VITIS_LOOP_106_3'(cnn_layer.cpp:106:35) in function 'ConvLayer<32, 8, 8, 32, 8, 8, 1, 4, 4>::write_output_func' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_103_1'(cnn_layer.cpp:103:20) and 'VITIS_LOOP_105_2'(cnn_layer.cpp:105:20) in function 'ConvLayer<32, 8, 8, 32, 8, 8, 1, 4, 4>::write_output_func' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_50_2'(cnn_layer.cpp:50:19) and 'VITIS_LOOP_51_3'(cnn_layer.cpp:51:34) in function 'ConvLayer<32, 8, 8, 32, 8, 8, 1, 4, 4>::prepare_input_buf_func' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_48_1'(cnn_layer.cpp:48:19) and 'VITIS_LOOP_50_2'(cnn_layer.cpp:50:19) in function 'ConvLayer<32, 8, 8, 32, 8, 8, 1, 4, 4>::prepare_input_buf_func' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_60_5'(cnn_layer.cpp:60:19) and 'VITIS_LOOP_61_6'(cnn_layer.cpp:61:34) in function 'ConvLayer<32, 8, 8, 32, 8, 8, 1, 4, 4>::prepare_input_buf_func' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_58_4'(cnn_layer.cpp:58:26) and 'VITIS_LOOP_60_5'(cnn_layer.cpp:60:19) in function 'ConvLayer<32, 8, 8, 32, 8, 8, 1, 4, 4>::prepare_input_buf_func' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_29_3'(cnn_layer.cpp:29:19) and 'VITIS_LOOP_30_4'(cnn_layer.cpp:30:38) in function 'ConvLayer<32, 8, 8, 32, 8, 8, 1, 4, 4>::load_params_func' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_27_2'(cnn_layer.cpp:27:19) and 'VITIS_LOOP_29_3'(cnn_layer.cpp:29:19) in function 'ConvLayer<32, 8, 8, 32, 8, 8, 1, 4, 4>::load_params_func' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_25_1'(cnn_layer.cpp:25:19) and 'VITIS_LOOP_27_2'(cnn_layer.cpp:27:19) in function 'ConvLayer<32, 8, 8, 32, 8, 8, 1, 4, 4>::load_params_func' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_76_2'(cnn_layer.cpp:76:19) and 'VITIS_LOOP_78_3'(cnn_layer.cpp:78:19) in function 'ConvLayer<32, 8, 8, 32, 8, 8, 1, 4, 4>::convolution_func' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_74_1'(cnn_layer.cpp:74:19) and 'VITIS_LOOP_76_2'(cnn_layer.cpp:76:19) in function 'ConvLayer<32, 8, 8, 32, 8, 8, 1, 4, 4>::convolution_func' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_105_2'(cnn_layer.cpp:105:20) and 'VITIS_LOOP_106_3'(cnn_layer.cpp:106:35) in function 'ConvLayer<32, 16, 16, 32, 16, 16, 1, 4, 4>::write_output_func' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_103_1'(cnn_layer.cpp:103:20) and 'VITIS_LOOP_105_2'(cnn_layer.cpp:105:20) in function 'ConvLayer<32, 16, 16, 32, 16, 16, 1, 4, 4>::write_output_func' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_50_2'(cnn_layer.cpp:50:19) and 'VITIS_LOOP_51_3'(cnn_layer.cpp:51:34) in function 'ConvLayer<32, 16, 16, 32, 16, 16, 1, 4, 4>::prepare_input_buf_func' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_48_1'(cnn_layer.cpp:48:19) and 'VITIS_LOOP_50_2'(cnn_layer.cpp:50:19) in function 'ConvLayer<32, 16, 16, 32, 16, 16, 1, 4, 4>::prepare_input_buf_func' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_60_5'(cnn_layer.cpp:60:19) and 'VITIS_LOOP_61_6'(cnn_layer.cpp:61:34) in function 'ConvLayer<32, 16, 16, 32, 16, 16, 1, 4, 4>::prepare_input_buf_func' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_58_4'(cnn_layer.cpp:58:26) and 'VITIS_LOOP_60_5'(cnn_layer.cpp:60:19) in function 'ConvLayer<32, 16, 16, 32, 16, 16, 1, 4, 4>::prepare_input_buf_func' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_29_3'(cnn_layer.cpp:29:19) and 'VITIS_LOOP_30_4'(cnn_layer.cpp:30:38) in function 'ConvLayer<32, 16, 16, 32, 16, 16, 1, 4, 4>::load_params_func' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_27_2'(cnn_layer.cpp:27:19) and 'VITIS_LOOP_29_3'(cnn_layer.cpp:29:19) in function 'ConvLayer<32, 16, 16, 32, 16, 16, 1, 4, 4>::load_params_func' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_25_1'(cnn_layer.cpp:25:19) and 'VITIS_LOOP_27_2'(cnn_layer.cpp:27:19) in function 'ConvLayer<32, 16, 16, 32, 16, 16, 1, 4, 4>::load_params_func' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_76_2'(cnn_layer.cpp:76:19) and 'VITIS_LOOP_78_3'(cnn_layer.cpp:78:19) in function 'ConvLayer<32, 16, 16, 32, 16, 16, 1, 4, 4>::convolution_func' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_74_1'(cnn_layer.cpp:74:19) and 'VITIS_LOOP_76_2'(cnn_layer.cpp:76:19) in function 'ConvLayer<32, 16, 16, 32, 16, 16, 1, 4, 4>::convolution_func' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_105_2'(cnn_layer.cpp:105:20) and 'VITIS_LOOP_106_3'(cnn_layer.cpp:106:35) in function 'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 1>::write_output_func' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_103_1'(cnn_layer.cpp:103:20) and 'VITIS_LOOP_105_2'(cnn_layer.cpp:105:20) in function 'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 1>::write_output_func' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_50_2'(cnn_layer.cpp:50:19) and 'VITIS_LOOP_51_3'(cnn_layer.cpp:51:34) in function 'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 1>::prepare_input_buf_func' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_58_4'(cnn_layer.cpp:58:26) and 'VITIS_LOOP_60_5'(cnn_layer.cpp:60:19) in function 'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 1>::prepare_input_buf_func' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_29_3'(cnn_layer.cpp:29:19) and 'VITIS_LOOP_30_4'(cnn_layer.cpp:30:38) in function 'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 1>::load_params_func' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_25_1'(cnn_layer.cpp:25:19) and 'VITIS_LOOP_29_3'(cnn_layer.cpp:29:19) in function 'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 1>::load_params_func' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_76_2'(cnn_layer.cpp:76:19) and 'VITIS_LOOP_78_3'(cnn_layer.cpp:78:19) in function 'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 1>::convolution_func' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_74_1'(cnn_layer.cpp:74:19) and 'VITIS_LOOP_76_2'(cnn_layer.cpp:76:19) in function 'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 1>::convolution_func' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_153_2' (cnn_layer.cpp:153:20) in function 'MaxPool<32, 8, 8>::read_input_func'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_151_1' (cnn_layer.cpp:151:20) in function 'MaxPool<32, 8, 8>::read_input_func'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_165_2' (cnn_layer.cpp:165:20) in function 'MaxPool<32, 8, 8>::pooling_func'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_163_1' (cnn_layer.cpp:163:20) in function 'MaxPool<32, 8, 8>::pooling_func'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_153_2' (cnn_layer.cpp:153:20) in function 'MaxPool<32, 16, 16>::read_input_func'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_151_1' (cnn_layer.cpp:151:20) in function 'MaxPool<32, 16, 16>::read_input_func'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_165_2' (cnn_layer.cpp:165:20) in function 'MaxPool<32, 16, 16>::pooling_func'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_163_1' (cnn_layer.cpp:163:20) in function 'MaxPool<32, 16, 16>::pooling_func'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_105_2' (cnn_layer.cpp:105:20) in function 'ConvLayer<32, 8, 8, 32, 8, 8, 1, 4, 4>::write_output_func'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_103_1' (cnn_layer.cpp:103:20) in function 'ConvLayer<32, 8, 8, 32, 8, 8, 1, 4, 4>::write_output_func'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_50_2' (cnn_layer.cpp:50:19) in function 'ConvLayer<32, 8, 8, 32, 8, 8, 1, 4, 4>::prepare_input_buf_func'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_48_1' (cnn_layer.cpp:48:19) in function 'ConvLayer<32, 8, 8, 32, 8, 8, 1, 4, 4>::prepare_input_buf_func'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_60_5' (cnn_layer.cpp:60:19) in function 'ConvLayer<32, 8, 8, 32, 8, 8, 1, 4, 4>::prepare_input_buf_func'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_58_4' (cnn_layer.cpp:58:26) in function 'ConvLayer<32, 8, 8, 32, 8, 8, 1, 4, 4>::prepare_input_buf_func'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_29_3' (cnn_layer.cpp:29:19) in function 'ConvLayer<32, 8, 8, 32, 8, 8, 1, 4, 4>::load_params_func'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_27_2' (cnn_layer.cpp:27:19) in function 'ConvLayer<32, 8, 8, 32, 8, 8, 1, 4, 4>::load_params_func'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_25_1' (cnn_layer.cpp:25:19) in function 'ConvLayer<32, 8, 8, 32, 8, 8, 1, 4, 4>::load_params_func'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_76_2' (cnn_layer.cpp:76:19) in function 'ConvLayer<32, 8, 8, 32, 8, 8, 1, 4, 4>::convolution_func'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_74_1' (cnn_layer.cpp:74:19) in function 'ConvLayer<32, 8, 8, 32, 8, 8, 1, 4, 4>::convolution_func'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_105_2' (cnn_layer.cpp:105:20) in function 'ConvLayer<32, 16, 16, 32, 16, 16, 1, 4, 4>::write_output_func'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_103_1' (cnn_layer.cpp:103:20) in function 'ConvLayer<32, 16, 16, 32, 16, 16, 1, 4, 4>::write_output_func'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_50_2' (cnn_layer.cpp:50:19) in function 'ConvLayer<32, 16, 16, 32, 16, 16, 1, 4, 4>::prepare_input_buf_func'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_48_1' (cnn_layer.cpp:48:19) in function 'ConvLayer<32, 16, 16, 32, 16, 16, 1, 4, 4>::prepare_input_buf_func'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_60_5' (cnn_layer.cpp:60:19) in function 'ConvLayer<32, 16, 16, 32, 16, 16, 1, 4, 4>::prepare_input_buf_func'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_58_4' (cnn_layer.cpp:58:26) in function 'ConvLayer<32, 16, 16, 32, 16, 16, 1, 4, 4>::prepare_input_buf_func'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_29_3' (cnn_layer.cpp:29:19) in function 'ConvLayer<32, 16, 16, 32, 16, 16, 1, 4, 4>::load_params_func'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_27_2' (cnn_layer.cpp:27:19) in function 'ConvLayer<32, 16, 16, 32, 16, 16, 1, 4, 4>::load_params_func'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_25_1' (cnn_layer.cpp:25:19) in function 'ConvLayer<32, 16, 16, 32, 16, 16, 1, 4, 4>::load_params_func'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_76_2' (cnn_layer.cpp:76:19) in function 'ConvLayer<32, 16, 16, 32, 16, 16, 1, 4, 4>::convolution_func'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_74_1' (cnn_layer.cpp:74:19) in function 'ConvLayer<32, 16, 16, 32, 16, 16, 1, 4, 4>::convolution_func'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_105_2' (cnn_layer.cpp:105:20) in function 'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 1>::write_output_func'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_103_1' (cnn_layer.cpp:103:20) in function 'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 1>::write_output_func'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_50_2' (cnn_layer.cpp:50:19) in function 'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 1>::prepare_input_buf_func'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_58_4' (cnn_layer.cpp:58:26) in function 'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 1>::prepare_input_buf_func'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_29_3' (cnn_layer.cpp:29:19) in function 'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 1>::load_params_func'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_25_1' (cnn_layer.cpp:25:19) in function 'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 1>::load_params_func'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_76_2' (cnn_layer.cpp:76:19) in function 'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 1>::convolution_func'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_74_1' (cnn_layer.cpp:74:19) in function 'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 1>::convolution_func'.
+WARNING: [HLS 200-1449] Process compute.4 has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process.
+WARNING: [HLS 200-1449] Process compute.3 has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process.
+WARNING: [HLS 200-1449] Process compute.2 has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 19 seconds. CPU system time: 0 seconds. Elapsed time: 23.546 seconds; current allocated memory: 886.551 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'cnn_top' ...
+WARNING: [SYN 201-103] Legalizing function name 'load_params_func.2_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_29_3_VITIS_LOOP_30_4' to 'load_params_func_2_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_29_3_VITIS_LOOP_30_4'.
+WARNING: [SYN 201-103] Legalizing function name 'load_params_func.2_Pipeline_VITIS_LOOP_39_5' to 'load_params_func_2_Pipeline_VITIS_LOOP_39_5'.
+WARNING: [SYN 201-103] Legalizing function name 'load_params_func.2' to 'load_params_func_2'.
+WARNING: [SYN 201-103] Legalizing function name 'prepare_input_buf_func.2_Pipeline_VITIS_LOOP_50_2_VITIS_LOOP_51_3' to 'prepare_input_buf_func_2_Pipeline_VITIS_LOOP_50_2_VITIS_LOOP_51_3'.
+WARNING: [SYN 201-103] Legalizing function name 'prepare_input_buf_func.2_Pipeline_VITIS_LOOP_58_4_VITIS_LOOP_60_5' to 'prepare_input_buf_func_2_Pipeline_VITIS_LOOP_58_4_VITIS_LOOP_60_5'.
+WARNING: [SYN 201-103] Legalizing function name 'prepare_input_buf_func.2' to 'prepare_input_buf_func_2'.
+WARNING: [SYN 201-103] Legalizing function name 'convolution_func.2' to 'convolution_func_2'.
+WARNING: [SYN 201-103] Legalizing function name 'write_output_func.2' to 'write_output_func_2'.
+WARNING: [SYN 201-103] Legalizing function name 'compute.4' to 'compute_4'.
+WARNING: [SYN 201-103] Legalizing function name 'load_params_func.1_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_VITIS_LOOP_29_3_VITI' to 'load_params_func_1_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_VITIS_LOOP_29_3_VITI'.
+WARNING: [SYN 201-103] Legalizing function name 'load_params_func.1_Pipeline_VITIS_LOOP_39_5' to 'load_params_func_1_Pipeline_VITIS_LOOP_39_5'.
+WARNING: [SYN 201-103] Legalizing function name 'load_params_func.1' to 'load_params_func_1'.
+WARNING: [SYN 201-103] Legalizing function name 'prepare_input_buf_func.1_Pipeline_VITIS_LOOP_48_1_VITIS_LOOP_50_2_VITIS_LOOP_51_' to 'prepare_input_buf_func_1_Pipeline_VITIS_LOOP_48_1_VITIS_LOOP_50_2_VITIS_LOOP_51_s'.
+WARNING: [SYN 201-103] Legalizing function name 'prepare_input_buf_func.1_Pipeline_VITIS_LOOP_58_4_VITIS_LOOP_60_5_VITIS_LOOP_61_' to 'prepare_input_buf_func_1_Pipeline_VITIS_LOOP_58_4_VITIS_LOOP_60_5_VITIS_LOOP_61_s'.
+WARNING: [SYN 201-103] Legalizing function name 'prepare_input_buf_func.1' to 'prepare_input_buf_func_1'.
+WARNING: [SYN 201-103] Legalizing function name 'convolution_func.1' to 'convolution_func_1'.
+WARNING: [SYN 201-103] Legalizing function name 'write_output_func.1' to 'write_output_func_1'.
+WARNING: [SYN 201-103] Legalizing function name 'compute.3' to 'compute_3'.
+WARNING: [SYN 201-103] Legalizing function name 'read_input_func.1' to 'read_input_func_1'.
+WARNING: [SYN 201-103] Legalizing function name 'pooling_func.1' to 'pooling_func_1'.
+WARNING: [SYN 201-103] Legalizing function name 'compute.1' to 'compute_1'.
+WARNING: [SYN 201-103] Legalizing function name 'load_params_func_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_VITIS_LOOP_29_3_VITIS_' to 'load_params_func_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_VITIS_LOOP_29_3_VITIS_s'.
+WARNING: [SYN 201-103] Legalizing function name 'compute.2' to 'compute_2'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'entry_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.761 seconds; current allocated memory: 894.348 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.015 seconds; current allocated memory: 895.586 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'read_input_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_195_1'.
+INFO: [HLS 200-876] Unable to schedule the whole 8 cycles bus request operation ('empty', cnn_layer.cpp:195) on port 'gmem3' (cnn_layer.cpp:195) within the first cycle (II = 1). Simulation mismatch may occur if the input data is modified before this operation completes.
+Resolution: For help on HLS 200-876 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-876.html
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 11, loop 'VITIS_LOOP_195_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.015 seconds; current allocated memory: 896.730 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.012 seconds; current allocated memory: 896.887 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'load_params_func_2_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_29_3_VITIS_LOOP_30_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_25_1_VITIS_LOOP_29_3_VITIS_LOOP_30_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_25_1_VITIS_LOOP_29_3_VITIS_LOOP_30_4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.031 seconds; current allocated memory: 897.590 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.016 seconds; current allocated memory: 897.852 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'load_params_func_2_Pipeline_VITIS_LOOP_39_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_39_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_39_5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.038 seconds; current allocated memory: 898.684 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.882 seconds; current allocated memory: 898.914 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'load_params_func_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.045 seconds; current allocated memory: 899.152 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.025 seconds; current allocated memory: 899.375 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'prepare_input_buf_func_2_Pipeline_VITIS_LOOP_50_2_VITIS_LOOP_51_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_50_2_VITIS_LOOP_51_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 9, loop 'VITIS_LOOP_50_2_VITIS_LOOP_51_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.044 seconds; current allocated memory: 899.832 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.019 seconds; current allocated memory: 899.832 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'prepare_input_buf_func_2_Pipeline_VITIS_LOOP_58_4_VITIS_LOOP_60_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_58_4_VITIS_LOOP_60_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 9, loop 'VITIS_LOOP_58_4_VITIS_LOOP_60_5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.037 seconds; current allocated memory: 900.391 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.017 seconds; current allocated memory: 900.391 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'prepare_input_buf_func_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.018 seconds; current allocated memory: 900.395 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.8 seconds; current allocated memory: 900.395 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'convolution_func_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_15) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_14) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_13) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_11) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_10) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul8) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul11) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_74_1_VITIS_LOOP_76_2_VITIS_LOOP_78_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 16, loop 'VITIS_LOOP_74_1_VITIS_LOOP_76_2_VITIS_LOOP_78_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.137 seconds; current allocated memory: 904.695 MB.
+INFO: [#UNDEF] Rewind delay = 8 for the pipelined loop 'VITIS_LOOP_74_1_VITIS_LOOP_76_2_VITIS_LOOP_78_3' to synchronize the reading of PIPO 'input_buf_0_0' with ap_ready.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.066 seconds; current allocated memory: 904.852 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'write_output_func_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_103_1_VITIS_LOOP_105_2_VITIS_LOOP_106_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_103_1_VITIS_LOOP_105_2_VITIS_LOOP_106_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.072 seconds; current allocated memory: 904.977 MB.
+INFO: [#UNDEF] Rewind delay = 1 for the pipelined loop 'VITIS_LOOP_103_1_VITIS_LOOP_105_2_VITIS_LOOP_106_3' to synchronize the reading of PIPO 'output_buf' with ap_ready.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.015 seconds; current allocated memory: 904.977 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'compute_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.727 seconds; current allocated memory: 905.145 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.029 seconds; current allocated memory: 905.215 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'load_params_func_1_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_VITIS_LOOP_29_3_VITI' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_25_1_VITIS_LOOP_27_2_VITIS_LOOP_29_3_VITIS_LOOP_30_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_25_1_VITIS_LOOP_27_2_VITIS_LOOP_29_3_VITIS_LOOP_30_4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.079 seconds; current allocated memory: 907.875 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.029 seconds; current allocated memory: 907.875 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'load_params_func_1_Pipeline_VITIS_LOOP_39_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_39_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_39_5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.054 seconds; current allocated memory: 908.102 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.026 seconds; current allocated memory: 908.230 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'load_params_func_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 908.508 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.025 seconds; current allocated memory: 908.508 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'prepare_input_buf_func_1_Pipeline_VITIS_LOOP_48_1_VITIS_LOOP_50_2_VITIS_LOOP_51_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_48_1_VITIS_LOOP_50_2_VITIS_LOOP_51_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 10, loop 'VITIS_LOOP_48_1_VITIS_LOOP_50_2_VITIS_LOOP_51_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.764 seconds; current allocated memory: 911.027 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.037 seconds; current allocated memory: 911.027 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'prepare_input_buf_func_1_Pipeline_VITIS_LOOP_58_4_VITIS_LOOP_60_5_VITIS_LOOP_61_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_58_4_VITIS_LOOP_60_5_VITIS_LOOP_61_6'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 10, loop 'VITIS_LOOP_58_4_VITIS_LOOP_60_5_VITIS_LOOP_61_6'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.083 seconds; current allocated memory: 912.438 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.031 seconds; current allocated memory: 912.438 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'prepare_input_buf_func_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 912.438 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 912.438 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'convolution_func_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_389) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_388) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_387) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_385) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_384) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_383) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_380) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_379) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_378) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_376) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_375) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_371) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_370) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_369) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_367) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_366) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_363) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_362) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_361) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_359) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_358) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_353) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_352) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_351) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_349) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_348) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_345) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_344) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_343) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_341) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_340) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_336) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_335) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_334) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_332) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_331) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_328) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_327) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_326) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_324) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_323) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_317) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_316) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_315) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_313) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_312) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_309) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_308) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_307) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_305) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_304) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_300) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_299) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_298) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_296) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_295) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_292) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_291) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_290) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_288) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_287) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_282) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_281) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_280) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_278) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_277) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_274) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_273) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_272) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_270) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_269) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_265) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_264) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_263) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_261) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_260) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_257) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_256) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_255) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_253) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_252) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_245) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_244) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_243) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_241) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_240) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_237) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_236) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_235) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_233) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_232) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_228) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_227) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_226) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_224) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_223) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_220) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_219) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_218) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_216) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_215) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_210) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_209) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_208) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_206) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_205) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_202) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_201) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_200) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_198) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_197) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_193) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_192) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_191) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_189) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_188) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_185) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_184) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_183) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_181) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_180) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_174) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_173) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_172) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_170) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_169) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_166) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_165) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_164) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_162) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_161) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_157) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_156) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_155) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_153) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_152) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_149) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_148) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_147) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_145) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_144) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_139) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_138) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_137) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_135) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_134) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_131) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_130) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_129) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_127) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_126) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_122) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_121) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_120) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_118) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_117) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_114) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_113) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_112) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_110) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul8) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul11) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_74_1_VITIS_LOOP_76_2_VITIS_LOOP_78_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 4, Final II = 4, Depth = 21, loop 'VITIS_LOOP_74_1_VITIS_LOOP_76_2_VITIS_LOOP_78_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 80 seconds. CPU system time: 0 seconds. Elapsed time: 92.567 seconds; current allocated memory: 1011.570 MB.
+INFO: [#UNDEF] Rewind delay = 12 for the pipelined loop 'VITIS_LOOP_74_1_VITIS_LOOP_76_2_VITIS_LOOP_78_3' to synchronize the reading of PIPO 'input_buf_0_0_0' with ap_ready.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 5 seconds. CPU system time: 1 seconds. Elapsed time: 5.475 seconds; current allocated memory: 1011.570 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'write_output_func_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_103_1_VITIS_LOOP_105_2_VITIS_LOOP_106_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_103_1_VITIS_LOOP_105_2_VITIS_LOOP_106_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.1 seconds; current allocated memory: 1011.570 MB.
+INFO: [#UNDEF] Rewind delay = 1 for the pipelined loop 'VITIS_LOOP_103_1_VITIS_LOOP_105_2_VITIS_LOOP_106_3' to synchronize the reading of PIPO 'output_buf' with ap_ready.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.022 seconds; current allocated memory: 1011.570 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'compute_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.037 seconds; current allocated memory: 1011.570 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 1011.570 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'read_input_func_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_151_1_VITIS_LOOP_153_2_VITIS_LOOP_154_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_151_1_VITIS_LOOP_153_2_VITIS_LOOP_154_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.113 seconds; current allocated memory: 1011.570 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.017 seconds; current allocated memory: 1011.570 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pooling_func_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_163_1_VITIS_LOOP_165_2_VITIS_LOOP_166_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_163_1_VITIS_LOOP_165_2_VITIS_LOOP_166_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.029 seconds; current allocated memory: 1011.570 MB.
+INFO: [#UNDEF] Rewind delay = 1 for the pipelined loop 'VITIS_LOOP_163_1_VITIS_LOOP_165_2_VITIS_LOOP_166_3' to synchronize the reading of PIPO 'input_buf_0' with ap_ready.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.75 seconds; current allocated memory: 1011.570 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'compute_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.019 seconds; current allocated memory: 1011.570 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.011 seconds; current allocated memory: 1011.570 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'load_params_func_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_VITIS_LOOP_29_3_VITIS_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_25_1_VITIS_LOOP_27_2_VITIS_LOOP_29_3_VITIS_LOOP_30_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_25_1_VITIS_LOOP_27_2_VITIS_LOOP_29_3_VITIS_LOOP_30_4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.063 seconds; current allocated memory: 1011.570 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.034 seconds; current allocated memory: 1011.570 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'load_params_func_Pipeline_VITIS_LOOP_39_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_39_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_39_5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.058 seconds; current allocated memory: 1011.570 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 1011.570 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'load_params_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.045 seconds; current allocated memory: 1011.570 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.029 seconds; current allocated memory: 1011.570 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'prepare_input_buf_func_Pipeline_VITIS_LOOP_48_1_VITIS_LOOP_50_2_VITIS_LOOP_51_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_48_1_VITIS_LOOP_50_2_VITIS_LOOP_51_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 8, loop 'VITIS_LOOP_48_1_VITIS_LOOP_50_2_VITIS_LOOP_51_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.071 seconds; current allocated memory: 1011.570 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 1011.570 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'prepare_input_buf_func_Pipeline_VITIS_LOOP_58_4_VITIS_LOOP_60_5_VITIS_LOOP_61_6' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_58_4_VITIS_LOOP_60_5_VITIS_LOOP_61_6'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 9, loop 'VITIS_LOOP_58_4_VITIS_LOOP_60_5_VITIS_LOOP_61_6'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.082 seconds; current allocated memory: 1011.570 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.033 seconds; current allocated memory: 1011.570 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'prepare_input_buf_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.033 seconds; current allocated memory: 1011.570 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.011 seconds; current allocated memory: 1011.570 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'convolution_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_280) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_279) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_278) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_276) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_275) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_274) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_271) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_270) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_269) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_267) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_266) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_262) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_261) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_260) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_258) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_257) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_254) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_253) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_252) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_250) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_249) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_244) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_243) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_242) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_240) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_239) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_236) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_235) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_234) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_232) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_231) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_227) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_226) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_225) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_223) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_222) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_219) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_218) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_217) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_215) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_214) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_208) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_207) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_206) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_204) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_203) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_200) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_199) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_198) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_196) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_195) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_191) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_190) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_189) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_187) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_186) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_183) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_182) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_181) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_179) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_178) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_173) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_172) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_171) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_169) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_168) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_165) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_164) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_163) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_161) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_160) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_156) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_155) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_154) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_152) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_151) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_148) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_147) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_146) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_144) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_143) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_136) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_135) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_134) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_132) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_131) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_128) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_127) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_126) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_124) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_123) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_119) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_118) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_117) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_115) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_114) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_111) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_110) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_109) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_107) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_106) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_101) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_100) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_99) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_97) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_96) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_93) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_92) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_91) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_89) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_88) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_84) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_83) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_82) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_80) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_79) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_76) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_75) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_74) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_72) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_71) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_65) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_64) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_63) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_61) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_60) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_57) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_56) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_55) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_53) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_52) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_48) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_47) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_46) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_44) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_43) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_40) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_39) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_38) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_36) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_35) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_30) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_29) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_28) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_26) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_25) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_22) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_21) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_20) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_18) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_17) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_13) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_12) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_11) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_9) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_8) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_5) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_4) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln90) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_74_1_VITIS_LOOP_76_2_VITIS_LOOP_78_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 4, Final II = 4, Depth = 20, loop 'VITIS_LOOP_74_1_VITIS_LOOP_76_2_VITIS_LOOP_78_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 113 seconds. CPU system time: 2 seconds. Elapsed time: 128.306 seconds; current allocated memory: 1.088 GB.
+INFO: [#UNDEF] Rewind delay = 11 for the pipelined loop 'VITIS_LOOP_74_1_VITIS_LOOP_76_2_VITIS_LOOP_78_3' to synchronize the reading of PIPO 'input_buf_0_0_0' with ap_ready.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 5 seconds. CPU system time: 0 seconds. Elapsed time: 5.295 seconds; current allocated memory: 1.088 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'write_output_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_103_1_VITIS_LOOP_105_2_VITIS_LOOP_106_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_103_1_VITIS_LOOP_105_2_VITIS_LOOP_106_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.11 seconds; current allocated memory: 1.088 GB.
+INFO: [#UNDEF] Rewind delay = 1 for the pipelined loop 'VITIS_LOOP_103_1_VITIS_LOOP_105_2_VITIS_LOOP_106_3' to synchronize the reading of PIPO 'output_buf' with ap_ready.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.019 seconds; current allocated memory: 1.088 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'compute_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.034 seconds; current allocated memory: 1.088 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 1.088 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'read_input_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_151_1_VITIS_LOOP_153_2_VITIS_LOOP_154_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'VITIS_LOOP_151_1_VITIS_LOOP_153_2_VITIS_LOOP_154_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.107 seconds; current allocated memory: 1.088 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.017 seconds; current allocated memory: 1.088 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pooling_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_163_1_VITIS_LOOP_165_2_VITIS_LOOP_166_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_163_1_VITIS_LOOP_165_2_VITIS_LOOP_166_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.027 seconds; current allocated memory: 1.088 GB.
+INFO: [#UNDEF] Rewind delay = 1 for the pipelined loop 'VITIS_LOOP_163_1_VITIS_LOOP_165_2_VITIS_LOOP_166_3' to synchronize the reading of PIPO 'input_buf_0' with ap_ready.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.29 seconds; current allocated memory: 1.088 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'compute' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.022 seconds; current allocated memory: 1.088 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.011 seconds; current allocated memory: 1.088 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'write_output_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_203_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 9, loop 'VITIS_LOOP_203_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.018 seconds; current allocated memory: 1.088 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.015 seconds; current allocated memory: 1.088 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'cnn_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+WARNING: [HLS 200-1020] Increasing the depth of FIFO start_for_write_output_top_U0 (from entry_proc_U0 to write_output_top_U0) to 7 to improve performance and/or avoid deadlocks.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.022 seconds; current allocated memory: 1.088 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 1.088 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'entry_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'entry_proc'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.217 seconds; current allocated memory: 1.088 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'read_input_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'read_input_top' pipeline 'VITIS_LOOP_195_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'read_input_top'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.631 seconds; current allocated memory: 1.088 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'load_params_func_2_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_29_3_VITIS_LOOP_30_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'load_params_func_2_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_29_3_VITIS_LOOP_30_4' pipeline 'VITIS_LOOP_25_1_VITIS_LOOP_29_3_VITIS_LOOP_30_4' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_2_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_29_3_VITIS_LOOP_30_4/m_axi_gmem0_0_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_2_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_29_3_VITIS_LOOP_30_4/m_axi_gmem0_0_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_2_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_29_3_VITIS_LOOP_30_4/m_axi_gmem0_0_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_2_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_29_3_VITIS_LOOP_30_4/m_axi_gmem0_0_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_2_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_29_3_VITIS_LOOP_30_4/m_axi_gmem0_0_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_2_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_29_3_VITIS_LOOP_30_4/m_axi_gmem0_0_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_2_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_29_3_VITIS_LOOP_30_4/m_axi_gmem0_0_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_2_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_29_3_VITIS_LOOP_30_4/m_axi_gmem0_0_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_2_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_29_3_VITIS_LOOP_30_4/m_axi_gmem0_0_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_2_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_29_3_VITIS_LOOP_30_4/m_axi_gmem0_0_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_2_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_29_3_VITIS_LOOP_30_4/m_axi_gmem0_0_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_2_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_29_3_VITIS_LOOP_30_4/m_axi_gmem0_0_ARUSER' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'load_params_func_2_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_29_3_VITIS_LOOP_30_4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.073 seconds; current allocated memory: 1.088 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'load_params_func_2_Pipeline_VITIS_LOOP_39_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'load_params_func_2_Pipeline_VITIS_LOOP_39_5' pipeline 'VITIS_LOOP_39_5' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_2_Pipeline_VITIS_LOOP_39_5/m_axi_gmem0_0_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_2_Pipeline_VITIS_LOOP_39_5/m_axi_gmem0_0_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_2_Pipeline_VITIS_LOOP_39_5/m_axi_gmem0_0_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_2_Pipeline_VITIS_LOOP_39_5/m_axi_gmem0_0_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_2_Pipeline_VITIS_LOOP_39_5/m_axi_gmem0_0_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_2_Pipeline_VITIS_LOOP_39_5/m_axi_gmem0_0_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_2_Pipeline_VITIS_LOOP_39_5/m_axi_gmem0_0_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_2_Pipeline_VITIS_LOOP_39_5/m_axi_gmem0_0_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_2_Pipeline_VITIS_LOOP_39_5/m_axi_gmem0_0_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_2_Pipeline_VITIS_LOOP_39_5/m_axi_gmem0_0_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_2_Pipeline_VITIS_LOOP_39_5/m_axi_gmem0_0_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_2_Pipeline_VITIS_LOOP_39_5/m_axi_gmem0_0_ARUSER' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'load_params_func_2_Pipeline_VITIS_LOOP_39_5'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.932 seconds; current allocated memory: 1.088 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'load_params_func_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'load_params_func_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.211 seconds; current allocated memory: 1.088 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'prepare_input_buf_func_2_Pipeline_VITIS_LOOP_50_2_VITIS_LOOP_51_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'prepare_input_buf_func_2_Pipeline_VITIS_LOOP_50_2_VITIS_LOOP_51_3' pipeline 'VITIS_LOOP_50_2_VITIS_LOOP_51_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_5ns_7ns_11_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_5ns_3ns_2_9_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'prepare_input_buf_func_2_Pipeline_VITIS_LOOP_50_2_VITIS_LOOP_51_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.098 seconds; current allocated memory: 1.088 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'prepare_input_buf_func_2_Pipeline_VITIS_LOOP_58_4_VITIS_LOOP_60_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'prepare_input_buf_func_2_Pipeline_VITIS_LOOP_58_4_VITIS_LOOP_60_5' pipeline 'VITIS_LOOP_58_4_VITIS_LOOP_60_5' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_5ns_7ns_11_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_5ns_3ns_2_9_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'prepare_input_buf_func_2_Pipeline_VITIS_LOOP_58_4_VITIS_LOOP_60_5'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.099 seconds; current allocated memory: 1.088 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'prepare_input_buf_func_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'prepare_input_buf_func_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.092 seconds; current allocated memory: 1.088 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'convolution_func_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'convolution_func_2' pipeline 'VITIS_LOOP_74_1_VITIS_LOOP_76_2_VITIS_LOOP_78_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'am_addmul_4ns_1ns_6ns_11_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'am_addmul_4ns_2ns_6ns_11_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_28ns_28_4_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_28s_28_4_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_16s_28_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_4ns_6ns_9_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_65_5_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_16_1_1': 18 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_4ns_3ns_2_8_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'convolution_func_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.52 seconds; current allocated memory: 1.088 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'write_output_func_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'write_output_func_2' pipeline 'VITIS_LOOP_103_1_VITIS_LOOP_105_2_VITIS_LOOP_106_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'write_output_func_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.348 seconds; current allocated memory: 1.088 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'compute_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_4/m_axi_gmem0_0_AWVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_4/m_axi_gmem0_0_AWADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_4/m_axi_gmem0_0_AWID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_4/m_axi_gmem0_0_AWLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_4/m_axi_gmem0_0_AWSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_4/m_axi_gmem0_0_AWBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_4/m_axi_gmem0_0_AWLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_4/m_axi_gmem0_0_AWCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_4/m_axi_gmem0_0_AWPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_4/m_axi_gmem0_0_AWQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_4/m_axi_gmem0_0_AWREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_4/m_axi_gmem0_0_AWUSER' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_4/m_axi_gmem0_0_WVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_4/m_axi_gmem0_0_WDATA' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_4/m_axi_gmem0_0_WSTRB' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_4/m_axi_gmem0_0_WLAST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_4/m_axi_gmem0_0_WID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_4/m_axi_gmem0_0_WUSER' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_4/m_axi_gmem0_0_BREADY' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_4/conv1_out_read' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'compute_4'.
+INFO: [HLS 200-741] Implementing PIPO cnn_top_compute_4_input_buf_RAM_AUTO_1R1W using a single memory for all blocks
+INFO: [RTMG 210-278] Implementing memory 'cnn_top_compute_4_input_buf_RAM_AUTO_1R1W_memcore' using auto RAMs.
+INFO: [HLS 200-741] Implementing PIPO cnn_top_compute_4_output_buf_RAM_AUTO_1R1W using a single memory for all blocks
+INFO: [RTMG 210-278] Implementing memory 'cnn_top_compute_4_output_buf_RAM_AUTO_1R1W_memcore' using auto RAMs.
+INFO: [HLS 200-741] Implementing PIPO cnn_top_compute_4_local_weights_RAM_AUTO_1R1W using a single memory for all blocks
+INFO: [RTMG 210-278] Implementing memory 'cnn_top_compute_4_local_weights_RAM_AUTO_1R1W_memcore' using auto RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_U(cnn_top_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_63_U(cnn_top_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_64_U(cnn_top_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_65_U(cnn_top_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_66_U(cnn_top_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_67_U(cnn_top_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_68_U(cnn_top_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_69_U(cnn_top_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_70_U(cnn_top_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_71_U(cnn_top_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_72_U(cnn_top_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_73_U(cnn_top_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_74_U(cnn_top_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_75_U(cnn_top_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_76_U(cnn_top_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_77_U(cnn_top_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_78_U(cnn_top_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_79_U(cnn_top_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_80_U(cnn_top_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_81_U(cnn_top_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_82_U(cnn_top_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_83_U(cnn_top_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_84_U(cnn_top_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_85_U(cnn_top_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_86_U(cnn_top_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_87_U(cnn_top_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_88_U(cnn_top_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_89_U(cnn_top_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_90_U(cnn_top_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_91_U(cnn_top_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_92_U(cnn_top_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_93_U(cnn_top_fifo_w16_d2_S)' using Shift Registers.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.669 seconds; current allocated memory: 1.088 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'load_params_func_1_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_VITIS_LOOP_29_3_VITI' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'load_params_func_1_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_VITIS_LOOP_29_3_VITI' pipeline 'VITIS_LOOP_25_1_VITIS_LOOP_27_2_VITIS_LOOP_29_3_VITIS_LOOP_30_4' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_1_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_VITIS_LOOP_29_3_VITI/m_axi_gmem1_0_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_1_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_VITIS_LOOP_29_3_VITI/m_axi_gmem1_0_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_1_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_VITIS_LOOP_29_3_VITI/m_axi_gmem1_0_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_1_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_VITIS_LOOP_29_3_VITI/m_axi_gmem1_0_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_1_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_VITIS_LOOP_29_3_VITI/m_axi_gmem1_0_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_1_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_VITIS_LOOP_29_3_VITI/m_axi_gmem1_0_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_1_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_VITIS_LOOP_29_3_VITI/m_axi_gmem1_0_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_1_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_VITIS_LOOP_29_3_VITI/m_axi_gmem1_0_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_1_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_VITIS_LOOP_29_3_VITI/m_axi_gmem1_0_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_1_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_VITIS_LOOP_29_3_VITI/m_axi_gmem1_0_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_1_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_VITIS_LOOP_29_3_VITI/m_axi_gmem1_0_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_1_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_VITIS_LOOP_29_3_VITI/m_axi_gmem1_0_ARUSER' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'load_params_func_1_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_VITIS_LOOP_29_3_VITI'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.989 seconds; current allocated memory: 1.088 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'load_params_func_1_Pipeline_VITIS_LOOP_39_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'load_params_func_1_Pipeline_VITIS_LOOP_39_5' pipeline 'VITIS_LOOP_39_5' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_1_Pipeline_VITIS_LOOP_39_5/m_axi_gmem1_0_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_1_Pipeline_VITIS_LOOP_39_5/m_axi_gmem1_0_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_1_Pipeline_VITIS_LOOP_39_5/m_axi_gmem1_0_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_1_Pipeline_VITIS_LOOP_39_5/m_axi_gmem1_0_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_1_Pipeline_VITIS_LOOP_39_5/m_axi_gmem1_0_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_1_Pipeline_VITIS_LOOP_39_5/m_axi_gmem1_0_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_1_Pipeline_VITIS_LOOP_39_5/m_axi_gmem1_0_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_1_Pipeline_VITIS_LOOP_39_5/m_axi_gmem1_0_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_1_Pipeline_VITIS_LOOP_39_5/m_axi_gmem1_0_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_1_Pipeline_VITIS_LOOP_39_5/m_axi_gmem1_0_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_1_Pipeline_VITIS_LOOP_39_5/m_axi_gmem1_0_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_1_Pipeline_VITIS_LOOP_39_5/m_axi_gmem1_0_ARUSER' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'load_params_func_1_Pipeline_VITIS_LOOP_39_5'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.199 seconds; current allocated memory: 1.088 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'load_params_func_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'load_params_func_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.22 seconds; current allocated memory: 1.095 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'prepare_input_buf_func_1_Pipeline_VITIS_LOOP_48_1_VITIS_LOOP_50_2_VITIS_LOOP_51_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'prepare_input_buf_func_1_Pipeline_VITIS_LOOP_48_1_VITIS_LOOP_50_2_VITIS_LOOP_51_s' pipeline 'VITIS_LOOP_48_1_VITIS_LOOP_50_2_VITIS_LOOP_51_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_5ns_7ns_11_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_5ns_3ns_2_9_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'prepare_input_buf_func_1_Pipeline_VITIS_LOOP_48_1_VITIS_LOOP_50_2_VITIS_LOOP_51_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.145 seconds; current allocated memory: 1.098 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'prepare_input_buf_func_1_Pipeline_VITIS_LOOP_58_4_VITIS_LOOP_60_5_VITIS_LOOP_61_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'prepare_input_buf_func_1_Pipeline_VITIS_LOOP_58_4_VITIS_LOOP_60_5_VITIS_LOOP_61_s' pipeline 'VITIS_LOOP_58_4_VITIS_LOOP_60_5_VITIS_LOOP_61_6' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_5ns_7ns_11_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_5ns_3ns_2_9_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'prepare_input_buf_func_1_Pipeline_VITIS_LOOP_58_4_VITIS_LOOP_60_5_VITIS_LOOP_61_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.464 seconds; current allocated memory: 1.103 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'prepare_input_buf_func_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'prepare_input_buf_func_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.203 seconds; current allocated memory: 1.108 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'convolution_func_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'convolution_func_1' pipeline 'VITIS_LOOP_74_1_VITIS_LOOP_76_2_VITIS_LOOP_78_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-104] Estimated max fanout for 'convolution_func_1' is 5925 from HDL expression: ((1'b0 == ap_block_pp0_stage1_11001) & (1'b1 == ap_CS_fsm_pp0_stage1))
+INFO: [RTGEN 206-100] Generating core module 'am_addmul_4ns_1ns_6ns_11_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'am_addmul_4ns_2ns_6ns_11_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_28ns_28_4_1': 34 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_28s_28_4_1': 127 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_16s_28_1_1': 127 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_4ns_6ns_9_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_65_5_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_16_1_1': 288 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_4ns_3ns_2_8_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'convolution_func_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 2.462 seconds; current allocated memory: 1.165 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'write_output_func_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'write_output_func_1' pipeline 'VITIS_LOOP_103_1_VITIS_LOOP_105_2_VITIS_LOOP_106_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'write_output_func_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2 seconds. CPU system time: 4 seconds. Elapsed time: 6.094 seconds; current allocated memory: 1.335 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'compute_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] RTL name 'fifo_w16_d2_S' is changed to 'fifo_w16_d2_S_x' due to conflict.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_3/m_axi_gmem1_0_AWVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_3/m_axi_gmem1_0_AWADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_3/m_axi_gmem1_0_AWID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_3/m_axi_gmem1_0_AWLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_3/m_axi_gmem1_0_AWSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_3/m_axi_gmem1_0_AWBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_3/m_axi_gmem1_0_AWLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_3/m_axi_gmem1_0_AWCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_3/m_axi_gmem1_0_AWPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_3/m_axi_gmem1_0_AWQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_3/m_axi_gmem1_0_AWREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_3/m_axi_gmem1_0_AWUSER' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_3/m_axi_gmem1_0_WVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_3/m_axi_gmem1_0_WDATA' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_3/m_axi_gmem1_0_WSTRB' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_3/m_axi_gmem1_0_WLAST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_3/m_axi_gmem1_0_WID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_3/m_axi_gmem1_0_WUSER' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_3/m_axi_gmem1_0_BREADY' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_3/conv2_out_read' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'compute_3'.
+INFO: [HLS 200-740] Implementing PIPO cnn_top_compute_3_input_buf_RAM_AUTO_1R1W using a separate memory for each block
+INFO: [RTMG 210-278] Implementing memory 'cnn_top_compute_3_input_buf_RAM_AUTO_1R1W_memcore' using auto RAMs.
+INFO: [HLS 200-741] Implementing PIPO cnn_top_compute_3_output_buf_RAM_AUTO_1R1W using a single memory for all blocks
+INFO: [RTMG 210-278] Implementing memory 'cnn_top_compute_3_output_buf_RAM_AUTO_1R1W_memcore' using auto RAMs.
+INFO: [HLS 200-740] Implementing PIPO cnn_top_compute_3_local_weights_RAM_AUTO_1R1W using a separate memory for each block
+INFO: [RTMG 210-278] Implementing memory 'cnn_top_compute_3_local_weights_RAM_AUTO_1R1W_memcore' using auto RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_U(cnn_top_fifo_w16_d2_S_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_94_U(cnn_top_fifo_w16_d2_S_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_95_U(cnn_top_fifo_w16_d2_S_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_96_U(cnn_top_fifo_w16_d2_S_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_97_U(cnn_top_fifo_w16_d2_S_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_98_U(cnn_top_fifo_w16_d2_S_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_99_U(cnn_top_fifo_w16_d2_S_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_100_U(cnn_top_fifo_w16_d2_S_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_101_U(cnn_top_fifo_w16_d2_S_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_102_U(cnn_top_fifo_w16_d2_S_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_103_U(cnn_top_fifo_w16_d2_S_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_104_U(cnn_top_fifo_w16_d2_S_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_105_U(cnn_top_fifo_w16_d2_S_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_106_U(cnn_top_fifo_w16_d2_S_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_107_U(cnn_top_fifo_w16_d2_S_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_108_U(cnn_top_fifo_w16_d2_S_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_109_U(cnn_top_fifo_w16_d2_S_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_110_U(cnn_top_fifo_w16_d2_S_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_111_U(cnn_top_fifo_w16_d2_S_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_112_U(cnn_top_fifo_w16_d2_S_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_113_U(cnn_top_fifo_w16_d2_S_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_114_U(cnn_top_fifo_w16_d2_S_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_115_U(cnn_top_fifo_w16_d2_S_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_116_U(cnn_top_fifo_w16_d2_S_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_117_U(cnn_top_fifo_w16_d2_S_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_118_U(cnn_top_fifo_w16_d2_S_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_119_U(cnn_top_fifo_w16_d2_S_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_120_U(cnn_top_fifo_w16_d2_S_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_121_U(cnn_top_fifo_w16_d2_S_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_122_U(cnn_top_fifo_w16_d2_S_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_123_U(cnn_top_fifo_w16_d2_S_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_124_U(cnn_top_fifo_w16_d2_S_x)' using Shift Registers.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.27 seconds; current allocated memory: 1.335 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'read_input_func_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'read_input_func_1' pipeline 'VITIS_LOOP_151_1_VITIS_LOOP_153_2_VITIS_LOOP_154_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'read_input_func_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.275 seconds; current allocated memory: 1.335 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pooling_func_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'pooling_func_1' pipeline 'VITIS_LOOP_163_1_VITIS_LOOP_165_2_VITIS_LOOP_166_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pooling_func_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.118 seconds; current allocated memory: 1.335 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'compute_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_1/pool1_out_read' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'compute_1'.
+INFO: [HLS 200-740] Implementing PIPO cnn_top_compute_1_input_buf_RAM_AUTO_1R1W using a separate memory for each block
+INFO: [RTMG 210-278] Implementing memory 'cnn_top_compute_1_input_buf_RAM_AUTO_1R1W_memcore' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.144 seconds; current allocated memory: 1.335 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'load_params_func_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_VITIS_LOOP_29_3_VITIS_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'load_params_func_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_VITIS_LOOP_29_3_VITIS_s' pipeline 'VITIS_LOOP_25_1_VITIS_LOOP_27_2_VITIS_LOOP_29_3_VITIS_LOOP_30_4' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_VITIS_LOOP_29_3_VITIS_s/m_axi_gmem2_0_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_VITIS_LOOP_29_3_VITIS_s/m_axi_gmem2_0_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_VITIS_LOOP_29_3_VITIS_s/m_axi_gmem2_0_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_VITIS_LOOP_29_3_VITIS_s/m_axi_gmem2_0_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_VITIS_LOOP_29_3_VITIS_s/m_axi_gmem2_0_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_VITIS_LOOP_29_3_VITIS_s/m_axi_gmem2_0_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_VITIS_LOOP_29_3_VITIS_s/m_axi_gmem2_0_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_VITIS_LOOP_29_3_VITIS_s/m_axi_gmem2_0_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_VITIS_LOOP_29_3_VITIS_s/m_axi_gmem2_0_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_VITIS_LOOP_29_3_VITIS_s/m_axi_gmem2_0_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_VITIS_LOOP_29_3_VITIS_s/m_axi_gmem2_0_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_VITIS_LOOP_29_3_VITIS_s/m_axi_gmem2_0_ARUSER' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'load_params_func_Pipeline_VITIS_LOOP_25_1_VITIS_LOOP_27_2_VITIS_LOOP_29_3_VITIS_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.105 seconds; current allocated memory: 1.335 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'load_params_func_Pipeline_VITIS_LOOP_39_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'load_params_func_Pipeline_VITIS_LOOP_39_5' pipeline 'VITIS_LOOP_39_5' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_Pipeline_VITIS_LOOP_39_5/m_axi_gmem2_0_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_Pipeline_VITIS_LOOP_39_5/m_axi_gmem2_0_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_Pipeline_VITIS_LOOP_39_5/m_axi_gmem2_0_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_Pipeline_VITIS_LOOP_39_5/m_axi_gmem2_0_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_Pipeline_VITIS_LOOP_39_5/m_axi_gmem2_0_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_Pipeline_VITIS_LOOP_39_5/m_axi_gmem2_0_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_Pipeline_VITIS_LOOP_39_5/m_axi_gmem2_0_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_Pipeline_VITIS_LOOP_39_5/m_axi_gmem2_0_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_Pipeline_VITIS_LOOP_39_5/m_axi_gmem2_0_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_Pipeline_VITIS_LOOP_39_5/m_axi_gmem2_0_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_Pipeline_VITIS_LOOP_39_5/m_axi_gmem2_0_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_params_func_Pipeline_VITIS_LOOP_39_5/m_axi_gmem2_0_ARUSER' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'load_params_func_Pipeline_VITIS_LOOP_39_5'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.762 seconds; current allocated memory: 1.335 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'load_params_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'load_params_func'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.247 seconds; current allocated memory: 1.335 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'prepare_input_buf_func_Pipeline_VITIS_LOOP_48_1_VITIS_LOOP_50_2_VITIS_LOOP_51_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'prepare_input_buf_func_Pipeline_VITIS_LOOP_48_1_VITIS_LOOP_50_2_VITIS_LOOP_51_3' pipeline 'VITIS_LOOP_48_1_VITIS_LOOP_50_2_VITIS_LOOP_51_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_4ns_6ns_9_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_4ns_3ns_2_8_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'prepare_input_buf_func_Pipeline_VITIS_LOOP_48_1_VITIS_LOOP_50_2_VITIS_LOOP_51_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.157 seconds; current allocated memory: 1.335 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'prepare_input_buf_func_Pipeline_VITIS_LOOP_58_4_VITIS_LOOP_60_5_VITIS_LOOP_61_6' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'prepare_input_buf_func_Pipeline_VITIS_LOOP_58_4_VITIS_LOOP_60_5_VITIS_LOOP_61_6' pipeline 'VITIS_LOOP_58_4_VITIS_LOOP_60_5_VITIS_LOOP_61_6' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_4ns_6ns_9_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_4ns_3ns_2_8_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'prepare_input_buf_func_Pipeline_VITIS_LOOP_58_4_VITIS_LOOP_60_5_VITIS_LOOP_61_6'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.234 seconds; current allocated memory: 1.337 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'prepare_input_buf_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'prepare_input_buf_func'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.236 seconds; current allocated memory: 1.342 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'convolution_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'convolution_func' pipeline 'VITIS_LOOP_74_1_VITIS_LOOP_76_2_VITIS_LOOP_78_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-104] Estimated max fanout for 'convolution_func' is 6241 from HDL expression: ((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_28ns_28_4_1': 34 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_28s_28_4_1': 127 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_16s_28_1_1': 127 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_3ns_5ns_7_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_4ns_6ns_9_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_65_5_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_16_1_1': 288 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_3ns_3ns_2_7_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'convolution_func'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 2.506 seconds; current allocated memory: 1.382 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'write_output_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'write_output_func' pipeline 'VITIS_LOOP_103_1_VITIS_LOOP_105_2_VITIS_LOOP_106_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'write_output_func'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2 seconds. CPU system time: 4 seconds. Elapsed time: 5.839 seconds; current allocated memory: 1.552 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'compute_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] RTL name 'fifo_w16_d2_S' is changed to 'fifo_w16_d2_S_x0' due to conflict.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_2/m_axi_gmem2_0_AWVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_2/m_axi_gmem2_0_AWADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_2/m_axi_gmem2_0_AWID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_2/m_axi_gmem2_0_AWLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_2/m_axi_gmem2_0_AWSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_2/m_axi_gmem2_0_AWBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_2/m_axi_gmem2_0_AWLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_2/m_axi_gmem2_0_AWCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_2/m_axi_gmem2_0_AWPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_2/m_axi_gmem2_0_AWQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_2/m_axi_gmem2_0_AWREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_2/m_axi_gmem2_0_AWUSER' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_2/m_axi_gmem2_0_WVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_2/m_axi_gmem2_0_WDATA' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_2/m_axi_gmem2_0_WSTRB' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_2/m_axi_gmem2_0_WLAST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_2/m_axi_gmem2_0_WID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_2/m_axi_gmem2_0_WUSER' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_2/m_axi_gmem2_0_BREADY' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute_2/conv3_out_read' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'compute_2'.
+INFO: [HLS 200-740] Implementing PIPO cnn_top_compute_2_input_buf_RAM_AUTO_1R1W using a separate memory for each block
+INFO: [RTMG 210-278] Implementing memory 'cnn_top_compute_2_input_buf_RAM_AUTO_1R1W_memcore' using auto RAMs.
+INFO: [HLS 200-741] Implementing PIPO cnn_top_compute_2_output_buf_RAM_AUTO_1R1W using a single memory for all blocks
+INFO: [RTMG 210-278] Implementing memory 'cnn_top_compute_2_output_buf_RAM_AUTO_1R1W_memcore' using auto RAMs.
+INFO: [HLS 200-740] Implementing PIPO cnn_top_compute_2_local_weights_RAM_AUTO_1R1W using a separate memory for each block
+INFO: [RTMG 210-278] Implementing memory 'cnn_top_compute_2_local_weights_RAM_AUTO_1R1W_memcore' using auto RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_U(cnn_top_fifo_w16_d2_S_x0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_125_U(cnn_top_fifo_w16_d2_S_x0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_126_U(cnn_top_fifo_w16_d2_S_x0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_127_U(cnn_top_fifo_w16_d2_S_x0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_128_U(cnn_top_fifo_w16_d2_S_x0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_129_U(cnn_top_fifo_w16_d2_S_x0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_130_U(cnn_top_fifo_w16_d2_S_x0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_131_U(cnn_top_fifo_w16_d2_S_x0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_132_U(cnn_top_fifo_w16_d2_S_x0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_133_U(cnn_top_fifo_w16_d2_S_x0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_134_U(cnn_top_fifo_w16_d2_S_x0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_135_U(cnn_top_fifo_w16_d2_S_x0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_136_U(cnn_top_fifo_w16_d2_S_x0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_137_U(cnn_top_fifo_w16_d2_S_x0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_138_U(cnn_top_fifo_w16_d2_S_x0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_139_U(cnn_top_fifo_w16_d2_S_x0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_140_U(cnn_top_fifo_w16_d2_S_x0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_141_U(cnn_top_fifo_w16_d2_S_x0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_142_U(cnn_top_fifo_w16_d2_S_x0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_143_U(cnn_top_fifo_w16_d2_S_x0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_144_U(cnn_top_fifo_w16_d2_S_x0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_145_U(cnn_top_fifo_w16_d2_S_x0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_146_U(cnn_top_fifo_w16_d2_S_x0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_147_U(cnn_top_fifo_w16_d2_S_x0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_148_U(cnn_top_fifo_w16_d2_S_x0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_149_U(cnn_top_fifo_w16_d2_S_x0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_150_U(cnn_top_fifo_w16_d2_S_x0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_151_U(cnn_top_fifo_w16_d2_S_x0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_152_U(cnn_top_fifo_w16_d2_S_x0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_153_U(cnn_top_fifo_w16_d2_S_x0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_154_U(cnn_top_fifo_w16_d2_S_x0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_bias_155_U(cnn_top_fifo_w16_d2_S_x0)' using Shift Registers.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.827 seconds; current allocated memory: 1.552 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'read_input_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'read_input_func'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.316 seconds; current allocated memory: 1.552 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pooling_func' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'pooling_func' pipeline 'VITIS_LOOP_163_1_VITIS_LOOP_165_2_VITIS_LOOP_166_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pooling_func'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.144 seconds; current allocated memory: 1.552 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'compute' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Setting dangling out port 'compute/output_s_read' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'compute'.
+INFO: [HLS 200-740] Implementing PIPO cnn_top_compute_input_buf_RAM_AUTO_1R1W using a separate memory for each block
+INFO: [RTMG 210-278] Implementing memory 'cnn_top_compute_input_buf_RAM_AUTO_1R1W_memcore' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.532 seconds; current allocated memory: 1.552 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'write_output_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'write_output_top' pipeline 'VITIS_LOOP_203_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'write_output_top'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.115 seconds; current allocated memory: 1.552 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'cnn_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn_top/gmem3' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn_top/gmem4' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn_top/gmem0' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn_top/gmem1' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn_top/gmem2' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn_top/input_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn_top/output_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn_top/conv1_weights' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn_top/conv1_bias' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn_top/conv2_weights' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn_top/conv2_bias' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn_top/conv3_weights' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn_top/conv3_bias' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'cnn_top' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'input_r', 'output_r', 'conv1_weights', 'conv1_bias', 'conv2_weights', 'conv2_bias', 'conv3_weights', 'conv3_bias' and 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'cnn_top'.
+INFO: [RTMG 210-285] Implementing FIFO 'output_r_c_U(cnn_top_fifo_w64_d8_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'input_s_U(cnn_top_fifo_w16_d32_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'conv1_out_U(cnn_top_fifo_w16_d32_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'conv2_out_U(cnn_top_fifo_w16_d32_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'pool1_out_U(cnn_top_fifo_w16_d32_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'conv3_out_U(cnn_top_fifo_w16_d32_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'output_s_U(cnn_top_fifo_w16_d32_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_write_output_top_U0_U(cnn_top_start_for_write_output_top_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_compute_1_U0_U(cnn_top_start_for_compute_1_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_compute_U0_U(cnn_top_start_for_compute_U0)' using Shift Registers.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.923 seconds; current allocated memory: 1.552 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 1.163 seconds; current allocated memory: 1.554 GB.
+INFO: [HLS 200-1603] Design has inferred MAXI bursts and missed bursts, see Vitis HLS GUI synthesis summary report for detailed information.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.227 seconds; current allocated memory: 1.620 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for cnn_top.
+INFO: [VLOG 209-307] Generating Verilog RTL for cnn_top.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 99.30 MHz
+INFO: [HLS 200-112] Total CPU user time: 271 seconds. Total CPU system time: 18 seconds. Total elapsed time: 451.499 seconds; peak allocated memory: 1.620 GB.
+INFO: [v++ 60-791] Total elapsed time: 0h 7m 35s

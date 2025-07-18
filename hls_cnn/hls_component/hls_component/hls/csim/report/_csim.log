@@ -1,0 +1,12 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+make: 'csim.exe' is up to date.
+Output[0] = 1.3125
+Output[1] = -0.273682
+Output[2] = 1.5437
+Output[3] = 0.878662
+Output[4] = 0.885254
+Test completed with 0 errors
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 8192
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

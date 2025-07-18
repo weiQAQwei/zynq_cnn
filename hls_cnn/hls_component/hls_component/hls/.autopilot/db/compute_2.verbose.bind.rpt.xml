@@ -1,0 +1,49 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'compute_2'" level="0">
+<item name = "Date">Fri Jul 18 13:03:50 2025
+</item>
+<item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
+<item name = "Project">hls_component</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 10.071 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">623750, 623750, 6.282 ms, 6.282 ms, 623750, 623750, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_load_params_func_fu_74">load_params_func, 27767, 27767, 0.278 ms, 0.278 ms, 27767, 27767, no</column>
+<column name="grp_prepare_input_buf_func_fu_90">prepare_input_buf_func, 15751, 15751, 0.158 ms, 0.158 ms, 15751, 15751, no</column>
+<column name="grp_convolution_func_fu_98">convolution_func, 589832, 589832, 5.898 ms, 5.898 ms, 589825, 589825, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_write_output_func_fu_106">write_output_func, 6146, 6146, 61.460 us, 61.460 us, 6145, 6145, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]D:\vitis\1\platform\export\platform\sw\boot\fsbl.elf
+	D:\vitis\1\hello_world\_ide\bitstream\design_1_wrapper.bit
+	D:\vitis\1\hello_world\build\hello_world.elf
+}

@@ -1,0 +1,159 @@
+<ENTRY>
+{
+ "thisFile": "D:/vitis\\projects_learning\\hls_cnn\\hls_component\\hls_component\\hls_component.hlsrun_package_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "07/18/25 13:07:36",
+ "timestampMillis": "1752815256713",
+ "buildStep": {
+  "cmdId": "c93ce57b-f8dc-4457-aa3e-85727841c3da",
+  "name": "vitis-run",
+  "logFile": "D:/vitis\\projects_learning\\hls_cnn\\hls_component\\hls_component\\logs\\hls_component.steps.log",
+  "commandLine": "C:/Xilinx/2025.1/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --package --config D:\\vitis\\projects_learning\\hls_cnn\\hls_component\\hls_config.cfg --work_dir hls_component ",
+  "args": [
+   "--mode",
+   "hls",
+   "--package",
+   "--config",
+   "D:\\vitis\\projects_learning\\hls_cnn\\hls_component\\hls_config.cfg",
+   "--work_dir",
+   "hls_component"
+  ],
+  "iniFiles": [],
+  "cwd": "D:\\vitis\\projects_learning\\hls_cnn\\hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/18/25 13:07:36",
+ "timestampMillis": "1752815256713",
+ "status": {
+  "cmdId": "c93ce57b-f8dc-4457-aa3e-85727841c3da",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "07/18/25 13:07:40",
+ "timestampMillis": "1752815260414",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IP",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "cnn_top",
+     "file": "D:/vitis\\projects_learning\\hls_cnn\\hls_component\\hls_component\\cnn_top.zip",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "D:/vitis\\projects_learning\\hls_cnn\\hls_component\\cnn_layer.cpp",
+     "D:/vitis\\projects_learning\\hls_cnn\\hls_component\\cnn_layer.h",
+     "D:/vitis\\projects_learning\\hls_cnn\\hls_component\\weights.cpp",
+     "D:/vitis\\projects_learning\\hls_cnn\\hls_component\\weights.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "07/18/25 13:07:40",
+ "timestampMillis": "1752815260415",
+ "buildStep": {
+  "cmdId": "5d0a90f2-fcd6-4551-b8d9-bd440a301de4",
+  "name": "",
+  "logFile": "D:/vitis\\projects_learning\\hls_cnn\\hls_component\\hls_component\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "D:\\vitis\\projects_learning\\hls_cnn\\hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/18/25 13:07:40",
+ "timestampMillis": "1752815260416",
+ "status": {
+  "cmdId": "5d0a90f2-fcd6-4551-b8d9-bd440a301de4",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/18/25 13:07:48",
+ "timestampMillis": "1752815268618",
+ "status": {
+  "cmdId": "5d0a90f2-fcd6-4551-b8d9-bd440a301de4",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/18/25 13:07:48",
+ "timestampMillis": "1752815268721",
+ "status": {
+  "cmdId": "c93ce57b-f8dc-4457-aa3e-85727841c3da",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/18/25 13:07:48",
+ "timestampMillis": "1752815268722",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/18/25 13:07:48",
+ "timestampMillis": "1752815268722",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

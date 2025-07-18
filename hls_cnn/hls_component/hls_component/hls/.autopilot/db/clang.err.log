@@ -1,0 +1,7 @@
+cnn_layer.cpp:75:9: warning: missing argument for 'variable' [-Winvalid-hls-pragmas]
+#pragma HLS bind_op op=mul impl=fabric latency=0
+        ^
+cnn_layer.cpp:76:9: warning: missing argument for 'variable' [-Winvalid-hls-pragmas]
+#pragma HLS bind_op op=add impl=fabric latency=0
+        ^
+2 warnings generated.

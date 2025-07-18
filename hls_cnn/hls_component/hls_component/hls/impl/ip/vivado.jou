@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Fri Jul 18 13:07:42 2025
+# Process ID         : 29692
+# Current directory  : D:/vitis/projects_learning/hls_cnn/hls_component/hls_component/hls/impl/ip
+# Command line       : vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file           : D:/vitis/projects_learning/hls_cnn/hls_component/hls_component/hls/impl/ip/vivado.log
+# Journal file       : D:/vitis/projects_learning/hls_cnn/hls_component/hls_component/hls/impl/ip\vivado.jou
+# Running On         : WEI1
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 7 9700X 8-Core Processor             
+# CPU Frequency      : 3800 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 8
+# Host memory        : 51175 MB
+# Swap memory        : 3221 MB
+# Total Virtual      : 54396 MB
+# Available Virtual  : 15715 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace

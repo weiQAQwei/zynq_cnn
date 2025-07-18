@@ -1,0 +1,40 @@
+[
+  {
+    "directory": "D:\\vitis\\zynq_cnn\\zynq_cnn\\hls_cnn\\hls_component",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=cnn_top",
+      "-c",
+      "D:\\vitis\\zynq_cnn\\zynq_cnn\\hls_cnn\\hls_component\\cnn_layer.cpp"
+    ],
+    "file": "D:\\vitis\\zynq_cnn\\zynq_cnn\\hls_cnn\\hls_component\\cnn_layer.cpp"
+  },
+  {
+    "directory": "D:\\vitis\\zynq_cnn\\zynq_cnn\\hls_cnn\\hls_component",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=cnn_top",
+      "-c",
+      "D:\\vitis\\zynq_cnn\\zynq_cnn\\hls_cnn\\hls_component\\weights.cpp"
+    ],
+    "file": "D:\\vitis\\zynq_cnn\\zynq_cnn\\hls_cnn\\hls_component\\weights.cpp"
+  },
+  {
+    "directory": "D:\\vitis\\zynq_cnn\\zynq_cnn\\hls_cnn\\hls_component",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\include",
+      "-c",
+      "D:\\vitis\\zynq_cnn\\zynq_cnn\\hls_cnn\\hls_component\\test.cpp"
+    ],
+    "file": "D:\\vitis\\zynq_cnn\\zynq_cnn\\hls_cnn\\hls_component\\test.cpp"
+  }
+]

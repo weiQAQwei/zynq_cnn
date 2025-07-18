@@ -1,0 +1,17 @@
+[
+{
+  "directory": "D:/vitis/1/hello_world/build",
+  "command": "C:\\Xilinx\\2025.1\\Vitis\\gnu\\aarch32\\nt\\gcc-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe -isystem D:/vitis/1/platform/export/platform/sw/standalone_ps7_cortexa9_0/include -isystem C:/Xilinx/2025.1/gnu/aarch32/nt/gcc-arm-none-eabi/x86_64-oesdk-mingw32/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include -isystem C:/Xilinx/2025.1/gnu/aarch32/nt/gcc-arm-none-eabi/x86_64-oesdk-mingw32/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include-fixed -isystem C:/Xilinx/2025.1/Vitis/gnu/aarch32/nt/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include  -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=D:/vitis/1/platform/export/platform/sw/standalone_ps7_cortexa9_0/Xilinx.spec -ID:/vitis/1/platform/export/platform/sw/standalone_ps7_cortexa9_0/include  -Wextra      -O0  -g3     -U__clang__ -o CMakeFiles\\hello_world.elf.dir\\helloworld.c.obj -c D:\\vitis\\1\\hello_world\\src\\helloworld.c",
+  "file": "D:\\vitis\\1\\hello_world\\src\\helloworld.c"
+},
+{
+  "directory": "D:/vitis/1/hello_world/build",
+  "command": "C:\\Xilinx\\2025.1\\Vitis\\gnu\\aarch32\\nt\\gcc-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe -isystem D:/vitis/1/platform/export/platform/sw/standalone_ps7_cortexa9_0/include -isystem C:/Xilinx/2025.1/gnu/aarch32/nt/gcc-arm-none-eabi/x86_64-oesdk-mingw32/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include -isystem C:/Xilinx/2025.1/gnu/aarch32/nt/gcc-arm-none-eabi/x86_64-oesdk-mingw32/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include-fixed -isystem C:/Xilinx/2025.1/Vitis/gnu/aarch32/nt/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include  -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=D:/vitis/1/platform/export/platform/sw/standalone_ps7_cortexa9_0/Xilinx.spec -ID:/vitis/1/platform/export/platform/sw/standalone_ps7_cortexa9_0/include  -Wextra      -O0  -g3     -U__clang__ -o CMakeFiles\\hello_world.elf.dir\\platform.c.obj -c D:\\vitis\\1\\hello_world\\src\\platform.c",
+  "file": "D:\\vitis\\1\\hello_world\\src\\platform.c"
+},
+{
+  "directory": "D:/vitis/1/hello_world/build",
+  "command": "C:\\Xilinx\\2025.1\\Vitis\\gnu\\aarch32\\nt\\gcc-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe -isystem D:/vitis/1/platform/export/platform/sw/standalone_ps7_cortexa9_0/include -isystem C:/Xilinx/2025.1/gnu/aarch32/nt/gcc-arm-none-eabi/x86_64-oesdk-mingw32/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include -isystem C:/Xilinx/2025.1/gnu/aarch32/nt/gcc-arm-none-eabi/x86_64-oesdk-mingw32/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include-fixed -isystem C:/Xilinx/2025.1/Vitis/gnu/aarch32/nt/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include  -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=D:/vitis/1/platform/export/platform/sw/standalone_ps7_cortexa9_0/Xilinx.spec -ID:/vitis/1/platform/export/platform/sw/standalone_ps7_cortexa9_0/include  -Wextra      -O0  -g3     -U__clang__ -o CMakeFiles\\hello_world.elf.dir\\weights.c.obj -c D:\\vitis\\1\\hello_world\\src\\weights.c",
+  "file": "D:\\vitis\\1\\hello_world\\src\\weights.c"
+}
+]

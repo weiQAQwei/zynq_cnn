@@ -1,0 +1,177 @@
+
+
+================================================================
+== Vitis HLS Report for 'compute_4'
+================================================================
+* Date:           Fri Jul 18 13:03:38 2025
+
+* Version:        2025.1 (Build 6135595 on May 21 2025)
+* Project:        hls_component
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.300 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-------+-------+---------+
+    |  Latency (cycles) |  Latency (absolute) |    Interval   | Pipeline|
+    |   min   |   max   |    min   |    max   |  min  |  max  |   Type  |
+    +---------+---------+----------+----------+-------+-------+---------+
+    |    43627|    43627|  0.436 ms|  0.436 ms|  43627|  43627|       no|
+    +---------+---------+----------+----------+-------+-------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 6
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 7.30>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%this_bias_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %this_bias"   --->   Operation 7 'read' 'this_bias_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%this_weights_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %this_weights"   --->   Operation 8 'read' 'this_weights_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%input_buf = alloca i32 1" [cnn_layer.cpp:115]   --->   Operation 9 'alloca' 'input_buf' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%input_buf_1 = alloca i32 1" [cnn_layer.cpp:115]   --->   Operation 10 'alloca' 'input_buf_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%input_buf_2 = alloca i32 1" [cnn_layer.cpp:115]   --->   Operation 11 'alloca' 'input_buf_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%input_buf_3 = alloca i32 1" [cnn_layer.cpp:115]   --->   Operation 12 'alloca' 'input_buf_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%input_buf_4 = alloca i32 1" [cnn_layer.cpp:115]   --->   Operation 13 'alloca' 'input_buf_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%input_buf_5 = alloca i32 1" [cnn_layer.cpp:115]   --->   Operation 14 'alloca' 'input_buf_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%input_buf_6 = alloca i32 1" [cnn_layer.cpp:115]   --->   Operation 15 'alloca' 'input_buf_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%input_buf_7 = alloca i32 1" [cnn_layer.cpp:115]   --->   Operation 16 'alloca' 'input_buf_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%input_buf_8 = alloca i32 1" [cnn_layer.cpp:115]   --->   Operation 17 'alloca' 'input_buf_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%output_buf = alloca i32 1" [cnn_layer.cpp:116]   --->   Operation 18 'alloca' 'output_buf' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%local_weights = alloca i32 1" [cnn_layer.cpp:118]   --->   Operation 19 'alloca' 'local_weights' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%local_weights_1 = alloca i32 1" [cnn_layer.cpp:118]   --->   Operation 20 'alloca' 'local_weights_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%local_weights_2 = alloca i32 1" [cnn_layer.cpp:118]   --->   Operation 21 'alloca' 'local_weights_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%local_weights_3 = alloca i32 1" [cnn_layer.cpp:118]   --->   Operation 22 'alloca' 'local_weights_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%local_weights_4 = alloca i32 1" [cnn_layer.cpp:118]   --->   Operation 23 'alloca' 'local_weights_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%local_weights_5 = alloca i32 1" [cnn_layer.cpp:118]   --->   Operation 24 'alloca' 'local_weights_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%local_weights_6 = alloca i32 1" [cnn_layer.cpp:118]   --->   Operation 25 'alloca' 'local_weights_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%local_weights_7 = alloca i32 1" [cnn_layer.cpp:118]   --->   Operation 26 'alloca' 'local_weights_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%local_weights_8 = alloca i32 1" [cnn_layer.cpp:118]   --->   Operation 27 'alloca' 'local_weights_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%local_bias = alloca i32 1" [cnn_layer.cpp:119]   --->   Operation 28 'alloca' 'local_bias' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [2/2] (7.30ns)   --->   "%call_ln121 = call void @load_params_func.2, i16 %gmem2, i32 %this_weights_read, i16 %gmem3, i32 %this_bias_read, i16 %local_weights, i16 %local_weights_1, i16 %local_weights_2, i16 %local_weights_3, i16 %local_weights_4, i16 %local_weights_5, i16 %local_weights_6, i16 %local_weights_7, i16 %local_weights_8, i16 %local_bias" [cnn_layer.cpp:121]   --->   Operation 29 'call' 'call_ln121' <Predicate = true> <Delay = 7.30> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 30 [2/2] (0.00ns)   --->   "%call_ln122 = call void @prepare_input_buf_func.2, i16 %input_s, i16 %input_buf, i16 %input_buf_1, i16 %input_buf_2, i16 %input_buf_3, i16 %input_buf_4, i16 %input_buf_5, i16 %input_buf_6, i16 %input_buf_7, i16 %input_buf_8" [cnn_layer.cpp:122]   --->   Operation 30 'call' 'call_ln122' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 31 [1/2] (0.00ns)   --->   "%call_ln121 = call void @load_params_func.2, i16 %gmem2, i32 %this_weights_read, i16 %gmem3, i32 %this_bias_read, i16 %local_weights, i16 %local_weights_1, i16 %local_weights_2, i16 %local_weights_3, i16 %local_weights_4, i16 %local_weights_5, i16 %local_weights_6, i16 %local_weights_7, i16 %local_weights_8, i16 %local_bias" [cnn_layer.cpp:121]   --->   Operation 31 'call' 'call_ln121' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 32 [1/2] (0.00ns)   --->   "%call_ln122 = call void @prepare_input_buf_func.2, i16 %input_s, i16 %input_buf, i16 %input_buf_1, i16 %input_buf_2, i16 %input_buf_3, i16 %input_buf_4, i16 %input_buf_5, i16 %input_buf_6, i16 %input_buf_7, i16 %input_buf_8" [cnn_layer.cpp:122]   --->   Operation 32 'call' 'call_ln122' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 33 [2/2] (0.00ns)   --->   "%call_ln123 = call void @convolution_func.2, i16 %input_buf, i16 %input_buf_1, i16 %input_buf_2, i16 %input_buf_3, i16 %input_buf_4, i16 %input_buf_5, i16 %input_buf_6, i16 %input_buf_7, i16 %input_buf_8, i16 %local_weights, i16 %local_weights_1, i16 %local_weights_2, i16 %local_weights_3, i16 %local_weights_4, i16 %local_weights_5, i16 %local_weights_6, i16 %local_weights_7, i16 %local_weights_8, i16 %local_bias, i15 %output_buf" [cnn_layer.cpp:123]   --->   Operation 33 'call' 'call_ln123' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 1.28>
+ST_4 : Operation 34 [1/2] (1.28ns)   --->   "%call_ln123 = call void @convolution_func.2, i16 %input_buf, i16 %input_buf_1, i16 %input_buf_2, i16 %input_buf_3, i16 %input_buf_4, i16 %input_buf_5, i16 %input_buf_6, i16 %input_buf_7, i16 %input_buf_8, i16 %local_weights, i16 %local_weights_1, i16 %local_weights_2, i16 %local_weights_3, i16 %local_weights_4, i16 %local_weights_5, i16 %local_weights_6, i16 %local_weights_7, i16 %local_weights_8, i16 %local_bias, i15 %output_buf" [cnn_layer.cpp:123]   --->   Operation 34 'call' 'call_ln123' <Predicate = true> <Delay = 1.28> <CoreType = "Generic">   --->   Generic Core
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 35 [2/2] (0.00ns)   --->   "%call_ln124 = call void @write_output_func.2, i15 %output_buf, i16 %conv1_out" [cnn_layer.cpp:124]   --->   Operation 35 'call' 'call_ln124' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 6 <SV = 5> <Delay = 4.12>
+ST_6 : Operation 36 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %conv1_out, void @empty_0, i32 0, i32 0, void @empty_13, i32 0, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 36 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 37 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %input_s, void @empty_0, i32 0, i32 0, void @empty_13, i32 0, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 37 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 38 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %gmem3, void @empty_15, i32 0, i32 0, void @empty_13, i32 0, i32 0, void @empty_7, void @empty_4, void @empty_13, i32 16, i32 16, i32 32, i32 32, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 38 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 39 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %gmem2, void @empty_15, i32 0, i32 0, void @empty_13, i32 0, i32 0, void @empty_6, void @empty_4, void @empty_13, i32 16, i32 16, i32 32, i32 32, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 39 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 40 [1/2] (4.12ns)   --->   "%call_ln124 = call void @write_output_func.2, i15 %output_buf, i16 %conv1_out" [cnn_layer.cpp:124]   --->   Operation 40 'call' 'call_ln124' <Predicate = true> <Delay = 4.12> <CoreType = "Generic">   --->   Generic Core
+ST_6 : Operation 41 [1/1] (0.00ns)   --->   "%ret_ln125 = ret" [cnn_layer.cpp:125]   --->   Operation 41 'ret' 'ret_ln125' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 7.300ns
+The critical path consists of the following:
+	wire read operation ('this_bias_read') on port 'this_bias' [11]  (0.000 ns)
+	'call' operation 0 bit ('call_ln121', cnn_layer.cpp:121) to 'load_params_func.2' [33]  (7.300 ns)
+
+ <State 2>: 0.000ns
+The critical path consists of the following:
+
+ <State 3>: 0.000ns
+The critical path consists of the following:
+
+ <State 4>: 1.282ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln123', cnn_layer.cpp:123) to 'convolution_func.2' [35]  (1.282 ns)
+
+ <State 5>: 0.000ns
+The critical path consists of the following:
+
+ <State 6>: 4.124ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln124', cnn_layer.cpp:124) to 'write_output_func.2' [36]  (4.124 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,38 @@
+  **** HLS Build v2025.1 6135595
+INFO: [HLS 200-2005] Using work_dir D:/vitis/projects_learning/hls_cnn/hls_component/hls_component 
+INFO: [HLS 200-2176] Writing Vitis IDE component file D:/vitis/projects_learning/hls_cnn/hls_component/hls_component/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'D:/vitis/projects_learning/hls_cnn/hls_component/hls_component'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file D:/vitis/projects_learning/hls_cnn/hls_component/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=cnn_layer.cpp' from D:/vitis/projects_learning/hls_cnn/hls_component/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'D:/vitis/projects_learning/hls_cnn/hls_component/cnn_layer.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=cnn_layer.h' from D:/vitis/projects_learning/hls_cnn/hls_component/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'D:/vitis/projects_learning/hls_cnn/hls_component/cnn_layer.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=weights.cpp' from D:/vitis/projects_learning/hls_cnn/hls_component/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'D:/vitis/projects_learning/hls_cnn/hls_component/weights.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=weights.h' from D:/vitis/projects_learning/hls_cnn/hls_component/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'D:/vitis/projects_learning/hls_cnn/hls_component/weights.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=test.cpp' from D:/vitis/projects_learning/hls_cnn/hls_component/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding test bench file 'D:/vitis/projects_learning/hls_cnn/hls_component/test.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=cnn_top' from D:/vitis/projects_learning/hls_cnn/hls_component/hls_config.cfg(12)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from D:/vitis/projects_learning/hls_cnn/hls_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z020clg400-2' from D:/vitis/projects_learning/hls_cnn/hls_component/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-2'
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from D:/vitis/projects_learning/hls_cnn/hls_component/hls_config.cfg(5)
+INFO: [HLS 200-1465] Applying config ini 'syn.interface.m_axi_addr64=0' from D:/vitis/projects_learning/hls_cnn/hls_component/hls_config.cfg(13)
+INFO: [HLS 200-2176] Writing Vitis IDE component file D:/vitis/projects_learning/hls_cnn/hls_component/hls_component/vitis-comp.json
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../test.cpp in debug mode
+   Compiling ../../../../cnn_layer.cpp in debug mode
+   Generating csim.exe
+out 0 : 4096out 1 : 4096out 2 : 4096out 3 : 4096out 4 : 4096out 5 : 4096out 6 : 4096out 7 : 4096out 8 : 4096out 9 : 4096out 10 : 4096out 11 : 4096out 12 : 4096out 13 : 4096out 14 : 4096out 15 : 4096out 16 : 4096out 17 : 4096out 18 : 4096out 19 : 4096out 20 : 4096out 21 : 4096out 22 : 4096out 23 : 4096out 24 : 4096out 25 : 4096out 26 : 4096out 27 : 4096out 28 : 4096out 29 : 4096out 30 : 4096out 31 : 4096out 32 : 4096out 33 : 4096out 34 : 4096out 35 : 4096out 36 : 4096out 37 : 4096out 38 : 4096out 39 : 4096out 40 : 4096out 41 : 4096out 42 : 4096out 43 : 4096out 44 : 4096out 45 : 4096out 46 : 4096out 47 : 4096out 48 : 4096out 49 : 4096out 50 : 4096out 51 : 4096out 52 : 4096out 53 : 4096out 54 : 4096out 55 : 4096out 56 : 4096out 57 : 4096out 58 : 4096out 59 : 4096out 60 : 4096out 61 : 4096out 62 : 4096out 63 : 4096out 64 : 4096out 65 : 4096out 66 : 4096out 67 : 4096out 68 : 4096out 69 : 4096out 70 : 4096out 71 : 4096out 72 : 4096out 73 : 4096out 74 : 4096out 75 : 4096out 76 : 4096out 77 : 4096out 78 : 4096out 79 : 4096out 80 : 4096out 81 : 4096out 82 : 4096out 83 : 4096out 84 : 4096out 85 : 4096out 86 : 4096out 87 : 4096out 88 : 4096out 89 : 4096out 90 : 4096out 91 : 4096out 92 : 4096out 93 : 4096out 94 : 4096out 95 : 4096out 96 : 4096out 97 : 4096out 98 : 4096out 99 : 4096out 100 : 4096out 101 : 4096out 102 : 4096out 103 : 4096out 104 : 4096out 105 : 4096out 106 : 4096out 107 : 4096out 108 : 4096out 109 : 4096out 110 : 4096out 111 : 4096out 112 : 4096out 113 : 4096out 114 : 4096out 115 : 4096out 116 : 4096out 117 : 4096out 118 : 4096out 119 : 4096out 120 : 4096out 121 : 4096out 122 : 4096out 123 : 4096out 124 : 4096out 125 : 4096out 126 : 4096out 127 : 4096out 128 : 4096out 129 : 4096out 130 : 4096out 131 : 4096out 132 : 4096out 133 : 4096out 134 : 4096out 135 : 4096out 136 : 4096out 137 : 4096out 138 : 4096out 139 : 4096out 140 : 4096out 141 : 4096out 142 : 4096out 143 : 4096out 144 : 4096out 145 : 4096out 146 : 4096out 147 : 4096out 148 : 4096out 149 : 4096out 150 : 4096out 151 : 4096out 152 : 4096out 153 : 4096out 154 : 4096out 155 : 4096out 156 : 4096out 157 : 4096out 158 : 4096out 159 : 4096out 160 : 4096out 161 : 4096out 162 : 4096out 163 : 4096out 164 : 4096out 165 : 4096out 166 : 4096out 167 : 4096out 168 : 4096out 169 : 4096out 170 : 4096out 171 : 4096out 172 : 4096out 173 : 4096out 174 : 4096out 175 : 4096out 176 : 4096out 177 : 4096out 178 : 4096out 179 : 4096out 180 : 4096out 181 : 4096out 182 : 4096out 183 : 4096out 184 : 4096out 185 : 4096out 186 : 4096out 187 : 4096out 188 : 4096out 189 : 4096out 190 : 4096out 191 : 4096out 192 : 4096out 193 : 4096out 194 : 4096out 195 : 4096out 196 : 4096out 197 : 4096out 198 : 4096out 199 : 4096out 200 : 4096out 201 : 4096out 202 : 4096out 203 : 4096out 204 : 4096out 205 : 4096out 206 : 4096out 207 : 4096out 208 : 4096out 209 : 4096out 210 : 4096out 211 : 4096out 212 : 4096out 213 : 4096out 214 : 4096out 215 : 4096out 216 : 4096out 217 : 4096out 218 : 4096out 219 : 4096out 220 : 4096out 221 : 4096out 222 : 4096out 223 : 4096out 224 : 4096out 225 : 4096out 226 : 4096out 227 : 4096out 228 : 4096out 229 : 4096out 230 : 4096out 231 : 4096out 232 : 4096out 233 : 4096out 234 : 4096out 235 : 4096out 236 : 4096out 237 : 4096out 238 : 4096out 239 : 4096out 240 : 4096out 241 : 4096out 242 : 4096out 243 : 4096out 244 : 4096out 245 : 4096out 246 : 4096out 247 : 4096out 248 : 4096out 249 : 4096out 250 : 4096out 251 : 4096out 252 : 4096out 253 : 4096out 254 : 4096out 255 : 4096Test completed with 0 errors
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 256
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 10.052 seconds; peak allocated memory: 391.484 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 13s

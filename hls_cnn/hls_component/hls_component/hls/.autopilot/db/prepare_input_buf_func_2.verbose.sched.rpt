@@ -1,0 +1,130 @@
+
+
+================================================================
+== Vitis HLS Report for 'prepare_input_buf_func_2'
+================================================================
+* Date:           Fri Jul 18 13:03:36 2025
+
+* Version:        2025.1 (Build 6135595 on May 21 2025)
+* Project:        hls_component
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.686 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+    |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+    +---------+---------+-----------+-----------+------+------+---------+
+    |     1571|     1571|  15.710 us|  15.710 us|  1571|  1571|       no|
+    +---------+---------+-----------+-----------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 5 [2/2] (0.00ns)   --->   "%call_ln0 = call void @prepare_input_buf_func.2_Pipeline_VITIS_LOOP_51_2_VITIS_LOOP_52_3, i16 %input_buf_2_2, i16 %input_buf_2_1, i16 %input_buf_2_0, i16 %input_buf_1_2, i16 %input_buf_1_1, i16 %input_buf_1_0, i16 %input_buf_0_2, i16 %input_buf_0_1, i16 %input_buf_0_0"   --->   Operation 5 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 6 [1/2] (0.00ns)   --->   "%call_ln0 = call void @prepare_input_buf_func.2_Pipeline_VITIS_LOOP_51_2_VITIS_LOOP_52_3, i16 %input_buf_2_2, i16 %input_buf_2_1, i16 %input_buf_2_0, i16 %input_buf_1_2, i16 %input_buf_1_1, i16 %input_buf_1_0, i16 %input_buf_0_2, i16 %input_buf_0_1, i16 %input_buf_0_0"   --->   Operation 6 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 7 [2/2] (0.00ns)   --->   "%call_ln0 = call void @prepare_input_buf_func.2_Pipeline_VITIS_LOOP_59_4_VITIS_LOOP_61_5, i16 %input_buf_2_2, i16 %input_buf_2_1, i16 %input_buf_2_0, i16 %input_buf_1_2, i16 %input_buf_1_1, i16 %input_buf_1_0, i16 %input_buf_0_2, i16 %input_buf_0_1, i16 %input_buf_0_0, i16 %input_s"   --->   Operation 7 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %input_s, void @empty_0, i32 0, i32 0, void @empty_13, i32 0, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 9 [1/2] (0.00ns)   --->   "%call_ln0 = call void @prepare_input_buf_func.2_Pipeline_VITIS_LOOP_59_4_VITIS_LOOP_61_5, i16 %input_buf_2_2, i16 %input_buf_2_1, i16 %input_buf_2_0, i16 %input_buf_1_2, i16 %input_buf_1_1, i16 %input_buf_1_0, i16 %input_buf_0_2, i16 %input_buf_0_1, i16 %input_buf_0_0, i16 %input_s"   --->   Operation 9 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 10 [1/1] (0.00ns)   --->   "%ret_ln68 = ret" [cnn_layer.cpp:68]   --->   Operation 10 'ret' 'ret_ln68' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 0.000ns
+The critical path consists of the following:
+
+ <State 2>: 0.000ns
+The critical path consists of the following:
+
+ <State 3>: 0.000ns
+The critical path consists of the following:
+
+ <State 4>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

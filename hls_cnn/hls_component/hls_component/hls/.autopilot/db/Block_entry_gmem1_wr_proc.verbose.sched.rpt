@@ -1,0 +1,192 @@
+
+
+================================================================
+== Vitis HLS Report for 'Block_entry_gmem1_wr_proc'
+================================================================
+* Date:           Fri Jul 18 13:03:52 2025
+
+* Version:        2025.1 (Build 6135595 on May 21 2025)
+* Project:        hls_component
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.300 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+    |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+    +---------+---------+-----------+-----------+------+------+---------+
+    |     1554|     1554|  15.540 us|  15.540 us|  1554|  1554|       no|
+    +---------+---------+-----------+-----------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 10
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.24>
+ST_1 : Operation 11 [1/1] ( I:3.24ns O:3.24ns )   --->   "%output_r_read = read i32 @_ssdm_op_Read.ap_fifo.i32P0A, i32 %output_r"   --->   Operation 11 'read' 'output_r_read' <Predicate = true> <Delay = 3.24> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.24> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 8> <FIFO>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i31 @_ssdm_op_PartSelect.i31.i32.i32.i32, i32 %output_r_read, i32 1, i32 31" [cnn_layer.cpp:250]   --->   Operation 12 'partselect' 'trunc_ln' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%sext_ln250 = sext i31 %trunc_ln" [cnn_layer.cpp:250]   --->   Operation 13 'sext' 'sext_ln250' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%gmem1_addr = getelementptr i16 %gmem1, i32 %sext_ln250" [cnn_layer.cpp:250]   --->   Operation 14 'getelementptr' 'gmem1_addr' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 7.30>
+ST_2 : Operation 15 [1/1] (7.30ns)   --->   "%gmem1_addr_req = writereq i1 @_ssdm_op_WriteReq.m_axi.i16P1A, i16 %gmem1_addr, i32 1" [cnn_layer.cpp:250]   --->   Operation 15 'writereq' 'gmem1_addr_req' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 9> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 3 <SV = 2> <Delay = 7.30>
+ST_3 : Operation 16 [1/1] (7.30ns)   --->   "%write_ln250 = write void @_ssdm_op_Write.m_axi.i16P1A, i16 %gmem1_addr, i16 8, i2 3" [cnn_layer.cpp:250]   --->   Operation 16 'write' 'write_ln250' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 5> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 4 <SV = 3> <Delay = 7.30>
+ST_4 : Operation 17 [5/5] (7.30ns)   --->   "%gmem1_addr_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i16P1A, i16 %gmem1_addr" [cnn_layer.cpp:250]   --->   Operation 17 'writeresp' 'gmem1_addr_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 5 <SV = 4> <Delay = 7.30>
+ST_5 : Operation 18 [4/5] (7.30ns)   --->   "%gmem1_addr_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i16P1A, i16 %gmem1_addr" [cnn_layer.cpp:250]   --->   Operation 18 'writeresp' 'gmem1_addr_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 6 <SV = 5> <Delay = 7.30>
+ST_6 : Operation 19 [3/5] (7.30ns)   --->   "%gmem1_addr_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i16P1A, i16 %gmem1_addr" [cnn_layer.cpp:250]   --->   Operation 19 'writeresp' 'gmem1_addr_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 7 <SV = 6> <Delay = 7.30>
+ST_7 : Operation 20 [2/5] (7.30ns)   --->   "%gmem1_addr_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i16P1A, i16 %gmem1_addr" [cnn_layer.cpp:250]   --->   Operation 20 'writeresp' 'gmem1_addr_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 8 <SV = 7> <Delay = 7.30>
+ST_8 : Operation 21 [1/5] (7.30ns)   --->   "%gmem1_addr_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i16P1A, i16 %gmem1_addr" [cnn_layer.cpp:250]   --->   Operation 21 'writeresp' 'gmem1_addr_resp' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 9 <SV = 8> <Delay = 7.30>
+ST_9 : Operation 22 [2/2] (7.30ns)   --->   "%call_ln251 = call void @write_output_top, i16 %output_s, i16 %gmem1, i32 %output_r_read" [cnn_layer.cpp:251]   --->   Operation 22 'call' 'call_ln251' <Predicate = true> <Delay = 7.30> <CoreType = "Generic">   --->   Generic Core
+
+State 10 <SV = 9> <Delay = 0.00>
+ST_10 : Operation 23 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %output_r, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str, i32 4294967295, i32 0, i32 0"   --->   Operation 23 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 24 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %output_s, void @empty_0, i32 0, i32 0, void @empty_13, i32 0, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 24 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 25 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %gmem1, void @empty_15, i32 0, i32 0, void @empty_13, i32 0, i32 512, void @empty_5, void @empty_4, void @empty_13, i32 16, i32 16, i32 32, i32 32, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 25 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 26 [1/2] (0.00ns)   --->   "%call_ln251 = call void @write_output_top, i16 %output_s, i16 %gmem1, i32 %output_r_read" [cnn_layer.cpp:251]   --->   Operation 26 'call' 'call_ln251' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_10 : Operation 27 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 27 'ret' 'ret_ln0' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 3.240ns
+The critical path consists of the following:
+	fifo read operation ('output_r_read') on port 'output_r' [5]  (3.240 ns)
+
+ <State 2>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('gmem1_addr_req', cnn_layer.cpp:250) on port 'gmem1' (cnn_layer.cpp:250) [11]  (7.300 ns)
+
+ <State 3>: 7.300ns
+The critical path consists of the following:
+	bus write operation ('write_ln250', cnn_layer.cpp:250) on port 'gmem1' (cnn_layer.cpp:250) [12]  (7.300 ns)
+
+ <State 4>: 7.300ns
+The critical path consists of the following:
+	bus response operation ('gmem1_addr_resp', cnn_layer.cpp:250) on port 'gmem1' (cnn_layer.cpp:250) [13]  (7.300 ns)
+
+ <State 5>: 7.300ns
+The critical path consists of the following:
+	bus response operation ('gmem1_addr_resp', cnn_layer.cpp:250) on port 'gmem1' (cnn_layer.cpp:250) [13]  (7.300 ns)
+
+ <State 6>: 7.300ns
+The critical path consists of the following:
+	bus response operation ('gmem1_addr_resp', cnn_layer.cpp:250) on port 'gmem1' (cnn_layer.cpp:250) [13]  (7.300 ns)
+
+ <State 7>: 7.300ns
+The critical path consists of the following:
+	bus response operation ('gmem1_addr_resp', cnn_layer.cpp:250) on port 'gmem1' (cnn_layer.cpp:250) [13]  (7.300 ns)
+
+ <State 8>: 7.300ns
+The critical path consists of the following:
+	bus response operation ('gmem1_addr_resp', cnn_layer.cpp:250) on port 'gmem1' (cnn_layer.cpp:250) [13]  (7.300 ns)
+
+ <State 9>: 7.300ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln251', cnn_layer.cpp:251) to 'write_output_top' [14]  (7.300 ns)
+
+ <State 10>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

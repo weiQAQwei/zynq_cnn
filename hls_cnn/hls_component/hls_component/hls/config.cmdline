@@ -1,0 +1,3 @@
+relativeroot=D:/vitis/projects_learning/hls_cnn/hls_component
+original_argv=--mode hls --package --config D:\vitis\projects_learning\hls_cnn\hls_component\hls_config.cfg --work_dir hls_component 
+

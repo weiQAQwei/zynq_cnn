@@ -1,0 +1,3469 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 121, Column: 9 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - Callee:          'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 4>::load_params_func(short (*) [1][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 23, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 4>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 122, Column: 9 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - Callee:          'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 4>::prepare_input_buf_func(hls::stream<short, 0>&, short (*) [18][18])'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 46, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 4>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 123, Column: 9 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - Callee:          'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 4>::convolution_func(short (*) [18][18], short (*) [1][3][3], short*, short (*) [16][16])'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 73, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 4>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 124, Column: 9 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - Callee:          'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 4>::write_output_func(short (*) [16][16], hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 101, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 4>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 121, Column: 9 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - Callee:          'ConvLayer<32, 16, 16, 32, 16, 16, 1, 1, 4>::load_params_func(short (*) [32][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 23, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ConvLayer<32, 16, 16, 32, 16, 16, 1, 1, 4>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 122, Column: 9 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - Callee:          'ConvLayer<32, 16, 16, 32, 16, 16, 1, 1, 4>::prepare_input_buf_func(hls::stream<short, 0>&, short (*) [18][18])'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 46, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ConvLayer<32, 16, 16, 32, 16, 16, 1, 1, 4>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 123, Column: 9 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - Callee:          'ConvLayer<32, 16, 16, 32, 16, 16, 1, 1, 4>::convolution_func(short (*) [18][18], short (*) [32][3][3], short*, short (*) [16][16])'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 73, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ConvLayer<32, 16, 16, 32, 16, 16, 1, 1, 4>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 124, Column: 9 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - Callee:          'ConvLayer<32, 16, 16, 32, 16, 16, 1, 1, 4>::write_output_func(short (*) [16][16], hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 101, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ConvLayer<32, 16, 16, 32, 16, 16, 1, 1, 4>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 176, Column: 9 }
+Function:        _ZN7MaxPoolILi32ELi16ELi16EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - Callee:          'MaxPool<32, 16, 16>::read_input_func(hls::stream<short, 0>&, short (*) [16][16])'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 141, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'MaxPool<32, 16, 16>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 173, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 177, Column: 9 }
+Function:        _ZN7MaxPoolILi32ELi16ELi16EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - Callee:          'MaxPool<32, 16, 16>::pooling_func(short (*) [16][16], hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 153, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'MaxPool<32, 16, 16>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 173, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 121, Column: 9 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - Callee:          'ConvLayer<32, 8, 8, 32, 8, 8, 1, 1, 4>::load_params_func(short (*) [32][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 23, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ConvLayer<32, 8, 8, 32, 8, 8, 1, 1, 4>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 122, Column: 9 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - Callee:          'ConvLayer<32, 8, 8, 32, 8, 8, 1, 1, 4>::prepare_input_buf_func(hls::stream<short, 0>&, short (*) [10][10])'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 46, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ConvLayer<32, 8, 8, 32, 8, 8, 1, 1, 4>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 123, Column: 9 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - Callee:          'ConvLayer<32, 8, 8, 32, 8, 8, 1, 1, 4>::convolution_func(short (*) [10][10], short (*) [32][3][3], short*, short (*) [8][8])'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 73, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ConvLayer<32, 8, 8, 32, 8, 8, 1, 1, 4>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 124, Column: 9 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - Callee:          'ConvLayer<32, 8, 8, 32, 8, 8, 1, 1, 4>::write_output_func(short (*) [8][8], hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 101, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ConvLayer<32, 8, 8, 32, 8, 8, 1, 1, 4>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 176, Column: 9 }
+Function:        _ZN7MaxPoolILi32ELi8ELi8EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - Callee:          'MaxPool<32, 8, 8>::read_input_func(hls::stream<short, 0>&, short (*) [8][8])'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 141, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'MaxPool<32, 8, 8>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 173, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 177, Column: 9 }
+Function:        _ZN7MaxPoolILi32ELi8ELi8EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - Callee:          'MaxPool<32, 8, 8>::pooling_func(short (*) [8][8], hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 153, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'MaxPool<32, 8, 8>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 173, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 233, Column: 5 }
+Function:        _Z7cnn_topPsS_PA1_A3_A3_sS_PA32_S1_S_S5_S_
+Args:            
+  - Callee:          'read_input_top(short*, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 182, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cnn_top(short*, short*, short (*) [1][3][3], short*, short (*) [32][3][3], short*, short (*) [32][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 207, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 235, Column: 47 }
+Function:        _Z7cnn_topPsS_PA1_A3_A3_sS_PA32_S1_S_S5_S_
+Args:            
+  - Callee:          'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 4>::ConvLayer(int, int, int, int, int, int, int, short*, short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 18, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cnn_top(short*, short*, short (*) [1][3][3], short*, short (*) [32][3][3], short*, short (*) [32][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 207, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 236, Column: 11 }
+Function:        _Z7cnn_topPsS_PA1_A3_A3_sS_PA32_S1_S_S5_S_
+Args:            
+  - Callee:          'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 4>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cnn_top(short*, short*, short (*) [1][3][3], short*, short (*) [32][3][3], short*, short (*) [32][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 207, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 238, Column: 48 }
+Function:        _Z7cnn_topPsS_PA1_A3_A3_sS_PA32_S1_S_S5_S_
+Args:            
+  - Callee:          'ConvLayer<32, 16, 16, 32, 16, 16, 1, 1, 4>::ConvLayer(int, int, int, int, int, int, int, short*, short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 18, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cnn_top(short*, short*, short (*) [1][3][3], short*, short (*) [32][3][3], short*, short (*) [32][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 207, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 239, Column: 11 }
+Function:        _Z7cnn_topPsS_PA1_A3_A3_sS_PA32_S1_S_S5_S_
+Args:            
+  - Callee:          'ConvLayer<32, 16, 16, 32, 16, 16, 1, 1, 4>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cnn_top(short*, short*, short (*) [1][3][3], short*, short (*) [32][3][3], short*, short (*) [32][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 207, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 241, Column: 25 }
+Function:        _Z7cnn_topPsS_PA1_A3_A3_sS_PA32_S1_S_S5_S_
+Args:            
+  - Callee:          'MaxPool<32, 16, 16>::MaxPool(int, int, int, int, int)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 136, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cnn_top(short*, short*, short (*) [1][3][3], short*, short (*) [32][3][3], short*, short (*) [32][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 207, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 242, Column: 11 }
+Function:        _Z7cnn_topPsS_PA1_A3_A3_sS_PA32_S1_S_S5_S_
+Args:            
+  - Callee:          'MaxPool<32, 16, 16>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 173, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cnn_top(short*, short*, short (*) [1][3][3], short*, short (*) [32][3][3], short*, short (*) [32][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 207, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 244, Column: 44 }
+Function:        _Z7cnn_topPsS_PA1_A3_A3_sS_PA32_S1_S_S5_S_
+Args:            
+  - Callee:          'ConvLayer<32, 8, 8, 32, 8, 8, 1, 1, 4>::ConvLayer(int, int, int, int, int, int, int, short*, short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 18, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cnn_top(short*, short*, short (*) [1][3][3], short*, short (*) [32][3][3], short*, short (*) [32][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 207, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 245, Column: 11 }
+Function:        _Z7cnn_topPsS_PA1_A3_A3_sS_PA32_S1_S_S5_S_
+Args:            
+  - Callee:          'ConvLayer<32, 8, 8, 32, 8, 8, 1, 1, 4>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cnn_top(short*, short*, short (*) [1][3][3], short*, short (*) [32][3][3], short*, short (*) [32][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 207, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 247, Column: 23 }
+Function:        _Z7cnn_topPsS_PA1_A3_A3_sS_PA32_S1_S_S5_S_
+Args:            
+  - Callee:          'MaxPool<32, 8, 8>::MaxPool(int, int, int, int, int)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 136, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cnn_top(short*, short*, short (*) [1][3][3], short*, short (*) [32][3][3], short*, short (*) [32][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 207, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 248, Column: 11 }
+Function:        _Z7cnn_topPsS_PA1_A3_A3_sS_PA32_S1_S_S5_S_
+Args:            
+  - Callee:          'MaxPool<32, 8, 8>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 173, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cnn_top(short*, short*, short (*) [1][3][3], short*, short (*) [32][3][3], short*, short (*) [32][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 207, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 251, Column: 5 }
+Function:        _Z7cnn_topPsS_PA1_A3_A3_sS_PA32_S1_S_S5_S_
+Args:            
+  - Callee:          'write_output_top(hls::stream<short, 0>&, short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 190, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cnn_top(short*, short*, short (*) [1][3][3], short*, short (*) [32][3][3], short*, short (*) [32][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 207, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            Inline
+DebugLoc:        { File: cnn_layer.cpp, Line: 207, Column: 0 }
+Function:        _Z7cnn_topPsS_PA1_A3_A3_sS_PA32_S1_S_S5_S_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 4>::ConvLayer(int, int, int, int, int, int, int, short*, short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 18, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'cnn_top(short*, short*, short (*) [1][3][3], short*, short (*) [32][3][3], short*, short (*) [32][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 207, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            Inline
+DebugLoc:        { File: cnn_layer.cpp, Line: 207, Column: 0 }
+Function:        _Z7cnn_topPsS_PA1_A3_A3_sS_PA32_S1_S_S5_S_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ConvLayer<32, 16, 16, 32, 16, 16, 1, 1, 4>::ConvLayer(int, int, int, int, int, int, int, short*, short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 18, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'cnn_top(short*, short*, short (*) [1][3][3], short*, short (*) [32][3][3], short*, short (*) [32][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 207, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            Inline
+DebugLoc:        { File: cnn_layer.cpp, Line: 207, Column: 0 }
+Function:        _Z7cnn_topPsS_PA1_A3_A3_sS_PA32_S1_S_S5_S_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ConvLayer<32, 8, 8, 32, 8, 8, 1, 1, 4>::ConvLayer(int, int, int, int, int, int, int, short*, short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 18, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'cnn_top(short*, short*, short (*) [1][3][3], short*, short (*) [32][3][3], short*, short (*) [32][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 207, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: cnn_layer.cpp, Line: 161, Column: 39 }
+Function:        _ZN7MaxPoolILi32ELi8ELi8EE12pooling_funcEPA8_A8_sRN3hls6streamIsLi0EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_161_4
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: cnn_layer.cpp, Line: 162, Column: 43 }
+Function:        _ZN7MaxPoolILi32ELi8ELi8EE12pooling_funcEPA8_A8_sRN3hls6streamIsLi0EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_162_5
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: cnn_layer.cpp, Line: 161, Column: 39 }
+Function:        _ZN7MaxPoolILi32ELi16ELi16EE12pooling_funcEPA16_A16_sRN3hls6streamIsLi0EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_161_4
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: cnn_layer.cpp, Line: 162, Column: 43 }
+Function:        _ZN7MaxPoolILi32ELi16ELi16EE12pooling_funcEPA16_A16_sRN3hls6streamIsLi0EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_162_5
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: cnn_layer.cpp, Line: 141, Column: 0 }
+Function:        _ZN7MaxPoolILi32ELi8ELi8EE15read_input_funcERN3hls6streamIsLi0EEEPA8_A8_s
+Args:            
+  - String:          'Updating loop '
+  - String:          upper
+  - String:          ' bound from '
+  - OldBound:        '16'
+  - String:          ' to '
+  - NewBound:        '8'
+  - String:          ' for loop '''
+  - LoopName:        VITIS_LOOP_143_1
+  - String:          ''' ('
+  - LoopLoc:         'cnn_layer.cpp:143:20'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          'MaxPool<32, 8, 8>::read_input_func'
+  - String:          '''.'
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: cnn_layer.cpp, Line: 153, Column: 0 }
+Function:        _ZN7MaxPoolILi32ELi8ELi8EE12pooling_funcEPA8_A8_sRN3hls6streamIsLi0EEE
+Args:            
+  - String:          'Updating loop '
+  - String:          upper
+  - String:          ' bound from '
+  - OldBound:        '8'
+  - String:          ' to '
+  - NewBound:        '4'
+  - String:          ' for loop '''
+  - LoopName:        VITIS_LOOP_155_1
+  - String:          ''' ('
+  - LoopLoc:         'cnn_layer.cpp:155:20'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          'MaxPool<32, 8, 8>::pooling_func'
+  - String:          '''.'
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: cnn_layer.cpp, Line: 141, Column: 0 }
+Function:        _ZN7MaxPoolILi32ELi16ELi16EE15read_input_funcERN3hls6streamIsLi0EEEPA16_A16_s
+Args:            
+  - String:          'Updating loop '
+  - String:          lower
+  - String:          ' bound from '
+  - OldBound:        '8'
+  - String:          ' to '
+  - NewBound:        '16'
+  - String:          ' for loop '''
+  - LoopName:        VITIS_LOOP_143_1
+  - String:          ''' ('
+  - LoopLoc:         'cnn_layer.cpp:143:20'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          'MaxPool<32, 16, 16>::read_input_func'
+  - String:          '''.'
+...
+--- !Missed
+Pass:            reflow-infer-loop-tripcount
+Name:            UpdateLoopBound
+DebugLoc:        { File: cnn_layer.cpp, Line: 153, Column: 0 }
+Function:        _ZN7MaxPoolILi32ELi16ELi16EE12pooling_funcEPA16_A16_sRN3hls6streamIsLi0EEE
+Args:            
+  - String:          'Updating loop '
+  - String:          lower
+  - String:          ' bound from '
+  - OldBound:        '4'
+  - String:          ' to '
+  - NewBound:        '8'
+  - String:          ' for loop '''
+  - LoopName:        VITIS_LOOP_155_1
+  - String:          ''' ('
+  - LoopLoc:         'cnn_layer.cpp:155:20'
+  - String:          ')'
+  - String:          ' in function '''
+  - String:          'MaxPool<32, 16, 16>::pooling_func'
+  - String:          '''.'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: cnn_layer.cpp, Line: 153, Column: 0 }
+Function:        _ZN7MaxPoolILi32ELi8ELi8EE12pooling_funcEPA8_A8_sRN3hls6streamIsLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_161_4
+  - String:          ''' ('
+  - LoopLoc:         'cnn_layer.cpp:161:39'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'MaxPool<32, 8, 8>::pooling_func'
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: cnn_layer.cpp, Line: 153, Column: 0 }
+Function:        _ZN7MaxPoolILi32ELi8ELi8EE12pooling_funcEPA8_A8_sRN3hls6streamIsLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_162_5
+  - String:          ''' ('
+  - LoopLoc:         'cnn_layer.cpp:162:43'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'MaxPool<32, 8, 8>::pooling_func'
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: cnn_layer.cpp, Line: 153, Column: 0 }
+Function:        _ZN7MaxPoolILi32ELi8ELi8EE12pooling_funcEPA8_A8_sRN3hls6streamIsLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_162_5
+  - String:          ''' ('
+  - LoopLoc:         'cnn_layer.cpp:162:43'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'MaxPool<32, 8, 8>::pooling_func'
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: cnn_layer.cpp, Line: 153, Column: 0 }
+Function:        _ZN7MaxPoolILi32ELi16ELi16EE12pooling_funcEPA16_A16_sRN3hls6streamIsLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_161_4
+  - String:          ''' ('
+  - LoopLoc:         'cnn_layer.cpp:161:39'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'MaxPool<32, 16, 16>::pooling_func'
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: cnn_layer.cpp, Line: 153, Column: 0 }
+Function:        _ZN7MaxPoolILi32ELi16ELi16EE12pooling_funcEPA16_A16_sRN3hls6streamIsLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_162_5
+  - String:          ''' ('
+  - LoopLoc:         'cnn_layer.cpp:162:43'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'MaxPool<32, 16, 16>::pooling_func'
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: cnn_layer.cpp, Line: 153, Column: 0 }
+Function:        _ZN7MaxPoolILi32ELi16ELi16EE12pooling_funcEPA16_A16_sRN3hls6streamIsLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_162_5
+  - String:          ''' ('
+  - LoopLoc:         'cnn_layer.cpp:162:43'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'MaxPool<32, 16, 16>::pooling_func'
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 121, Column: 9 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - Callee:          'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 4>::load_params_func(short (*) [1][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 23, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 4>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 122, Column: 9 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - Callee:          'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 4>::prepare_input_buf_func(hls::stream<short, 0>&, short (*) [18][18])'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 46, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 4>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 123, Column: 9 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - Callee:          'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 4>::convolution_func(short (*) [18][18], short (*) [1][3][3], short*, short (*) [16][16])'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 73, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 4>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 124, Column: 9 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - Callee:          'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 4>::write_output_func(short (*) [16][16], hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 101, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 4>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 121, Column: 9 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - Callee:          'ConvLayer<32, 16, 16, 32, 16, 16, 1, 1, 4>::load_params_func(short (*) [32][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 23, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ConvLayer<32, 16, 16, 32, 16, 16, 1, 1, 4>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 122, Column: 9 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - Callee:          'ConvLayer<32, 16, 16, 32, 16, 16, 1, 1, 4>::prepare_input_buf_func(hls::stream<short, 0>&, short (*) [18][18])'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 46, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ConvLayer<32, 16, 16, 32, 16, 16, 1, 1, 4>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 123, Column: 9 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - Callee:          'ConvLayer<32, 16, 16, 32, 16, 16, 1, 1, 4>::convolution_func(short (*) [18][18], short (*) [32][3][3], short*, short (*) [16][16])'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 73, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ConvLayer<32, 16, 16, 32, 16, 16, 1, 1, 4>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 124, Column: 9 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - Callee:          'ConvLayer<32, 16, 16, 32, 16, 16, 1, 1, 4>::write_output_func(short (*) [16][16], hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 101, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ConvLayer<32, 16, 16, 32, 16, 16, 1, 1, 4>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 176, Column: 9 }
+Function:        _ZN7MaxPoolILi32ELi16ELi16EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - Callee:          'MaxPool<32, 16, 16>::read_input_func(hls::stream<short, 0>&, short (*) [16][16])'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 141, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'MaxPool<32, 16, 16>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 173, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 177, Column: 9 }
+Function:        _ZN7MaxPoolILi32ELi16ELi16EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - Callee:          'MaxPool<32, 16, 16>::pooling_func(short (*) [16][16], hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 153, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'MaxPool<32, 16, 16>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 173, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 121, Column: 9 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - Callee:          'ConvLayer<32, 8, 8, 32, 8, 8, 1, 1, 4>::load_params_func(short (*) [32][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 23, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ConvLayer<32, 8, 8, 32, 8, 8, 1, 1, 4>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 122, Column: 9 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - Callee:          'ConvLayer<32, 8, 8, 32, 8, 8, 1, 1, 4>::prepare_input_buf_func(hls::stream<short, 0>&, short (*) [10][10])'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 46, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ConvLayer<32, 8, 8, 32, 8, 8, 1, 1, 4>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 123, Column: 9 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - Callee:          'ConvLayer<32, 8, 8, 32, 8, 8, 1, 1, 4>::convolution_func(short (*) [10][10], short (*) [32][3][3], short*, short (*) [8][8])'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 73, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ConvLayer<32, 8, 8, 32, 8, 8, 1, 1, 4>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 124, Column: 9 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - Callee:          'ConvLayer<32, 8, 8, 32, 8, 8, 1, 1, 4>::write_output_func(short (*) [8][8], hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 101, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ConvLayer<32, 8, 8, 32, 8, 8, 1, 1, 4>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 176, Column: 9 }
+Function:        _ZN7MaxPoolILi32ELi8ELi8EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - Callee:          'MaxPool<32, 8, 8>::read_input_func(hls::stream<short, 0>&, short (*) [8][8])'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 141, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'MaxPool<32, 8, 8>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 173, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 177, Column: 9 }
+Function:        _ZN7MaxPoolILi32ELi8ELi8EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - Callee:          'MaxPool<32, 8, 8>::pooling_func(short (*) [8][8], hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 153, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'MaxPool<32, 8, 8>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 173, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 233, Column: 5 }
+Function:        _Z7cnn_topPsS_PA1_A3_A3_sS_PA32_S1_S_S5_S_
+Args:            
+  - Callee:          'read_input_top(short*, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 182, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cnn_top(short*, short*, short (*) [1][3][3], short*, short (*) [32][3][3], short*, short (*) [32][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 207, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 236, Column: 11 }
+Function:        _Z7cnn_topPsS_PA1_A3_A3_sS_PA32_S1_S_S5_S_
+Args:            
+  - Callee:          'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 4>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cnn_top(short*, short*, short (*) [1][3][3], short*, short (*) [32][3][3], short*, short (*) [32][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 207, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 239, Column: 11 }
+Function:        _Z7cnn_topPsS_PA1_A3_A3_sS_PA32_S1_S_S5_S_
+Args:            
+  - Callee:          'ConvLayer<32, 16, 16, 32, 16, 16, 1, 1, 4>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cnn_top(short*, short*, short (*) [1][3][3], short*, short (*) [32][3][3], short*, short (*) [32][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 207, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 242, Column: 11 }
+Function:        _Z7cnn_topPsS_PA1_A3_A3_sS_PA32_S1_S_S5_S_
+Args:            
+  - Callee:          'MaxPool<32, 16, 16>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 173, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cnn_top(short*, short*, short (*) [1][3][3], short*, short (*) [32][3][3], short*, short (*) [32][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 207, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 245, Column: 11 }
+Function:        _Z7cnn_topPsS_PA1_A3_A3_sS_PA32_S1_S_S5_S_
+Args:            
+  - Callee:          'ConvLayer<32, 8, 8, 32, 8, 8, 1, 1, 4>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cnn_top(short*, short*, short (*) [1][3][3], short*, short (*) [32][3][3], short*, short (*) [32][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 207, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 248, Column: 11 }
+Function:        _Z7cnn_topPsS_PA1_A3_A3_sS_PA32_S1_S_S5_S_
+Args:            
+  - Callee:          'MaxPool<32, 8, 8>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 173, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cnn_top(short*, short*, short (*) [1][3][3], short*, short (*) [32][3][3], short*, short (*) [32][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 207, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 251, Column: 5 }
+Function:        _Z7cnn_topPsS_PA1_A3_A3_sS_PA32_S1_S_S5_S_
+Args:            
+  - Callee:          'write_output_top(hls::stream<short, 0>&, short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 190, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cnn_top(short*, short*, short (*) [1][3][3], short*, short (*) [32][3][3], short*, short (*) [32][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 207, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_cnn_top_ir
+Args:            
+  - Callee:          'cnn_top(short*, short*, short (*) [1][3][3], short*, short (*) [32][3][3], short*, short (*) [32][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 207, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_cnn_top_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_in_channels
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_out_channels
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_height
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_width
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_in_channels
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_padding
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_in_channels
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_out_channels
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_stride
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_output_height
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_output_width
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_out_channels
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_output_height
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_output_width
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_in_channels
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_out_channels
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_height
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_width
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_in_channels
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_padding
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_in_channels
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_out_channels
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_stride
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_output_height
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_output_width
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_out_channels
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_output_height
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_output_width
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_in_channels
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_out_channels
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_height
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_width
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_in_channels
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_padding
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_in_channels
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_out_channels
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_stride
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_output_height
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_output_width
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_out_channels
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_output_height
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_output_width
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_in_channels
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_out_channels
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_weights
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_bias
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_height
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_width
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_in_channels
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_padding
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_in_channels
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_out_channels
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_stride
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_output_height
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_output_width
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_out_channels
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_output_height
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_output_width
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_in_channels
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_out_channels
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_weights
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_bias
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_height
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_width
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_in_channels
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_padding
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_in_channels
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_out_channels
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_stride
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_output_height
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_output_width
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_out_channels
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_output_height
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_output_width
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_in_channels
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_out_channels
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_weights
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_bias
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_height
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_width
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_in_channels
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_padding
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_in_channels
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_out_channels
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_stride
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_output_height
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_output_width
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_out_channels
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_output_height
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       this_output_width
+  - String:          '''.'
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: cnn_layer.cpp, Line: 184, Column: 20 }
+Function:        _Z14read_input_topPsRN3hls6streamIsLi0EEE
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '256'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        input2seq
+  - ArrayName:       input
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_184_1
+  - String:          ' '
+  - LoopLoc:         'cnn_layer.cpp:184:20'
+  - String:          ' '
+  - Function:        'read_input_top(short*, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 182, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: cnn_layer.cpp, Line: 186, Column: 10 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.load.5
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: cnn_layer.cpp, Line: 192, Column: 20 }
+Function:        _Z16write_output_topRN3hls6streamIsLi0EEEPs
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of length '
+  - Length:          '512'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        output2seq
+  - ArrayName:       output
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_192_1
+  - String:          ' '
+  - LoopLoc:         'cnn_layer.cpp:192:20'
+  - String:          ' '
+  - Function:        'write_output_top(hls::stream<short, 0>&, short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 190, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: cnn_layer.cpp, Line: 194, Column: 12 }
+  - OrigDirection:   write
+  - OrigID:          for.inc.store.6
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: cnn_layer.cpp, Line: 26, Column: 19 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE16load_params_funcEPA32_A3_A3_sPs
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '9216'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        this_weights1seq
+  - ArrayName:       this_weights
+  - String:          ' '
+  - BundleName:      gmem6
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_26_1
+  - String:          ' '
+  - LoopLoc:         'cnn_layer.cpp:26:19'
+  - String:          ' '
+  - Function:        'ConvLayer<32, 8, 8, 32, 8, 8, 1, 1, 4>::load_params_func(short (*) [32][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 23, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: cnn_layer.cpp, Line: 34, Column: 55 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.load.7
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: cnn_layer.cpp, Line: 40, Column: 26 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE16load_params_funcEPA32_A3_A3_sPs
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '32'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        this_bias2seq
+  - ArrayName:       this_bias
+  - String:          ' '
+  - BundleName:      gmem7
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_40_5
+  - String:          ' '
+  - LoopLoc:         'cnn_layer.cpp:40:26'
+  - String:          ' '
+  - Function:        'ConvLayer<32, 8, 8, 32, 8, 8, 1, 1, 4>::load_params_func(short (*) [32][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 23, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: cnn_layer.cpp, Line: 42, Column: 19 }
+  - OrigDirection:   read
+  - OrigID:          for.inc47.load.5
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: cnn_layer.cpp, Line: 26, Column: 19 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE16load_params_funcEPA32_A3_A3_sPs
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '9216'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        this_weights1seq
+  - ArrayName:       this_weights
+  - String:          ' '
+  - BundleName:      gmem4
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_26_1
+  - String:          ' '
+  - LoopLoc:         'cnn_layer.cpp:26:19'
+  - String:          ' '
+  - Function:        'ConvLayer<32, 16, 16, 32, 16, 16, 1, 1, 4>::load_params_func(short (*) [32][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 23, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: cnn_layer.cpp, Line: 34, Column: 55 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.load.7
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: cnn_layer.cpp, Line: 40, Column: 26 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE16load_params_funcEPA32_A3_A3_sPs
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '32'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        this_bias2seq
+  - ArrayName:       this_bias
+  - String:          ' '
+  - BundleName:      gmem5
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_40_5
+  - String:          ' '
+  - LoopLoc:         'cnn_layer.cpp:40:26'
+  - String:          ' '
+  - Function:        'ConvLayer<32, 16, 16, 32, 16, 16, 1, 1, 4>::load_params_func(short (*) [32][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 23, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: cnn_layer.cpp, Line: 42, Column: 19 }
+  - OrigDirection:   read
+  - OrigID:          for.inc47.load.5
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: cnn_layer.cpp, Line: 26, Column: 19 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE16load_params_funcEPA1_A3_A3_sPs
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '288'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        this_weights1seq
+  - ArrayName:       this_weights
+  - String:          ' '
+  - BundleName:      gmem2
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_26_1
+  - String:          ' '
+  - LoopLoc:         'cnn_layer.cpp:26:19'
+  - String:          ' '
+  - Function:        'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 4>::load_params_func(short (*) [1][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 23, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: cnn_layer.cpp, Line: 34, Column: 55 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.load.7
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: cnn_layer.cpp, Line: 40, Column: 26 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE16load_params_funcEPA1_A3_A3_sPs
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '32'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        this_bias2seq
+  - ArrayName:       this_bias
+  - String:          ' '
+  - BundleName:      gmem3
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_40_5
+  - String:          ' '
+  - LoopLoc:         'cnn_layer.cpp:40:26'
+  - String:          ' '
+  - Function:        'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 4>::load_params_func(short (*) [1][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 23, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: cnn_layer.cpp, Line: 42, Column: 19 }
+  - OrigDirection:   read
+  - OrigID:          for.inc47.load.5
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualAlignment
+DebugLoc:        { File: cnn_layer.cpp, Line: 184, Column: 20 }
+Function:        _Z14read_input_topPsRN3hls6streamIsLi0EEE
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i16
+  - String:          ' size is greater than or equal to alignment '
+  - Alignment:       '1'
+  - String:          '(bytes)'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: cnn_layer.cpp, Line: 184, Column: 20 }
+  - OrigDirection:   read
+  - OrigID:          input2seq
+  - ArrayName:       input
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_184_1
+  - String:          ' '
+  - LoopLoc:         'cnn_layer.cpp:184:20'
+  - String:          ' '
+  - Function:        'read_input_top(short*, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 182, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualAlignment
+DebugLoc:        { File: cnn_layer.cpp, Line: 192, Column: 20 }
+Function:        _Z16write_output_topRN3hls6streamIsLi0EEEPs
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i16
+  - String:          ' size is greater than or equal to alignment '
+  - Alignment:       '1'
+  - String:          '(bytes)'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: cnn_layer.cpp, Line: 192, Column: 20 }
+  - OrigDirection:   write
+  - OrigID:          output2seq
+  - ArrayName:       output
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_192_1
+  - String:          ' '
+  - LoopLoc:         'cnn_layer.cpp:192:20'
+  - String:          ' '
+  - Function:        'write_output_top(hls::stream<short, 0>&, short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 190, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualAlignment
+DebugLoc:        { File: cnn_layer.cpp, Line: 40, Column: 26 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE16load_params_funcEPA32_A3_A3_sPs
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i16
+  - String:          ' size is greater than or equal to alignment '
+  - Alignment:       '1'
+  - String:          '(bytes)'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: cnn_layer.cpp, Line: 40, Column: 26 }
+  - OrigDirection:   read
+  - OrigID:          this_bias2seq
+  - ArrayName:       this_bias
+  - String:          ' '
+  - BundleName:      gmem7
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_40_5
+  - String:          ' '
+  - LoopLoc:         'cnn_layer.cpp:40:26'
+  - String:          ' '
+  - Function:        'ConvLayer<32, 8, 8, 32, 8, 8, 1, 1, 4>::load_params_func(short (*) [32][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 23, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualAlignment
+DebugLoc:        { File: cnn_layer.cpp, Line: 26, Column: 19 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE16load_params_funcEPA32_A3_A3_sPs
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i16
+  - String:          ' size is greater than or equal to alignment '
+  - Alignment:       '1'
+  - String:          '(bytes)'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: cnn_layer.cpp, Line: 26, Column: 19 }
+  - OrigDirection:   read
+  - OrigID:          this_weights1seq
+  - ArrayName:       this_weights
+  - String:          ' '
+  - BundleName:      gmem6
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_31_4
+  - String:          ' '
+  - LoopLoc:         'cnn_layer.cpp:31:38'
+  - String:          ' '
+  - Function:        'ConvLayer<32, 8, 8, 32, 8, 8, 1, 1, 4>::load_params_func(short (*) [32][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 23, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualAlignment
+DebugLoc:        { File: cnn_layer.cpp, Line: 40, Column: 26 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE16load_params_funcEPA32_A3_A3_sPs
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i16
+  - String:          ' size is greater than or equal to alignment '
+  - Alignment:       '1'
+  - String:          '(bytes)'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: cnn_layer.cpp, Line: 40, Column: 26 }
+  - OrigDirection:   read
+  - OrigID:          this_bias2seq
+  - ArrayName:       this_bias
+  - String:          ' '
+  - BundleName:      gmem5
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_40_5
+  - String:          ' '
+  - LoopLoc:         'cnn_layer.cpp:40:26'
+  - String:          ' '
+  - Function:        'ConvLayer<32, 16, 16, 32, 16, 16, 1, 1, 4>::load_params_func(short (*) [32][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 23, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualAlignment
+DebugLoc:        { File: cnn_layer.cpp, Line: 26, Column: 19 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE16load_params_funcEPA32_A3_A3_sPs
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i16
+  - String:          ' size is greater than or equal to alignment '
+  - Alignment:       '1'
+  - String:          '(bytes)'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: cnn_layer.cpp, Line: 26, Column: 19 }
+  - OrigDirection:   read
+  - OrigID:          this_weights1seq
+  - ArrayName:       this_weights
+  - String:          ' '
+  - BundleName:      gmem4
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_31_4
+  - String:          ' '
+  - LoopLoc:         'cnn_layer.cpp:31:38'
+  - String:          ' '
+  - Function:        'ConvLayer<32, 16, 16, 32, 16, 16, 1, 1, 4>::load_params_func(short (*) [32][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 23, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualAlignment
+DebugLoc:        { File: cnn_layer.cpp, Line: 40, Column: 26 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE16load_params_funcEPA1_A3_A3_sPs
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i16
+  - String:          ' size is greater than or equal to alignment '
+  - Alignment:       '1'
+  - String:          '(bytes)'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: cnn_layer.cpp, Line: 40, Column: 26 }
+  - OrigDirection:   read
+  - OrigID:          this_bias2seq
+  - ArrayName:       this_bias
+  - String:          ' '
+  - BundleName:      gmem3
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_40_5
+  - String:          ' '
+  - LoopLoc:         'cnn_layer.cpp:40:26'
+  - String:          ' '
+  - Function:        'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 4>::load_params_func(short (*) [1][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 23, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualAlignment
+DebugLoc:        { File: cnn_layer.cpp, Line: 26, Column: 19 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE16load_params_funcEPA1_A3_A3_sPs
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i16
+  - String:          ' size is greater than or equal to alignment '
+  - Alignment:       '1'
+  - String:          '(bytes)'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: cnn_layer.cpp, Line: 26, Column: 19 }
+  - OrigDirection:   read
+  - OrigID:          this_weights1seq
+  - ArrayName:       this_weights
+  - String:          ' '
+  - BundleName:      gmem2
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_31_4
+  - String:          ' '
+  - LoopLoc:         'cnn_layer.cpp:31:38'
+  - String:          ' '
+  - Function:        'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 4>::load_params_func(short (*) [1][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 23, Column: 0 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_87_6
+  - String:          '> at '
+  - LoopLoc:         'cnn_layer.cpp:87:46'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_87_6
+  - String:          '> at '
+  - LoopLoc:         'cnn_layer.cpp:87:46'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_81_3
+  - String:          '> at '
+  - LoopLoc:         'cnn_layer.cpp:81:19'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_61_5
+  - String:          '> at '
+  - LoopLoc:         'cnn_layer.cpp:61:19'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: cnn_layer.cpp, Line: 86, Column: 19 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE16convolution_funcEPA18_A18_sPA1_A3_A3_sPsPA16_A16_s
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_86_5
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: cnn_layer.cpp, Line: 87, Column: 46 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE16convolution_funcEPA18_A18_sPA1_A3_A3_sPsPA16_A16_s
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_87_6
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: cnn_layer.cpp, Line: 73, Column: 0 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE16convolution_funcEPA18_A18_sPA1_A3_A3_sPsPA16_A16_s
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_86_5
+  - String:          ''' ('
+  - LoopLoc:         'cnn_layer.cpp:86:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 4>::convolution_func'
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: cnn_layer.cpp, Line: 73, Column: 0 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE16convolution_funcEPA18_A18_sPA1_A3_A3_sPsPA16_A16_s
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_87_6
+  - String:          ''' ('
+  - LoopLoc:         'cnn_layer.cpp:87:46'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 4>::convolution_func'
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: cnn_layer.cpp, Line: 73, Column: 0 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE16convolution_funcEPA18_A18_sPA1_A3_A3_sPsPA16_A16_s
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_87_6
+  - String:          ''' ('
+  - LoopLoc:         'cnn_layer.cpp:87:46'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 4>::convolution_func'
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: cnn_layer.cpp, Line: 73, Column: 0 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE16convolution_funcEPA18_A18_sPA1_A3_A3_sPsPA16_A16_s
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_87_6
+  - String:          ''' ('
+  - LoopLoc:         'cnn_layer.cpp:87:46'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 4>::convolution_func'
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayPromotion
+DebugLoc:        { File: cnn_layer.cpp, Line: 115, Column: 17 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Automatically partitioning array '''
+  - Value:           input_buf
+  - String:          ''' dimension '
+  - Dim:             '1'
+  - String:          ' completely based on constant index.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayPromotion
+DebugLoc:        { File: cnn_layer.cpp, Line: 118, Column: 17 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Automatically partitioning array '''
+  - Value:           local_weights
+  - String:          ''' dimension '
+  - Dim:             '2'
+  - String:          ' completely based on constant index.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: cnn_layer.cpp, Line: 115, Column: 17 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=input_buf'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 4>::compute'
+  - String:          ' '
+  - varLoc:          'cnn_layer.cpp:115:17'
+  - String:          ' '
+  - VarName:         input_buf
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: cnn_layer.cpp, Line: 115, Column: 17 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            input_buf
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: cnn_layer.cpp, Line: 115, Column: 17 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=3 type=cyclic factor=3 variable=input_buf'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 4>::compute'
+  - String:          ' '
+  - varLoc:          'cnn_layer.cpp:115:17'
+  - String:          ' '
+  - VarName:         input_buf
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: cnn_layer.cpp, Line: 115, Column: 17 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '3'
+  - String:          ' dim='
+  - Dim:             '3'
+  - String:          ''' for array '''
+  - Name:            input_buf
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: cnn_layer.cpp, Line: 115, Column: 17 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=2 type=cyclic factor=3 variable=input_buf'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 4>::compute'
+  - String:          ' '
+  - varLoc:          'cnn_layer.cpp:115:17'
+  - String:          ' '
+  - VarName:         input_buf
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: cnn_layer.cpp, Line: 115, Column: 17 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '3'
+  - String:          ' dim='
+  - Dim:             '2'
+  - String:          ''' for array '''
+  - Name:            input_buf
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: cnn_layer.cpp, Line: 118, Column: 17 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=3 type=complete  variable=local_weights'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 4>::compute'
+  - String:          ' '
+  - varLoc:          'cnn_layer.cpp:118:17'
+  - String:          ' '
+  - VarName:         local_weights
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: cnn_layer.cpp, Line: 118, Column: 17 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '3'
+  - String:          ''' for array '''
+  - Name:            local_weights
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: cnn_layer.cpp, Line: 118, Column: 17 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=2 type=complete  variable=local_weights'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 4>::compute'
+  - String:          ' '
+  - varLoc:          'cnn_layer.cpp:118:17'
+  - String:          ' '
+  - VarName:         local_weights
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: cnn_layer.cpp, Line: 118, Column: 17 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '2'
+  - String:          ''' for array '''
+  - Name:            local_weights
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: cnn_layer.cpp, Line: 118, Column: 17 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=4 type=complete  variable=local_weights'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 4>::compute'
+  - String:          ' '
+  - varLoc:          'cnn_layer.cpp:118:17'
+  - String:          ' '
+  - VarName:         local_weights
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: cnn_layer.cpp, Line: 118, Column: 17 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '4'
+  - String:          ''' for array '''
+  - Name:            local_weights
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: cnn_layer.cpp, Line: 115, Column: 17 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          input_buf
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '3'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '3'
+  - String:          ' on dimension '
+  - Dim:             '3'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: cnn_layer.cpp, Line: 118, Column: 17 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          local_weights
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '3'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '4'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: cnn_layer.cpp, Line: 184, Column: 20 }
+Function:        _Z14read_input_topPsRN3hls6streamIsLi0EEE.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '256'
+  - String:          ' and bit width '
+  - Width:           '16'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_184_1
+  - String:          ' '
+  - LoopLoc:         'cnn_layer.cpp:184:20'
+  - String:          ' '
+  - Function:        'read_input_top(short*, hls::stream<short, 0>&) (.1)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 182, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: cnn_layer.cpp, Line: 184, Column: 20 }
+Function:        _Z14read_input_topPsRN3hls6streamIsLi0EEE.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '256'
+  - String:          ' and bit width '
+  - Width:           '16'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_184_1
+  - String:          '''('
+  - LoopLoc:         'cnn_layer.cpp:184:20'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem0
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: cnn_layer.cpp, Line: 26, Column: 19 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE16load_params_funcEPA1_A3_A3_sPs.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '288'
+  - String:          ' and bit width '
+  - Width:           '16'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem2
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_26_1
+  - String:          ' '
+  - LoopLoc:         'cnn_layer.cpp:26:19'
+  - String:          ' '
+  - Function:        'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 4>::load_params_func(short (*) [1][3][3], short*) (.1)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 23, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: cnn_layer.cpp, Line: 26, Column: 19 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE16load_params_funcEPA1_A3_A3_sPs.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '288'
+  - String:          ' and bit width '
+  - Width:           '16'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_26_1
+  - String:          '''('
+  - LoopLoc:         'cnn_layer.cpp:26:19'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem2
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: cnn_layer.cpp, Line: 40, Column: 26 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE16load_params_funcEPA1_A3_A3_sPs.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '32'
+  - String:          ' and bit width '
+  - Width:           '16'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq1
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem3
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_40_5
+  - String:          ' '
+  - LoopLoc:         'cnn_layer.cpp:40:26'
+  - String:          ' '
+  - Function:        'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 4>::load_params_func(short (*) [1][3][3], short*) (.1)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 23, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: cnn_layer.cpp, Line: 40, Column: 26 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE16load_params_funcEPA1_A3_A3_sPs.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '32'
+  - String:          ' and bit width '
+  - Width:           '16'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_40_5
+  - String:          '''('
+  - LoopLoc:         'cnn_layer.cpp:40:26'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem3
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: cnn_layer.cpp, Line: 26, Column: 19 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE16load_params_funcEPA32_A3_A3_sPs.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '9216'
+  - String:          ' and bit width '
+  - Width:           '16'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem4
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_26_1
+  - String:          ' '
+  - LoopLoc:         'cnn_layer.cpp:26:19'
+  - String:          ' '
+  - Function:        'ConvLayer<32, 16, 16, 32, 16, 16, 1, 1, 4>::load_params_func(short (*) [32][3][3], short*) (.1)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 23, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: cnn_layer.cpp, Line: 26, Column: 19 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE16load_params_funcEPA32_A3_A3_sPs.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '9216'
+  - String:          ' and bit width '
+  - Width:           '16'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_26_1
+  - String:          '''('
+  - LoopLoc:         'cnn_layer.cpp:26:19'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem4
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: cnn_layer.cpp, Line: 40, Column: 26 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE16load_params_funcEPA32_A3_A3_sPs.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '32'
+  - String:          ' and bit width '
+  - Width:           '16'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq1
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem5
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_40_5
+  - String:          ' '
+  - LoopLoc:         'cnn_layer.cpp:40:26'
+  - String:          ' '
+  - Function:        'ConvLayer<32, 16, 16, 32, 16, 16, 1, 1, 4>::load_params_func(short (*) [32][3][3], short*) (.1)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 23, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: cnn_layer.cpp, Line: 40, Column: 26 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE16load_params_funcEPA32_A3_A3_sPs.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '32'
+  - String:          ' and bit width '
+  - Width:           '16'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_40_5
+  - String:          '''('
+  - LoopLoc:         'cnn_layer.cpp:40:26'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem5
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: cnn_layer.cpp, Line: 26, Column: 19 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE16load_params_funcEPA32_A3_A3_sPs.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '9216'
+  - String:          ' and bit width '
+  - Width:           '16'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem6
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_26_1
+  - String:          ' '
+  - LoopLoc:         'cnn_layer.cpp:26:19'
+  - String:          ' '
+  - Function:        'ConvLayer<32, 8, 8, 32, 8, 8, 1, 1, 4>::load_params_func(short (*) [32][3][3], short*) (.1)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 23, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: cnn_layer.cpp, Line: 26, Column: 19 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE16load_params_funcEPA32_A3_A3_sPs.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '9216'
+  - String:          ' and bit width '
+  - Width:           '16'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_26_1
+  - String:          '''('
+  - LoopLoc:         'cnn_layer.cpp:26:19'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem6
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: cnn_layer.cpp, Line: 40, Column: 26 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE16load_params_funcEPA32_A3_A3_sPs.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '32'
+  - String:          ' and bit width '
+  - Width:           '16'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq1
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem7
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_40_5
+  - String:          ' '
+  - LoopLoc:         'cnn_layer.cpp:40:26'
+  - String:          ' '
+  - Function:        'ConvLayer<32, 8, 8, 32, 8, 8, 1, 1, 4>::load_params_func(short (*) [32][3][3], short*) (.1)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 23, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: cnn_layer.cpp, Line: 40, Column: 26 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE16load_params_funcEPA32_A3_A3_sPs.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '32'
+  - String:          ' and bit width '
+  - Width:           '16'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_40_5
+  - String:          '''('
+  - LoopLoc:         'cnn_layer.cpp:40:26'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem7
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: cnn_layer.cpp, Line: 192, Column: 20 }
+Function:        _Z16write_output_topRN3hls6streamIsLi0EEEPs.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '512'
+  - String:          ' and bit width '
+  - Width:           '16'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_192_1
+  - String:          ' '
+  - LoopLoc:         'cnn_layer.cpp:192:20'
+  - String:          ' '
+  - Function:        'write_output_top(hls::stream<short, 0>&, short*) (.1)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 190, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: cnn_layer.cpp, Line: 192, Column: 20 }
+Function:        _Z16write_output_topRN3hls6streamIsLi0EEEPs.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '512'
+  - String:          ' and bit width '
+  - Width:           '16'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_192_1
+  - String:          '''('
+  - LoopLoc:         'cnn_layer.cpp:192:20'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem1
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Failure
+Pass:            reflow-dataflow-canon
+Name:            DataflowAggrMerge
+DebugLoc:        { File: cnn_layer.cpp, Line: 207, Column: 0 }
+Function:        _Z7cnn_topPsS_PA1_A3_A3_sS_PA32_S1_S_S5_S_
+Args:            
+  - String:          'Merging processes '
+  - String:          '''write_output_top'''
+  - String:          ' in function '''
+  - FName:           cnn_top
+  - String:          ''' '
+  - String:          'due to writes on ''gmem1'''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 121, Column: 9 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.1
+Args:            
+  - Callee:          'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 4>::load_params_func(short (*) [1][3][3], short*) (.1)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 23, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 4>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&) (.1)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 122, Column: 9 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.1
+Args:            
+  - Callee:          'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 4>::prepare_input_buf_func(hls::stream<short, 0>&, short (*) [18][18])'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 46, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 4>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&) (.1)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 123, Column: 9 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.1
+Args:            
+  - Callee:          'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 4>::convolution_func(short (*) [18][18], short (*) [1][3][3], short*, short (*) [16][16])'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 73, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 4>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&) (.1)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 124, Column: 9 }
+Function:        _ZN9ConvLayerILi1ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.1
+Args:            
+  - Callee:          'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 4>::write_output_func(short (*) [16][16], hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 101, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 4>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&) (.1)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 121, Column: 9 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.1
+Args:            
+  - Callee:          'ConvLayer<32, 16, 16, 32, 16, 16, 1, 1, 4>::load_params_func(short (*) [32][3][3], short*) (.1)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 23, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ConvLayer<32, 16, 16, 32, 16, 16, 1, 1, 4>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&) (.1)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 122, Column: 9 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.1
+Args:            
+  - Callee:          'ConvLayer<32, 16, 16, 32, 16, 16, 1, 1, 4>::prepare_input_buf_func(hls::stream<short, 0>&, short (*) [18][18])'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 46, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ConvLayer<32, 16, 16, 32, 16, 16, 1, 1, 4>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&) (.1)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 123, Column: 9 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.1
+Args:            
+  - Callee:          'ConvLayer<32, 16, 16, 32, 16, 16, 1, 1, 4>::convolution_func(short (*) [18][18], short (*) [32][3][3], short*, short (*) [16][16])'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 73, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ConvLayer<32, 16, 16, 32, 16, 16, 1, 1, 4>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&) (.1)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 124, Column: 9 }
+Function:        _ZN9ConvLayerILi32ELi16ELi16ELi32ELi16ELi16ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.1
+Args:            
+  - Callee:          'ConvLayer<32, 16, 16, 32, 16, 16, 1, 1, 4>::write_output_func(short (*) [16][16], hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 101, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ConvLayer<32, 16, 16, 32, 16, 16, 1, 1, 4>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&) (.1)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 176, Column: 9 }
+Function:        _ZN7MaxPoolILi32ELi16ELi16EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - Callee:          'MaxPool<32, 16, 16>::read_input_func(hls::stream<short, 0>&, short (*) [16][16])'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 141, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'MaxPool<32, 16, 16>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 173, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 177, Column: 9 }
+Function:        _ZN7MaxPoolILi32ELi16ELi16EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - Callee:          'MaxPool<32, 16, 16>::pooling_func(short (*) [16][16], hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 153, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'MaxPool<32, 16, 16>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 173, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 121, Column: 9 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.1
+Args:            
+  - Callee:          'ConvLayer<32, 8, 8, 32, 8, 8, 1, 1, 4>::load_params_func(short (*) [32][3][3], short*) (.1)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 23, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ConvLayer<32, 8, 8, 32, 8, 8, 1, 1, 4>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&) (.1)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 122, Column: 9 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.1
+Args:            
+  - Callee:          'ConvLayer<32, 8, 8, 32, 8, 8, 1, 1, 4>::prepare_input_buf_func(hls::stream<short, 0>&, short (*) [10][10])'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 46, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ConvLayer<32, 8, 8, 32, 8, 8, 1, 1, 4>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&) (.1)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 123, Column: 9 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.1
+Args:            
+  - Callee:          'ConvLayer<32, 8, 8, 32, 8, 8, 1, 1, 4>::convolution_func(short (*) [10][10], short (*) [32][3][3], short*, short (*) [8][8])'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 73, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ConvLayer<32, 8, 8, 32, 8, 8, 1, 1, 4>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&) (.1)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 124, Column: 9 }
+Function:        _ZN9ConvLayerILi32ELi8ELi8ELi32ELi8ELi8ELi1ELi1ELi4EE7computeERN3hls6streamIsLi0EEES4_.1
+Args:            
+  - Callee:          'ConvLayer<32, 8, 8, 32, 8, 8, 1, 1, 4>::write_output_func(short (*) [8][8], hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 101, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ConvLayer<32, 8, 8, 32, 8, 8, 1, 1, 4>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&) (.1)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 176, Column: 9 }
+Function:        _ZN7MaxPoolILi32ELi8ELi8EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - Callee:          'MaxPool<32, 8, 8>::read_input_func(hls::stream<short, 0>&, short (*) [8][8])'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 141, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'MaxPool<32, 8, 8>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 173, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 177, Column: 9 }
+Function:        _ZN7MaxPoolILi32ELi8ELi8EE7computeERN3hls6streamIsLi0EEES4_
+Args:            
+  - Callee:          'MaxPool<32, 8, 8>::pooling_func(short (*) [8][8], hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 153, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'MaxPool<32, 8, 8>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 173, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 251, Column: 5 }
+Function:        Block_entry_gmem1_wr_proc
+Args:            
+  - Callee:          'write_output_top(hls::stream<short, 0>&, short*) (.1)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 190, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          Block_entry_gmem1_wr_proc
+    DebugLoc:        { File: cnn_layer.cpp, Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 233, Column: 5 }
+Function:        _Z7cnn_topPsS_PA1_A3_A3_sS_PA32_S1_S_S5_S_
+Args:            
+  - Callee:          'read_input_top(short*, hls::stream<short, 0>&) (.1)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 182, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cnn_top(short*, short*, short (*) [1][3][3], short*, short (*) [32][3][3], short*, short (*) [32][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 207, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 236, Column: 11 }
+Function:        _Z7cnn_topPsS_PA1_A3_A3_sS_PA32_S1_S_S5_S_
+Args:            
+  - Callee:          'ConvLayer<1, 16, 16, 32, 16, 16, 1, 1, 4>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&) (.1)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cnn_top(short*, short*, short (*) [1][3][3], short*, short (*) [32][3][3], short*, short (*) [32][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 207, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 239, Column: 11 }
+Function:        _Z7cnn_topPsS_PA1_A3_A3_sS_PA32_S1_S_S5_S_
+Args:            
+  - Callee:          'ConvLayer<32, 16, 16, 32, 16, 16, 1, 1, 4>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&) (.1)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cnn_top(short*, short*, short (*) [1][3][3], short*, short (*) [32][3][3], short*, short (*) [32][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 207, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 242, Column: 11 }
+Function:        _Z7cnn_topPsS_PA1_A3_A3_sS_PA32_S1_S_S5_S_
+Args:            
+  - Callee:          'MaxPool<32, 16, 16>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 173, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cnn_top(short*, short*, short (*) [1][3][3], short*, short (*) [32][3][3], short*, short (*) [32][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 207, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 245, Column: 11 }
+Function:        _Z7cnn_topPsS_PA1_A3_A3_sS_PA32_S1_S_S5_S_
+Args:            
+  - Callee:          'ConvLayer<32, 8, 8, 32, 8, 8, 1, 1, 4>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&) (.1)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 114, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cnn_top(short*, short*, short (*) [1][3][3], short*, short (*) [32][3][3], short*, short (*) [32][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 207, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 248, Column: 11 }
+Function:        _Z7cnn_topPsS_PA1_A3_A3_sS_PA32_S1_S_S5_S_
+Args:            
+  - Callee:          'MaxPool<32, 8, 8>::compute(hls::stream<short, 0>&, hls::stream<short, 0>&)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 173, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cnn_top(short*, short*, short (*) [1][3][3], short*, short (*) [32][3][3], short*, short (*) [32][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 207, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: cnn_layer.cpp, Line: 250, Column: 15 }
+Function:        _Z7cnn_topPsS_PA1_A3_A3_sS_PA32_S1_S_S5_S_
+Args:            
+  - Callee:          Block_entry_gmem1_wr_proc
+    DebugLoc:        { File: cnn_layer.cpp, Line: 0, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'cnn_top(short*, short*, short (*) [1][3][3], short*, short (*) [32][3][3], short*, short (*) [32][3][3], short*)'
+    DebugLoc:        { File: cnn_layer.cpp, Line: 207, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
